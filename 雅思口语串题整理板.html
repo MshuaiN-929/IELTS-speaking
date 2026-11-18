@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <title>雅思口语串题整理板</title>
+  <style>
+    :root{font-family:"Microsoft YaHei UI","PingFang SC",system-ui,sans-serif;color:#26333a;background:#f7f6f2;font-synthesis:none}
+    *{box-sizing:border-box}body{margin:0}button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #76b7ae;outline-offset:2px}
+    .app{max-width:1500px;margin:auto;padding:32px 32px 64px}.top{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:24px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#59847e;margin:0 0 8px}.top h1{font-size:clamp(28px,3vw,42px);letter-spacing:-.05em;margin:0}.subtitle{color:#6d7778;margin:9px 0 0;font-size:14px;line-height:1.6}.top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}.button{border:1px solid #d5dfdb;background:#fff;color:#344d4b;border-radius:11px;padding:10px 14px;font-weight:700;font-size:13px;white-space:nowrap}.button:hover{border-color:#8db7ae;background:#f7fcfa}.button.primary{background:#245c56;color:white;border-color:#245c56}.button.primary:hover{background:#1a4b45}.button.danger{color:#a14d45}.button.small{padding:6px 10px;font-size:12px}.more{position:relative}.more summary{list-style:none}.more summary::-webkit-details-marker{display:none}.more-menu{position:absolute;z-index:20;right:0;top:43px;min-width:164px;display:grid;gap:4px;background:#fff;padding:7px;border:1px solid #dce5df;border-radius:12px;box-shadow:0 16px 38px #253c3523}.more-menu button{background:transparent;border:0;text-align:left;padding:10px;border-radius:7px;color:#344d4b;font-size:13px}.more-menu button:hover{background:#f2f8f5}
+    .progress-card{display:flex;align-items:center;gap:15px;background:#e9f1ec;border:1px solid #d8e8df;padding:12px 17px;border-radius:15px;margin-bottom:22px}.progress-text{font-size:13px;color:#4b625c;white-space:nowrap}.progress-text strong{font-size:18px;color:#1d504a}.progress-bar{height:7px;flex:1;background:#d3e3d9;border-radius:99px;overflow:hidden}.progress-fill{height:100%;background:#4d9a82;border-radius:inherit;transition:width .2s}.save-status{font-size:12px;color:#61736d;white-space:nowrap}
+    .layout{display:grid;grid-template-columns:minmax(340px,390px) minmax(0,1fr);gap:22px;align-items:start}.panel{background:white;border:1px solid #e2e6df;border-radius:20px;box-shadow:0 4px 20px #2a473608}.bank{position:sticky;top:16px;max-height:calc(100vh - 32px);display:flex;flex-direction:column;min-height:380px;min-width:0}.panel-head{padding:20px 20px 14px;border-bottom:1px solid #eef0eb;min-width:0}.section-heading{display:flex;justify-content:space-between;align-items:center;gap:12px}.section-heading h2{font-size:18px;letter-spacing:-.02em;margin:0}.section-heading small{color:#87928e;font-size:12px}.search{width:100%;border:1px solid #dce4de;border-radius:10px;padding:10px 12px;margin:16px 0 12px;background:#fcfdfb;color:#26333a}.filters{display:flex;gap:7px;overflow-x:auto;padding-bottom:3px;scrollbar-width:thin}.filter{border:1px solid #e0e8e0;border-radius:999px;background:#fff;color:#64736c;padding:6px 10px;font-size:12px;white-space:nowrap}.filter:hover{border-color:#a9c7ba}.filter.active{background:#245c56;color:white;border-color:#245c56}.bank-subfilters{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:13px;font-size:12px;color:#78847d}.checkbox{display:inline-flex;align-items:center;gap:6px;cursor:pointer}.checkbox input{accent-color:#245c56}.topic-list{overflow-y:auto;padding:10px 14px 17px;scrollbar-width:thin}.category-title{display:flex;align-items:center;gap:8px;color:#6e8176;font-size:11px;letter-spacing:.04em;font-weight:800;margin:15px 7px 8px}.category-title:first-child{margin-top:3px}.category-title::after{content:"";height:1px;background:#e6ebe4;flex:1}.topic{background:#fbfcfa;border:1px solid #e5ebe4;border-radius:11px;margin:7px 0;padding:10px 11px;display:flex;gap:10px;align-items:flex-start;transition:border-color .15s,background .15s,transform .15s}.topic:hover{border-color:#b7d0c2;background:#f8fbf8}.topic[draggable=true]{cursor:grab}.topic.dragging{opacity:.45}.topic.assigned{background:#f3f8f4}.topic-main{min-width:0;flex:1}.topic-name{font-size:13px;font-weight:700;line-height:1.45}.topic-meta{font-size:11px;color:#7b8c80;margin-top:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.topic select{border:1px solid #dbe5de;background:#fff;border-radius:7px;color:#51665c;padding:5px 6px;font-size:11px;max-width:105px;flex-shrink:0}.topic select:disabled{opacity:.55}.empty-list{padding:30px 12px;color:#7c8781;text-align:center;font-size:13px;line-height:1.6}
+    .workspace{min-width:0}.workspace-intro{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin:2px 2px 18px}.workspace-intro h2{font-size:20px;margin:0 0 5px;letter-spacing:-.025em}.workspace-intro p{font-size:13px;color:#7d8880;margin:0;line-height:1.5}.zones{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px;align-items:start}.zone{background:#fff;border:1px solid #e0e6df;border-radius:18px;min-height:244px;box-shadow:0 4px 20px #2a473608;transition:border-color .15s,background .15s,transform .15s}.zone.drag-over{border-color:#51a384;background:#f2faf4;transform:translateY(-2px)}.zone-head{display:flex;align-items:center;gap:8px;padding:17px 17px 13px}.zone-number{width:25px;height:25px;border-radius:8px;background:#e8f1ea;color:#537666;display:grid;place-items:center;font-size:12px;font-weight:800;flex:none}.zone-title{width:100%;min-width:0;border:1px solid transparent;border-radius:7px;background:transparent;padding:5px 6px;font-size:15px;font-weight:800;color:#294c43}.zone-title:hover,.zone-title:focus{border-color:#c8ded0;background:#f8fbf8}.zone-delete{background:none;border:none;color:#8a9890;font-size:20px;line-height:1;padding:3px 7px;border-radius:6px}.zone-delete:hover{background:#fbedeb;color:#b1534a}.zone-body{padding:0 17px 17px}.zone-caption{font-size:11px;font-weight:800;color:#839288;margin-bottom:7px}.zone textarea{width:100%;resize:vertical;min-height:76px;border:1px solid #e0e9df;background:#fafcf9;border-radius:10px;padding:10px 11px;font-size:12px;line-height:1.6;color:#374942}.zone textarea::placeholder{color:#a0ada2}.zone-count{font-size:11px;color:#789183;font-weight:700;margin:15px 0 7px}.zone-topic-list{min-height:43px}.zone-topic{display:flex;gap:8px;align-items:center;background:#f4f8f4;border:1px solid #e2ece3;border-radius:9px;padding:8px 9px;margin-top:6px;cursor:grab}.zone-topic.dragging{opacity:.45}.zone-topic span{font-size:12px;font-weight:700;line-height:1.45;flex:1}.zone-topic button{border:0;background:transparent;color:#819487;font-size:16px;padding:0 4px}.zone-topic button:hover{color:#ad514a}.drop-hint{border:1px dashed #cadccf;border-radius:9px;color:#9aa99d;text-align:center;padding:11px 7px;font-size:12px}.zone.drag-over .drop-hint{border-color:#68ae8c;color:#428262}.empty-zones{border:1px dashed #bcd6c7;background:#fbfdfa;border-radius:20px;text-align:center;padding:66px 22px;color:#6f887a}.empty-zones strong{display:block;font-size:17px;color:#315a49;margin-bottom:9px}.empty-zones p{font-size:13px;line-height:1.6;margin:0 0 19px}.footnote{font-size:12px;color:#97a19a;margin-top:22px;line-height:1.5}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#2b4941;color:white;border-radius:10px;padding:10px 15px;font-size:12px;box-shadow:0 12px 32px #233d3250;z-index:50;opacity:0;pointer-events:none;transition:opacity .2s}.toast.show{opacity:1}
+    .zone-column{display:flex;flex-direction:column;gap:16px;min-width:0}
+    .zone{border:1px solid color-mix(in srgb,var(--zone-accent,#1557b0) 42%,white);border-left:5px solid var(--zone-accent,#1557b0);border-top:4px solid var(--zone-accent,#1557b0)}.zone-head{background:color-mix(in srgb,var(--zone-accent,#1557b0) 14%,white);border-radius:13px 13px 0 0}.zone-number{background:color-mix(in srgb,var(--zone-accent,#1557b0) 48%,white);color:#172c2f}.zone-topic{background:color-mix(in srgb,var(--zone-accent,#1557b0) 22%,white);border-color:color-mix(in srgb,var(--zone-accent,#1557b0) 38%,white)}.topic.assigned{border-left:4px solid var(--zone-accent,#1557b0);background:color-mix(in srgb,var(--zone-accent,#1557b0) 16%,white)}.zone textarea{background:color-mix(in srgb,var(--zone-accent,#1557b0) 6%,white);border-color:color-mix(in srgb,var(--zone-accent,#1557b0) 28%,white)}
+    .zone-topic.drop-before{box-shadow:0 -3px 0 var(--zone-accent,#4d8b7d)}.zone-topic.drop-after{box-shadow:0 3px 0 var(--zone-accent,#4d8b7d)}.zone-topic .order-button{font-size:13px;line-height:1;min-width:18px}.zone-topic .order-button:disabled{opacity:.25;cursor:default}.zone-topic .order-button:disabled:hover{color:#819487}
+    .zone .note-toggle{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:28px;padding:3px 2px 7px;margin:0;border:0;background:transparent;text-align:left;cursor:pointer}.note-toggle .toggle-hint{font-weight:600;color:#87968a}.note-toggle:hover .toggle-hint{color:#3e7a67}.zone.note-collapsed{min-height:0}.zone.note-collapsed .zone-count{margin-top:7px}.zone textarea[hidden]{display:none}
+    .zone{position:relative}.zone-handle{border:0;background:transparent;color:#92a29a;padding:4px 0;min-width:19px;font-size:15px;line-height:1;cursor:grab;flex:none}.zone-handle:hover{color:#356f61}.zone-handle:active{cursor:grabbing}.zone.group-dragging{opacity:.45}.zone.zone-insert-before::before,.zone.zone-insert-after::after{content:"";position:absolute;left:0;right:0;height:5px;background:#31836d;border-radius:99px;pointer-events:none}.zone.zone-insert-before::before{top:-10px}.zone.zone-insert-after::after{bottom:-10px}.zone-palette{position:relative;flex:none}.zone-color-trigger{display:grid;place-items:center;width:28px;height:28px;padding:3px;border:1px solid #d8e3d9;border-radius:50%;background:#fff;cursor:pointer;list-style:none}.zone-color-trigger::-webkit-details-marker{display:none}.zone-color-trigger .color-dot{width:19px;height:19px;border-radius:50%;background:var(--chosen-color,#4d8b7d)}.zone-palette-menu{position:absolute;right:0;top:35px;z-index:40;display:grid;grid-template-columns:repeat(5,28px);gap:7px;padding:11px;background:#fff;border:1px solid #dce5df;border-radius:12px;box-shadow:0 14px 30px #233d322b}.palette-choice{width:28px;height:28px;border:2px solid #fff;border-radius:50%;background:var(--choice-color);box-shadow:0 0 0 1px #d8e0d9;cursor:pointer}.palette-choice:hover{transform:scale(1.1)}.palette-choice.selected{box-shadow:0 0 0 2px #2e5c50}
+    #boardView[hidden],#detailView[hidden]{display:none}.zone-tools{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:15px 0 7px}.zone-tools .zone-count{margin:0}.detail-link{border:1px solid color-mix(in srgb,var(--zone-accent) 40%,white);background:color-mix(in srgb,var(--zone-accent) 13%,white);color:#304741;border-radius:8px;padding:5px 9px;font-size:11px;font-weight:800;white-space:nowrap}.detail-link:hover{background:color-mix(in srgb,var(--zone-accent) 24%,white)}.detail-view{max-width:1060px;margin:0 auto}.detail-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px}.detail-back{border:0;background:transparent;color:#356b60;font-size:14px;font-weight:800;padding:8px 0}.detail-back:hover{text-decoration:underline}.detail-save-status{font-size:12px;color:#718079}.detail-hero{border:1px solid color-mix(in srgb,var(--detail-accent) 44%,white);border-left:6px solid var(--detail-accent);border-radius:18px;padding:25px 28px;background:color-mix(in srgb,var(--detail-accent) 13%,white)}.detail-hero .eyebrow{margin-bottom:7px;color:#536c68}.detail-hero h1{font-size:clamp(27px,3vw,38px);margin:0;letter-spacing:-.04em}.detail-hero p{margin:9px 0 0;color:#5f706b;font-size:13px;line-height:1.6}.detail-card{background:white;border:1px solid #e0e6df;border-radius:18px;padding:23px 25px;margin-top:17px;box-shadow:0 4px 20px #2a473608}.detail-card h2{font-size:18px;margin:0 0 6px}.detail-help{font-size:12px;color:#7c8a81;line-height:1.6;margin:0 0 13px}.detail-textarea{display:block;width:100%;resize:vertical;border:1px solid #ccdcd2;border-radius:10px;background:#fcfdfb;padding:13px 14px;color:#26333a;line-height:1.75;font-size:14px}.detail-summary{min-height:86px}.detail-story{min-height:340px}.detail-question-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.detail-question{border:1px solid #dfe7df;border-left:4px solid var(--detail-accent);border-radius:11px;background:#fbfcfa;min-width:0}.detail-question summary{display:flex;justify-content:space-between;align-items:center;gap:12px;list-style:none;padding:12px 14px;cursor:pointer;font-size:13px;font-weight:800}.detail-question summary::-webkit-details-marker{display:none}.detail-question summary span:first-child{min-width:0}.detail-question .question-hint{font-size:11px;font-weight:600;color:#7d8d83;white-space:nowrap}.detail-question textarea{width:calc(100% - 28px);min-height:120px;resize:vertical;margin:0 14px 14px;padding:10px 11px;border:1px solid #d7e4d9;border-radius:8px;background:#fff;line-height:1.6;font-size:13px}.detail-empty{padding:22px;color:#7d8b81;text-align:center;font-size:13px;border:1px dashed #d1dfd4;border-radius:10px}@media(max-width:700px){.detail-card{padding:19px}.detail-hero{padding:20px}.detail-question-grid{grid-template-columns:1fr}}
+    .detail-question .question-fields{display:grid;gap:12px;padding:0 14px 14px}.detail-question .question-field-label{display:block;margin-bottom:5px;font-size:12px;font-weight:800;color:#52665b}.detail-question .question-fields textarea{display:block;width:100%;min-height:112px;margin:0;font-weight:400;color:#26333a}
+    .tree-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:20px;align-items:start}.theme-sidebar{position:sticky;top:16px;background:#fff;border:1px solid #e0e6df;border-radius:16px;padding:15px;max-height:calc(100vh - 32px);overflow:auto}.theme-sidebar h2{font-size:14px;margin:0 0 11px}.theme-list{display:grid;gap:7px}.theme-choice{width:100%;text-align:left;border:1px solid #e1e8e1;border-left:4px solid var(--theme-accent);border-radius:9px;background:#fff;padding:10px;font-size:12px;font-weight:700;line-height:1.4;color:#355047;overflow-wrap:anywhere}.theme-choice.active{background:color-mix(in srgb,var(--theme-accent) 13%,white);border-color:var(--theme-accent)}.theme-choice:hover{background:#f5faf6}.tree-main{min-width:0}.tree-main .detail-card{margin-top:14px}.tree-main .detail-story{min-height:170px}.tree-step{display:flex;align-items:center;gap:9px}.tree-number{display:inline-grid;place-items:center;min-width:23px;height:23px;border-radius:8px;background:color-mix(in srgb,var(--detail-accent) 17%,white);color:#284f47;font-size:12px}.tree-arrow{height:21px;display:grid;place-items:center;color:#88a39a;font-size:20px;line-height:1}.tree-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.tree-branches{display:grid;gap:13px}.branch-card{border:1px solid #dbe5de;border-left:5px solid var(--detail-accent);border-radius:13px;background:#fbfdfb;padding:13px}.branch-card.active{background:color-mix(in srgb,var(--detail-accent) 7%,white)}.branch-head{display:flex;align-items:center;gap:8px}.branch-toggle{flex:1;min-width:0;text-align:left;border:0;background:transparent;padding:5px 2px;font-size:14px;font-weight:800;color:#294942}.branch-head .button{flex:none}.branch-content{padding:10px 2px 7px}.branch-title-input{width:100%;border:1px solid #d7e3d9;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-weight:700}.branch-content textarea{min-height:135px}.leaf-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:10px 0 0 20px;border-left:2px solid #cdded3;margin:8px 0 0 11px}.leaf-card{min-width:0;border:1px solid #dbe5de;border-radius:10px;background:#fff}.leaf-card.active{grid-column:1/-1;border-color:var(--detail-accent);box-shadow:0 2px 12px #2a473610}.leaf-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;text-align:left;border:0;background:transparent;padding:10px 12px;font-size:12px;font-weight:800;color:#2d4840}.leaf-toggle span:first-child{overflow-wrap:anywhere}.leaf-toggle small{flex:none;color:#85968c;font-weight:600}.leaf-fields{border-top:1px solid #e8eee7;padding:13px;display:grid;gap:11px}.leaf-fields label{display:grid;gap:5px;font-size:12px;font-weight:800;color:#52665b}.leaf-fields textarea{min-height:105px}.leaf-fields select{border:1px solid #d4e1d7;border-radius:8px;padding:8px;background:#fff}.tree-direct{margin-top:13px}.tree-direct h3{font-size:13px;margin:0 0 7px;color:#587569}.full-answer{white-space:pre-wrap;overflow-wrap:anywhere;background:#f6faf7;border:1px solid #dce8df;border-radius:11px;padding:16px;line-height:1.8;font-size:14px;min-height:76px}.full-answer p{margin:0 0 13px}.full-answer p:last-child{margin-bottom:0}.answer-placeholder{color:#8b9d91}.tree-empty{padding:15px;border:1px dashed #cbded1;border-radius:10px;color:#84958a;font-size:12px}.tree-note{color:#789084;font-size:11px;line-height:1.5;margin:7px 0 0}@media(max-width:800px){.tree-layout{grid-template-columns:1fr}.theme-sidebar{position:static;max-height:none}.theme-list{display:flex;overflow-x:auto}.theme-choice{min-width:135px;max-width:190px}.leaf-list{grid-template-columns:1fr}}
+    @media(max-width:900px){.layout{grid-template-columns:minmax(0,1fr)}.bank{position:static;max-height:520px}.app{padding:22px 17px 50px}.top{align-items:flex-start;flex-direction:column}.top-actions{justify-content:flex-start}.workspace-intro{margin-top:4px}}@media(max-width:560px){.progress-card{flex-wrap:wrap}.progress-bar{flex-basis:100%;order:3}.save-status{margin-left:auto;white-space:normal;text-align:right}.workspace-intro{flex-direction:column}.zones{grid-template-columns:1fr}.bank{max-height:480px}.top-actions{width:100%}}
+    .route-picker{background:#fff;border:1px solid #e0e6df;border-radius:16px;padding:17px 18px;margin-top:14px;box-shadow:0 4px 20px #2a473608}.route-picker h2{font-size:16px;margin:0 0 5px}.route-picker p{color:#7c8a81;font-size:12px;margin:0 0 12px}.topic-tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 1px 9px;scrollbar-width:thin}.topic-tab{flex:none;max-width:220px;text-align:left;border:1px solid #dce7df;border-radius:10px;background:#fff;padding:9px 12px;color:#36534a;font-size:12px;font-weight:700;line-height:1.45}.topic-tab.active{border-color:var(--detail-accent);background:color-mix(in srgb,var(--detail-accent) 13%,white);box-shadow:inset 0 0 0 1px var(--detail-accent)}.topic-tab:hover{border-color:var(--detail-accent)}.topic-tab small{display:block;color:#87968a;font-size:10px;font-weight:600;margin-top:2px}.route-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:17px 0 11px}.route-toolbar strong{font-size:15px;line-height:1.45}.mode-switch{display:flex;padding:3px;border:1px solid #d9e6dc;border-radius:10px;background:#edf3ee;flex:none}.mode-switch button{border:0;border-radius:7px;padding:7px 15px;background:transparent;color:#637b70;font-size:12px;font-weight:800}.mode-switch button.active{background:#fff;color:#245c56;box-shadow:0 1px 5px #203d2b1c}.route-stack{display:grid;gap:0}.route-segment{background:#fff;border:1px solid #dfe8df;border-left:4px solid var(--detail-accent);border-radius:13px;padding:17px 19px;box-shadow:0 4px 20px #2a473608;min-width:0}.route-segment h3{font-size:13px;color:#58766a;margin:0 0 11px}.route-body{font-size:14px;line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere;min-height:25px}.route-body.empty{color:#9ba9a0}.route-segment[open] summary{margin-bottom:12px}.route-segment summary{cursor:pointer;font-size:13px;font-weight:800;color:#416155;list-style:none}.route-segment summary::-webkit-details-marker{display:none}.route-segment summary::before{content:'▸';display:inline-block;margin-right:8px}.route-segment[open] summary::before{content:'▾'}.route-segment textarea{min-height:110px}.route-step-arrow{display:grid;place-items:center;height:25px;color:#8ea79a;font-size:20px}.route-branch-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(105px,160px);gap:10px;align-items:start}.route-branch-row.no-siblings{grid-template-columns:1fr}.branch-rail{display:grid;gap:6px}.branch-rail-label{font-size:11px;color:#819489;font-weight:700;margin-bottom:1px}.branch-chip{width:100%;text-align:left;border:1px solid #dce5dd;border-radius:9px;padding:8px 9px;background:#f8faf8;color:#567164;font-size:11px;font-weight:700;overflow-wrap:anywhere}.branch-chip:hover{border-color:#9fbca9}.branch-chip:disabled{cursor:default}.route-empty{border:1px dashed #cdded1;border-radius:13px;background:#fbfdfb;padding:23px;color:#72877a;font-size:13px;line-height:1.6}.route-edit-actions{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}.settings-panel{background:#fff;border:1px solid #dfe8df;border-radius:13px;padding:15px 18px;margin-top:13px}.settings-panel summary{cursor:pointer;font-size:13px;font-weight:800;color:#456456}.settings-panel[open] summary{margin-bottom:15px}.settings-panel label{display:grid;gap:6px;font-size:12px;font-weight:800;color:#587064;margin-bottom:12px}.settings-panel textarea{min-height:80px}.settings-branches{display:grid;gap:8px;margin-top:12px}.settings-branch{display:flex;align-items:center;gap:8px;padding:8px;border:1px solid #e3ebe4;border-radius:9px}.settings-branch input{flex:1;min-width:0;border:1px solid #d5e3d8;border-radius:7px;padding:8px 9px;font-size:12px;font-weight:700}.settings-branch small{color:#85968a;white-space:nowrap}.settings-branch .button{padding:6px 8px}.route-assignment{display:grid;gap:6px;border:1px solid #dfe8df;border-radius:11px;background:#fbfdfb;padding:11px 13px;margin-bottom:12px;color:#526b5d;font-size:12px;font-weight:800}.route-assignment select{width:100%;border:1px solid #d1e0d5;border-radius:7px;background:white;padding:8px;color:#334f42}.route-no-branch{font-size:12px;color:#83968a;margin:0 0 10px}@media(max-width:700px){.route-branch-row{grid-template-columns:1fr}.branch-rail{display:flex;overflow-x:auto}.branch-rail-label{flex:none;white-space:nowrap;align-self:center}.branch-chip{min-width:120px}.route-toolbar{align-items:flex-start;flex-direction:column}.settings-branch{flex-wrap:wrap}}
+    #annotationToolbar[hidden],#notePopup[hidden],.note-read[hidden],.note-input[hidden],.note-actions button[hidden]{display:none}.annotation-toolbar{display:flex;align-items:center;gap:7px;flex-wrap:wrap;background:#f0f6f1;border:1px solid #d4e4d8;border-radius:11px;padding:9px 11px;margin:0 0 13px}.annotation-toolbar .annotation-help{font-size:11px;color:#5e7869;flex:1;min-width:150px}.mark-button{border:1px solid #cfdfd3;background:#fff;border-radius:7px;padding:6px 9px;color:#315344;font-size:12px;font-weight:800}.mark-button:hover:not(:disabled){border-color:#6eac81}.mark-button:disabled{opacity:.4;cursor:default}.mark-color{width:27px;height:27px;padding:3px;border-radius:50%;background:var(--mark-color);border:2px solid #fff;box-shadow:0 0 0 1px #b8cfc0;flex:none}.marked-note{background:#fff1c9;border-bottom:2px dotted #b57600}.note-marker{display:inline-flex;vertical-align:super;align-items:center;justify-content:center;border:0;border-radius:99px;background:#fff0b8;color:#825900;padding:1px 4px;margin:0 2px;font-size:10px;line-height:1.2;font-weight:800}.note-marker:hover{background:#ffe081}.annotation-note-list{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.annotation-note-list button{border:1px solid #e7d49a;background:#fff9e8;color:#785c1e;border-radius:7px;padding:5px 8px;font-size:11px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.note-popup{position:fixed;right:18px;bottom:18px;z-index:60;width:min(380px,calc(100vw - 36px));background:#fff;border:1px solid #dce5dd;border-radius:15px;padding:17px;box-shadow:0 18px 45px #182e2640}.note-popup h2{margin:0 0 7px;font-size:16px}.note-quote{color:#6c7d70;font-size:12px;line-height:1.5;margin:0 0 10px;max-height:70px;overflow:auto}.note-read{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65;font-size:13px}.note-input{width:100%;min-height:110px;resize:vertical;border:1px solid #cad9cf;border-radius:8px;padding:9px;line-height:1.55;font-size:13px}.note-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}.note-actions button{border:1px solid #d7e3d9;border-radius:8px;background:#fff;padding:6px 10px;font-size:12px;font-weight:700}.note-actions button.primary{background:#245c56;color:white;border-color:#245c56}.note-actions button.danger{color:#ab4e41}
+    .more-menu .backup-hint{display:block;color:#84958a;font-size:10px;line-height:1.5;padding:3px 10px 5px;white-space:normal}
+    .practice-card{border:1px solid color-mix(in srgb,var(--detail-accent) 35%,white);border-top:5px solid var(--detail-accent);border-radius:17px;background:#fff;padding:27px 30px;box-shadow:0 4px 20px #2a473608;min-height:200px}.practice-card .practice-eyebrow{margin:0 0 10px;color:#678276;font-size:11px;font-weight:800;letter-spacing:.08em}.practice-card h2{margin:0 0 19px;font-size:21px;color:#284940;line-height:1.45}.practice-question{white-space:pre-wrap;overflow-wrap:anywhere;font-size:17px;line-height:1.9;color:#263b32}.practice-question.empty{color:#91a299;font-size:14px}.prompt-edit-card{background:#fff;border:1px solid #dfe8df;border-left:4px solid var(--detail-accent);border-radius:13px;padding:17px 19px;margin-bottom:13px;box-shadow:0 4px 20px #2a473608}.prompt-edit-card h2{font-size:14px;color:#416155;margin:0 0 5px}.prompt-edit-card p{font-size:11px;color:#84978a;margin:0 0 11px}.prompt-edit-card textarea{display:block;width:100%;min-height:150px;resize:vertical;border:1px solid #cfdfd4;border-radius:9px;background:#fcfefc;padding:11px 12px;font-size:13px;line-height:1.7;color:#293c32}@media(max-width:700px){.practice-card{padding:21px}.practice-question{font-size:16px}}
+    .theme-choice,.theme-choice.active,.theme-choice:hover{background-image:linear-gradient(90deg,rgba(79,178,103,.28) var(--mastery-progress,0%),transparent var(--mastery-progress,0%))}.theme-choice small{display:block;color:#648072;font-size:10px;font-weight:700;margin-top:3px}.topic-tab-item{display:flex;flex-direction:column;flex:none;min-width:132px;max-width:220px;gap:5px}.topic-tab-item .topic-tab{width:100%;max-width:none;flex:1}.mastery-check{display:flex;align-items:center;gap:5px;padding:2px 3px;color:#587765;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap}.mastery-check input{margin:0;accent-color:#32915a;width:15px;height:15px}.route-branch-row{grid-template-columns:minmax(0,1fr) 44px}.branch-rail{display:grid;grid-template-columns:1fr;gap:6px;width:44px;justify-self:end;align-self:start;overflow:visible}.branch-rail-label{text-align:right;white-space:nowrap}.branch-chip{width:100%;min-width:0;padding:6px 3px}.branch-chip + .branch-chip{margin-top:0}@media(max-width:700px){.route-branch-row{grid-template-columns:1fr}.branch-rail{display:grid;width:44px;justify-self:end;overflow:visible}.branch-rail-label{align-self:auto;text-align:right}.branch-chip{min-width:0}}
+  </style>
+</head>
+<body>
+<main class="app">
+  <div id="boardView">
+  <header class="top"><div><p class="eyebrow">IELTS Speaking · Part 2</p><h1>串题整理板</h1><p class="subtitle">先给题目找素材，再把同一个故事能回答的题放到一起。</p></div><div class="top-actions"><button class="button" id="exportText">导出整理结果</button><details class="more" id="moreMenu"><summary class="button">备份与恢复 ▾</summary><div class="more-menu"><button id="exportBackup">下载备份文件</button><button id="importBackup">导入备份文件</button><small class="backup-hint">备份包含原始题目、答案、文字标注和已掌握进度</small></div></details></div></header>
+  <div class="progress-card" aria-live="polite"><div class="progress-text"><strong id="assignedCount">0</strong> / <span id="totalCount">63</span> 道题已串</div><div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div><div class="save-status" id="saveStatus">自动保存到当前浏览器</div></div>
+  <div class="layout">
+    <section class="panel bank" aria-labelledby="bankTitle"><div class="panel-head"><div class="section-heading"><h2 id="bankTitle">题目库</h2><small>拖动或用下拉框归类</small></div><input class="search" id="search" type="search" placeholder="搜索题目关键词…" aria-label="搜索题目"><div class="filters" id="filters" aria-label="按题目类别筛选"></div><div class="bank-subfilters"><label class="checkbox"><input id="unassignedOnly" type="checkbox"> 只看未串题</label><span id="visibleCount"></span></div></div><div class="topic-list" id="topicList"></div></section>
+    <section class="workspace" aria-labelledby="zoneTitle"><div class="workspace-intro"><div><h2 id="zoneTitle">我的素材区</h2><p>拖动左上角把手调整素材区顺序；区内题目也可以拖动排序。</p></div><button class="button primary" id="addZone">＋ 新增素材区</button></div><div class="zones" id="zones"></div><p class="footnote">整理内容只保存在当前浏览器。换浏览器或清除浏览数据前，建议下载备份文件。</p></section>
+  </div>
+  </div>
+  <section class="detail-view" id="detailView" hidden aria-label="素材内容页">
+    <div class="detail-nav"><button class="detail-back" id="backBoard" type="button">← 返回整理板</button><span class="detail-save-status" id="detailSaveStatus">自动保存到当前浏览器</span></div>
+    <div class="tree-layout"><aside class="theme-sidebar" aria-label="切换大主题"><h2>大主题</h2><div class="theme-list" id="themeList"></div></aside><div class="tree-main">
+      <header class="detail-hero" id="detailHero"><p class="eyebrow">IELTS Speaking · 内容树</p><h1 id="detailTitle"></h1><p id="detailSubtitle"></p></header>
+      <section class="route-picker"><h2>选择小题</h2><p>只展开当前小题，其余题目收在这里。点另一道题即可切换路线。</p><div class="topic-tabs" id="topicTabs"></div></section>
+      <div class="route-toolbar"><strong id="routeTitle">选一道题，开始练习</strong><div class="mode-switch" role="group" aria-label="内容模式"><button id="practiceMode" type="button">练习</button><button id="showMode" type="button">展示答案</button><button id="editMode" type="button">修改</button></div></div>
+      <div class="annotation-toolbar" id="annotationToolbar" hidden><span class="annotation-help" id="annotationHelp">选中下面输入框中的文字，再点标注</span><button class="mark-button" type="button" data-mark-action="bold" title="加粗"><strong>B</strong></button><button class="mark-button" type="button" data-mark-action="underline" title="下划线"><u>U</u></button><button class="mark-button mark-color" type="button" data-mark-action="color" data-color="#b42318" style="--mark-color:#b42318" aria-label="红色文字"></button><button class="mark-button mark-color" type="button" data-mark-action="color" data-color="#1557b0" style="--mark-color:#1557b0" aria-label="蓝色文字"></button><button class="mark-button mark-color" type="button" data-mark-action="color" data-color="#147347" style="--mark-color:#147347" aria-label="绿色文字"></button><button class="mark-button mark-color" type="button" data-mark-action="color" data-color="#7a3daf" style="--mark-color:#7a3daf" aria-label="紫色文字"></button><button class="mark-button mark-color" type="button" data-mark-action="color" data-color="#ad5b00" style="--mark-color:#ad5b00" aria-label="橙色文字"></button><button class="mark-button" type="button" data-mark-action="note">＋旁注</button><button class="mark-button" type="button" data-mark-action="clear">清除格式</button></div>
+      <div id="routeFlow"></div><div id="editSettings"></div>
+    </div></div>
+  </section>
+</main>
+<input type="file" id="backupFile" accept="application/json,.json" hidden>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<section class="note-popup" id="notePopup" role="dialog" aria-label="文字旁注" hidden><h2 id="noteTitle">文字旁注</h2><p class="note-quote" id="noteQuote"></p><div class="note-read" id="noteRead"></div><textarea class="note-input" id="noteInput" aria-label="旁注内容" placeholder="写下这句话的提示或解释……"></textarea><div class="note-actions"><button id="noteDelete" class="danger" type="button">删除旁注</button><button id="noteCancel" type="button">关闭</button><button id="noteSave" class="primary" type="button">保存旁注</button></div></section>
+<script>
+(() => {
+  'use strict';
+  const categories = ['人物','经历与活动','地点与建筑','物品与作品','决定、改变与目标','法律与公共信息'];
+  const topicGroups = [
+    ['人物',['做困难事情并成功的人','快乐人士','有条理的人','喜欢拍照的人','尊敬的比你年长的人','擅长做手工的人','学习并喜欢历史的人','教你新技能的人','受欢迎的人','钦佩的运动员','有健康习惯和作息的人','喜欢在家/花园种菜的人','发小','想从事医疗行业的人','拥有成功商业的人','擅长学习和说语言的人','一见且想继续了解的人','有创造力的朋友']],
+    ['经历与活动',['看过的名人采访','小时候学到的新技能','好的购物服务','和朋友度过的愉快夜晚','浪费时间的活动','不喜欢的短途旅行','印象深刻的聚会','帮助他人','早起经历','在团队中工作','喜欢的现场体育赛事','遇到的科技问题','很久没收到回复的信息','印象深刻的课程','公共场所丢物品','听不感兴趣的话','不会用的科技产品']],
+    ['地点与建筑',['嘈杂地','喜欢的城市自然之地','拥挤地方','喜欢的公共建筑','喜欢或不喜欢的高建筑','去过的无聊地方','推荐旅行过的地方','喜欢拜访但不想住的家','想再去一次的城市']],
+    ['物品与作品',['攒钱买特别物品','不喜欢的电影','读起来开心的书','有趣视频','特别场合的食物','名人出演的广告','包含动物的故事或书','送朋友的礼物']],
+    ['决定、改变与目标',['对结果开心的重要决定','近期改变的计划','重要决定','长久目标/抱负','改变重要想法','近期改变','节约时间的方法/改变']],
+    ['法律与公共信息',['想颁布的新法律','保护环境的法律','想要颁布的环保法律','当地新闻']]
+  ];
+  let topicCounter = 1;
+  const topics = topicGroups.flatMap(([category,names]) => names.map(name => ({id:'t'+(topicCounter++),name,category})));
+  const topicById = new Map(topics.map(topic => [topic.id,topic]));
+  const previousPalette = ['#4d8b7d','#9b79ad','#cb8967','#678db2','#8a9b64','#c27c96','#a78350','#6a9ca1','#c76e72','#737db2','#70a06e','#ae7da0','#d0a254','#5b9dbc','#947a68','#9a86bc','#bf7656','#708f9b','#7e9e88','#b89274'];
+  const zonePalette = ['#1557b0','#e36a13','#178a4c','#a53ac3','#c92a2a','#008a94','#d63384','#9c6a00','#5f3dc4','#d9480f','#4c9400','#c2255c','#087f5b','#1971c2','#7b4a12','#9b2c9b','#0c8599','#e8590c','#5c6b73','#a61e4d'];
+  const markColors = ['#b42318','#1557b0','#147347','#7a3daf','#ad5b00'];
+  const validColor = (value,fallback) => /^#[0-9a-f]{6}$/i.test(String(value)) ? String(value) : fallback;
+  const updatedColor = (value,index) => {const color=String(value||'').toLowerCase(),oldIndex=previousPalette.indexOf(color);return oldIndex<0?validColor(color,zonePalette[index%zonePalette.length]):zonePalette[oldIndex];};
+  const storageKey = 'ielts-part2-material-board-v1';
+  const $ = id => document.getElementById(id);
+  const el = (tag,className,text) => {const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
+  let state = {groups:[],assignments:{},order:{},prompts:{},mastered:{}};
+  let categoryFilter = '全部';
+  let toastTimer;
+  try {
+    const saved = JSON.parse(localStorage.getItem(storageKey) || 'null');
+    if(saved && Array.isArray(saved.groups) && saved.assignments && typeof saved.assignments==='object') {
+      state.groups = saved.groups.filter(g => g && typeof g.id==='string').map(normalizedGroup);
+      const groupIds = new Set(state.groups.map(g => g.id));
+      for(const [topicId,groupId] of Object.entries(saved.assignments)) if(topicById.has(topicId) && groupIds.has(groupId)) state.assignments[topicId]=groupId;
+      state.order=normalizedOrder(state.groups,state.assignments,saved.order);
+      state.prompts=normalizedPrompts(saved.prompts);
+      state.mastered=normalizedMastered(saved.mastered);
+    }
+  } catch { $('saveStatus').textContent='无法读取本地记录';$('detailSaveStatus').textContent='无法读取本地记录'; }
+  function save(){
+    try{localStorage.setItem(storageKey,JSON.stringify(state));$('saveStatus').textContent='已自动保存到当前浏览器';$('detailSaveStatus').textContent='已自动保存到当前浏览器';}
+    catch{$('saveStatus').textContent='无法自动保存，请下载备份';$('detailSaveStatus').textContent='无法自动保存，请下载备份';}
+  }
+  function toast(message){const node=$('toast');node.textContent=message;node.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>node.classList.remove('show'),2600);}
+  function groupName(id){const group=state.groups.find(g=>g.id===id);return group ? (group.title.trim()||'未命名素材') : '';}
+  function groupColor(id){return state.groups.find(g=>g.id===id)?.color||zonePalette[0];}
+  function normalizedQuestionNotes(raw){
+    const result={};
+    if(raw&&typeof raw==='object'&&!Array.isArray(raw))for(const [id,value] of Object.entries(raw))if(topicById.has(id)&&(typeof value==='string'||value&&typeof value==='object'&&!Array.isArray(value)))result[id]=normalizedQuestionNote(value);
+    return result;
+  }
+  function normalizedPrompts(raw){
+    const result={};if(raw&&typeof raw==='object'&&!Array.isArray(raw))for(const [id,value] of Object.entries(raw))if(topicById.has(id)&&typeof value==='string')result[id]=value;
+    return result;
+  }
+  function normalizedMastered(raw){
+    const result={};if(raw&&typeof raw==='object'&&!Array.isArray(raw))for(const [id,value] of Object.entries(raw))if(topicById.has(id)&&value===true)result[id]=true;
+    return result;
+  }
+  function normalizedQuestionNote(value){
+    if(value&&typeof value==='object'&&!Array.isArray(value))return {opening:typeof value.opening==='string'?value.opening:'',ending:typeof value.ending==='string'?value.ending:''};
+    const original=typeof value==='string'?value:'';
+    const endingMark=/(?:^|\r?\n)[ \t]*(?:结尾|ending)[ \t]*[:：][ \t]*/i.exec(original);
+    const first=endingMark?original.slice(0,endingMark.index):original;
+    const last=endingMark?original.slice(endingMark.index+endingMark[0].length):'';
+    return {opening:first.trim().replace(/^(?:开头|opening)[ \t]*[:：][ \t]*/i,'').trim(),ending:last.trim()};
+  }
+  function hasQuestionNote(value){return Boolean(value?.opening?.trim()||value?.ending?.trim());}
+  function normalizedGroup(g,index){
+    const branches=[],seen=new Set();
+    if(Array.isArray(g.branches))for(const item of g.branches){
+      if(!item||typeof item.id!=='string'||!item.id||seen.has(item.id))continue;
+      branches.push({id:item.id,title:String(item.title||''),content:String(item.content||'')});seen.add(item.id);
+    }
+    const topicBranches={};
+    if(g.topicBranches&&typeof g.topicBranches==='object'&&!Array.isArray(g.topicBranches))for(const [id,branchId] of Object.entries(g.topicBranches))if(topicById.has(id)&&seen.has(branchId))topicBranches[id]=branchId;
+    const group={id:String(g.id),title:String(g.title||''),note:String(g.note||''),content:String(g.content||''),questionNotes:normalizedQuestionNotes(g.questionNotes),branches,topicBranches,color:updatedColor(g.color,index),noteCollapsed:g.noteCollapsed===true,annotations:{}};
+    group.annotations=normalizedAnnotations(g.annotations,group);return group;
+  }
+  function slotText(group,slot){
+    if(slot==='common')return group.content;
+    if(slot.startsWith('branch:'))return group.branches.find(branch=>branch.id===slot.slice(7))?.content;
+    const match=/^(opening|ending):(t\d+)$/.exec(slot);
+    return match&&topicById.has(match[2])?(group.questionNotes[match[2]]?.[match[1]]||''):undefined;
+  }
+  function normalizedAnnotations(raw,group){
+    const result={};if(!raw||typeof raw!=='object'||Array.isArray(raw))return result;
+    for(const [slot,items] of Object.entries(raw)){
+      const value=slotText(group,slot);if(typeof value!=='string'||!Array.isArray(items))continue;
+      const clean=[];
+      for(const item of items){
+        if(!item||!['bold','underline','color','note'].includes(item.type))continue;
+        const start=Number(item.start),end=Number(item.end);
+        if(!Number.isInteger(start)||!Number.isInteger(end)||start<0||end<=start||end>value.length)continue;
+        const mark={id:typeof item.id==='string'&&item.id?item.id:makeId(),type:item.type,start,end};
+        if(item.type==='color'){if(!markColors.includes(item.value))continue;mark.value=item.value;}
+        if(item.type==='note')mark.value=String(item.value||'').slice(0,3000);
+        clean.push(mark);
+      }
+      if(clean.length)result[slot]=clean;
+    }
+    return result;
+  }
+  function makeId(){return crypto.randomUUID?crypto.randomUUID():Date.now()+'-'+Math.random().toString(36).slice(2);}
+  function marksFor(group,slot){return group.annotations[slot]||(group.annotations[slot]=[]);}
+  function normalizedOrder(groups,assignments,stored){
+    const result={};
+    for(const group of groups){
+      const order=[],seen=new Set(),saved=Array.isArray(stored?.[group.id])?stored[group.id]:[];
+      for(const id of saved)if(topicById.has(id)&&assignments[id]===group.id&&!seen.has(id)){order.push(id);seen.add(id);}
+      for(const topic of topics)if(assignments[topic.id]===group.id&&!seen.has(topic.id))order.push(topic.id);
+      result[group.id]=order;
+    }
+    return result;
+  }
+  function orderedTopics(groupId){return (state.order[groupId]||[]).map(id=>topicById.get(id)).filter(Boolean);}
+  function updateProgress(){const count=Object.keys(state.assignments).length;$('assignedCount').textContent=count;$('totalCount').textContent=topics.length;$('progressFill').style.width=(count/topics.length*100)+'%';}
+  function renderFilters(){
+    const holder=$('filters');holder.replaceChildren();
+    for(const name of ['全部',...categories]){
+      const button=el('button','filter'+(categoryFilter===name?' active':''),name);
+      button.type='button';button.setAttribute('aria-pressed',String(categoryFilter===name));
+      button.addEventListener('click',()=>{categoryFilter=name;renderFilters();renderBank();});holder.append(button);
+    }
+  }
+  function createBankCard(topic){
+    const card=el('div','topic'+(state.assignments[topic.id]?' assigned':''));card.draggable=true;card.dataset.topicId=topic.id;
+    if(state.assignments[topic.id])card.style.setProperty('--zone-accent',groupColor(state.assignments[topic.id]));
+    const main=el('div','topic-main');main.append(el('div','topic-name',topic.name));
+    const meta=el('div','topic-meta',state.assignments[topic.id] ? '已归入：'+groupName(state.assignments[topic.id]) : '尚未串题');main.append(meta);card.append(main);
+    const select=el('select');select.setAttribute('aria-label','将“'+topic.name+'”移至素材区');select.dataset.topicId=topic.id;
+    const empty=el('option','',state.groups.length?'未串题':'先建素材区');empty.value='';select.append(empty);
+    for(const group of state.groups){const option=el('option','',groupName(group.id));option.value=group.id;select.append(option);}
+    select.value=state.assignments[topic.id]||'';select.disabled=state.groups.length===0;
+    select.addEventListener('change',()=>assign(topic.id,select.value));card.append(select);return card;
+  }
+  function renderBank(){
+    const list=$('topicList'), oldScroll=list.scrollTop, query=$('search').value.trim().toLocaleLowerCase(), unassigned=$('unassignedOnly').checked;
+    const filtered=topics.filter(t=>(categoryFilter==='全部'||t.category===categoryFilter)&&(!unassigned||!state.assignments[t.id])&&(!query||t.name.toLocaleLowerCase().includes(query)));
+    $('visibleCount').textContent='显示 '+filtered.length+' / '+topics.length;
+    const fragment=document.createDocumentFragment();
+    for(const category of categories){
+      const matches=filtered.filter(t=>t.category===category);if(!matches.length)continue;
+      fragment.append(el('div','category-title',category+' · '+matches.length));
+      for(const topic of matches)fragment.append(createBankCard(topic));
+    }
+    if(!filtered.length)fragment.append(el('div','empty-list','没有符合条件的题目。试试其他关键词或筛选条件。'));
+    list.replaceChildren(fragment);list.scrollTop=oldScroll;
+  }
+  function createZone(group,index){
+    const zone=el('article','zone'+(group.noteCollapsed?' note-collapsed':''));zone.dataset.groupId=group.id;zone.style.setProperty('--zone-accent',group.color);
+    const head=el('div','zone-head');
+    const handle=el('button','zone-handle','⋮⋮');handle.type='button';handle.draggable=true;handle.title='拖动调整素材区顺序；也可按上下方向键';handle.setAttribute('aria-label','调整“'+groupName(group.id)+'”的顺序');
+    handle.addEventListener('dragstart',event=>{draggingGroupId=group.id;event.dataTransfer.effectAllowed='move';event.dataTransfer.setData('application/x-ielts-zone',group.id);event.dataTransfer.setData('text/plain',group.id);requestAnimationFrame(()=>zone.classList.add('group-dragging'));});
+    handle.addEventListener('keydown',event=>{if(event.key==='ArrowUp'||event.key==='ArrowDown'){event.preventDefault();moveGroupBy(group.id,event.key==='ArrowUp'?-1:1);}});head.append(handle);
+    head.append(el('div','zone-number',String(index+1).padStart(2,'0')));
+    const title=el('input','zone-title');title.type='text';title.placeholder='给这个素材起个名字';title.maxLength=80;title.value=group.title;title.setAttribute('aria-label','素材区名称');
+    title.addEventListener('input',()=>{group.title=title.value;save();renderBank();});head.append(title);
+    const picker=el('details','zone-palette'),trigger=el('summary','zone-color-trigger'),dot=el('span','color-dot'),menu=el('div','zone-palette-menu');
+    trigger.title='从 20 种颜色中选择';trigger.setAttribute('aria-label','选择“'+groupName(group.id)+'”的颜色');dot.style.setProperty('--chosen-color',group.color);trigger.append(dot);picker.append(trigger);
+    menu.setAttribute('role','group');menu.setAttribute('aria-label','20 种固定颜色');
+    zonePalette.forEach((hex,paletteIndex)=>{
+      const choice=el('button','palette-choice'+(group.color===hex?' selected':''));choice.type='button';choice.style.setProperty('--choice-color',hex);choice.title='颜色 '+(paletteIndex+1);choice.setAttribute('aria-label','选择第 '+(paletteIndex+1)+' 种颜色');choice.setAttribute('aria-pressed',String(group.color===hex));
+      choice.addEventListener('click',()=>{group.color=hex;zone.style.setProperty('--zone-accent',hex);dot.style.setProperty('--chosen-color',hex);menu.querySelectorAll('.palette-choice').forEach(button=>{const selected=button===choice;button.classList.toggle('selected',selected);button.setAttribute('aria-pressed',String(selected));});save();renderBank();picker.open=false;});menu.append(choice);
+    });picker.append(menu);head.append(picker);
+    const remove=el('button','zone-delete','×');remove.type='button';remove.title='删除素材区';remove.setAttribute('aria-label','删除素材区 '+groupName(group.id));
+    remove.addEventListener('click',()=>deleteGroup(group.id));head.append(remove);zone.append(head);
+    const body=el('div','zone-body');
+    const toggle=el('button','zone-caption note-toggle');toggle.type='button';toggle.setAttribute('aria-expanded',String(!group.noteCollapsed));toggle.setAttribute('aria-label',(group.noteCollapsed?'展开':'收起')+'“'+groupName(group.id)+'”的情况描述');
+    toggle.append(el('span','','情况描述'),el('span','toggle-hint',group.noteCollapsed?'展开 ▾':'收起 ▴'));
+    toggle.addEventListener('click',()=>{group.noteCollapsed=!group.noteCollapsed;save();renderZones();const updated=[...$('zones').querySelectorAll('.zone')].find(node=>node.dataset.groupId===group.id);updated?.querySelector('.note-toggle')?.focus({preventScroll:true});});body.append(toggle);
+    const note=el('textarea');note.placeholder='例如：和朋友一起准备生日蛋糕，过程中遇到一点困难，最后成功了……';note.value=group.note;note.hidden=group.noteCollapsed;note.setAttribute('aria-label',groupName(group.id)+'的情况描述');
+    note.addEventListener('input',()=>{group.note=note.value;save();});body.append(note);
+    const assigned=orderedTopics(group.id),toolsRow=el('div','zone-tools');
+    toolsRow.append(el('div','zone-count','已放入 '+assigned.length+' 道题'));
+    const detailLink=el('button','detail-link',group.content.trim()||Object.values(group.questionNotes).some(hasQuestionNote)?'继续写内容 →':'写具体内容 →');detailLink.type='button';detailLink.setAttribute('aria-label','打开“'+groupName(group.id)+'”的内容页');detailLink.addEventListener('click',()=>openDetail(group.id));toolsRow.append(detailLink);body.append(toolsRow);
+    const topicList=el('div','zone-topic-list');
+    if(!assigned.length)topicList.append(el('div','drop-hint','把题目拖到这里，或在左侧选择此素材区'));
+    for(const [index,topic] of assigned.entries()){
+      const item=el('div','zone-topic');item.draggable=true;item.dataset.topicId=topic.id;
+      item.append(el('span','',topic.name));
+      for(const [symbol,direction,disabled] of [['↑',-1,index===0],['↓',1,index===assigned.length-1]]){
+        const move=el('button','order-button',symbol);move.type='button';move.disabled=disabled;move.title=direction<0?'上移':'下移';move.setAttribute('aria-label','将“'+topic.name+'”'+(direction<0?'上移':'下移'));
+        move.addEventListener('click',()=>moveWithinGroup(group.id,topic.id,direction));item.append(move);
+      }
+      const unassign=el('button','','×');unassign.type='button';unassign.title='移回未串题';unassign.setAttribute('aria-label','将“'+topic.name+'”移回未串题');
+      unassign.addEventListener('click',()=>assign(topic.id,''));item.append(unassign);topicList.append(item);
+    }
+    body.append(topicList);zone.append(body);return zone;
+  }
+  function renderZones(){
+    const holder=$('zones');holder.replaceChildren();holder.style.gridTemplateColumns='';
+    if(!state.groups.length){
+      const empty=el('div','empty-zones');empty.append(el('strong','','从一个素材开始'));
+      empty.append(el('p','','先新建素材区，写下大概的故事或经历，再把能共用它的题目放进来。'));
+      const button=el('button','button primary','＋ 新增第一个素材区');button.type='button';button.addEventListener('click',addGroup);empty.append(button);holder.append(empty);return;
+    }
+    const columnCount=Math.min(state.groups.length,Math.max(1,Math.floor((holder.clientWidth+16)/336)));
+    holder.style.gridTemplateColumns='repeat('+columnCount+',minmax(0,1fr))';
+    const columns=Array.from({length:columnCount},()=>el('div','zone-column'));
+    holder.append(...columns);
+    const heights=columns.map(()=>0);
+    state.groups.forEach((group,index)=>{
+      let target=0;
+      for(let i=1;i<heights.length;i++)if(heights[i]<heights[target])target=i;
+      const zone=createZone(group,index);columns[target].append(zone);
+      heights[target]+=zone.getBoundingClientRect().height+16;
+    });
+  }
+  function render(){renderFilters();renderBank();renderZones();updateProgress();}
+  let boardScrollY=0,currentDetailId='',activeTopicId='',detailMode='practice',selectedMark=null,noteDraft=null;
+  function openDetail(groupId){
+    if(!state.groups.some(group=>group.id===groupId))return;
+    if(!$('boardView').hidden)boardScrollY=window.scrollY;
+    location.hash='material='+encodeURIComponent(groupId);syncView();
+  }
+  function updateMarkToolbar(){
+    $('annotationToolbar').hidden=detailMode!=='edit';
+    $('annotationHelp').textContent=selectedMark?'已选中：'+selectedMark.quote.slice(0,35)+(selectedMark.quote.length>35?'…':''):'选中下面输入框中的文字，再点标注';
+    for(const button of $('annotationToolbar').querySelectorAll('[data-mark-action]'))button.disabled=!selectedMark;
+  }
+  function captureMarkSelection(field,group,slot){
+    if(detailMode!=='edit')return;
+    const start=field.selectionStart,end=field.selectionEnd;
+    selectedMark=end>start?{groupId:group.id,slot,start,end,quote:field.value.slice(start,end)}:null;
+    updateMarkToolbar();
+  }
+  function shiftMarks(group,slot,oldText,newText){
+    const marks=marksFor(group,slot);if(!marks.length||oldText===newText)return;
+    let prefix=0;while(prefix<oldText.length&&prefix<newText.length&&oldText[prefix]===newText[prefix])prefix++;
+    let suffix=0;while(suffix<oldText.length-prefix&&suffix<newText.length-prefix&&oldText[oldText.length-1-suffix]===newText[newText.length-1-suffix])suffix++;
+    const oldEnd=oldText.length-suffix,newEnd=newText.length-suffix,delta=newText.length-oldText.length;
+    const mapStart=position=>position<=prefix?position:position>=oldEnd?position+delta:prefix;
+    const mapEnd=position=>position<=prefix?position:position>=oldEnd?position+delta:newEnd;
+    group.annotations[slot]=marks.map(mark=>({...mark,start:mapStart(mark.start),end:mapEnd(mark.end)})).filter(mark=>mark.end>mark.start&&mark.end<=newText.length);
+  }
+  function subtractMark(mark,start,end){
+    if(mark.end<=start||mark.start>=end)return [mark];
+    const parts=[];
+    if(mark.start<start)parts.push({...mark,end:start});
+    if(mark.end>end)parts.push({...mark,id:makeId(),start:end});
+    return parts;
+  }
+  function fullyCovered(marks,type,start,end){
+    let cursor=start;
+    for(const mark of marks.filter(item=>item.type===type&&item.end>start&&item.start<end).sort((a,b)=>a.start-b.start)){
+      if(mark.start>cursor)return false;cursor=Math.max(cursor,mark.end);if(cursor>=end)return true;
+    }
+    return false;
+  }
+  function applyMark(type,value=''){
+    const selection=selectedMark;if(!selection)return;
+    const group=state.groups.find(item=>item.id===selection.groupId);
+    if(!group||group.id!==currentDetailId||slotText(group,selection.slot)?.slice(selection.start,selection.end)!==selection.quote){toast('请重新选中要标注的文字');return;}
+    if(type==='note'){openNotePopup(group,selection.slot,null,selection);return;}
+    const marks=marksFor(group,selection.slot),remove=type==='clear'?['bold','underline','color']:[type];
+    const shouldAdd=(type==='bold'||type==='underline')?!fullyCovered(marks,type,selection.start,selection.end):type==='color';
+    group.annotations[selection.slot]=marks.flatMap(mark=>remove.includes(mark.type)?subtractMark(mark,selection.start,selection.end):[mark]);
+    if(shouldAdd)group.annotations[selection.slot].push({id:makeId(),type,start:selection.start,end:selection.end,...(type==='color'?{value}:{})});
+    save();renderDetail(group);toast(type==='clear'?'格式已清除':'标注已保存');
+  }
+  function renderMarkedText(body,value,group,slot){
+    body.replaceChildren();body.dataset.markSlot=slot;
+    if(!value?.trim()){body.classList.add('empty');body.textContent='（这一段还没有内容）';return;}
+    body.classList.remove('empty');
+    const marks=marksFor(group,slot).filter(mark=>mark.start>=0&&mark.end<=value.length&&mark.end>mark.start);
+    const points=[...new Set([0,value.length,...marks.flatMap(mark=>[mark.start,mark.end])])].sort((a,b)=>a-b);
+    for(let i=0;i<points.length-1;i++){
+      const start=points[i],end=points[i+1],span=el('span');
+      const active=marks.filter(mark=>mark.start<=start&&mark.end>=end);
+      if(active.some(mark=>mark.type==='bold'))span.style.fontWeight='800';
+      if(active.some(mark=>mark.type==='underline'))span.style.textDecoration='underline';
+      const color=active.filter(mark=>mark.type==='color').at(-1);if(color)span.style.color=color.value;
+      if(active.some(mark=>mark.type==='note'))span.classList.add('marked-note');
+      span.textContent=value.slice(start,end);body.append(span);
+      for(const note of marks.filter(mark=>mark.type==='note'&&mark.end===end)){
+        const marker=el('button','note-marker','注');marker.type='button';marker.title='查看旁注';marker.setAttribute('aria-label','查看“'+value.slice(note.start,note.end).slice(0,30)+'”的旁注');
+        marker.addEventListener('click',()=>openNotePopup(group,slot,note));body.append(marker);
+      }
+    }
+  }
+  function closeNotePopup(){$('notePopup').hidden=true;noteDraft=null;}
+  function openNotePopup(group,slot,note,selection=null){
+    const start=note?.start??selection?.start,end=note?.end??selection?.end;
+    if(!Number.isInteger(start)||!Number.isInteger(end))return;
+    noteDraft={groupId:group.id,slot,id:note?.id||'',start,end};
+    const reading=detailMode==='show';$('noteTitle').textContent=reading?'文字旁注':note?'修改旁注':'添加旁注';
+    $('noteQuote').textContent='“'+(slotText(group,slot)||'').slice(start,end)+'”';
+    $('noteRead').hidden=!reading;$('noteRead').textContent=note?.value||'';
+    $('noteInput').hidden=reading;$('noteInput').value=note?.value||'';
+    $('noteSave').hidden=reading;$('noteDelete').hidden=reading||!note;
+    $('notePopup').hidden=false;if(!reading)$('noteInput').focus();
+  }
+  function renderDetail(group){
+    selectedMark=null;closeNotePopup();updateMarkToolbar();
+    const assigned=orderedTopics(group.id);
+    if(activeTopicId&&!assigned.some(topic=>topic.id===activeTopicId))activeTopicId='';
+    $('detailHero').style.setProperty('--detail-accent',group.color);
+    $('detailView').style.setProperty('--detail-accent',group.color);
+    $('detailTitle').textContent=groupName(group.id);
+    $('detailSubtitle').textContent='关联 '+assigned.length+' 道题 · 选题练习，或切换到答案与修改。';
+    const themes=$('themeList');themes.replaceChildren();
+    for(const item of state.groups){
+      const themeTopics=orderedTopics(item.id),done=themeTopics.filter(topic=>state.mastered[topic.id]).length;
+      const button=el('button','theme-choice'+(item.id===group.id?' active':''));
+      button.type='button';button.style.setProperty('--theme-accent',item.color);button.setAttribute('aria-current',item.id===group.id?'page':'false');
+      button.style.setProperty('--mastery-progress',themeTopics.length?(done/themeTopics.length*100)+'%':'0%');
+      button.append(el('span','',groupName(item.id)),el('small','',done+' / '+themeTopics.length+' 已掌握'));
+      button.addEventListener('click',()=>openDetail(item.id));themes.append(button);
+    }
+    const tabs=$('topicTabs'),previousScroll=tabs.scrollLeft;tabs.replaceChildren();
+    if(!assigned.length)tabs.append(el('span','tree-note','这里还没有题目。回整理板把题目放进这个素材区。'));
+    for(const topic of assigned){
+      const branch=group.branches.find(item=>item.id===group.topicBranches[topic.id]);
+      const item=el('div','topic-tab-item');
+      const tab=el('button','topic-tab'+(activeTopicId===topic.id?' active':''));tab.type='button';tab.dataset.topicId=topic.id;
+      tab.setAttribute('aria-pressed',String(activeTopicId===topic.id));tab.append(document.createTextNode(topic.name),el('small','',branch?.title?.trim()||'直接连接共用段'));
+      tab.addEventListener('click',()=>{activeTopicId=topic.id;renderDetail(group);$('topicTabs').querySelector('.topic-tab.active')?.scrollIntoView({block:'nearest',inline:'nearest'});});item.append(tab);
+      const label=el('label','mastery-check'),check=el('input');check.type='checkbox';check.checked=state.mastered[topic.id]===true;
+      check.setAttribute('aria-label','“'+topic.name+'”已掌握');
+      check.addEventListener('change',()=>{if(check.checked)state.mastered[topic.id]=true;else delete state.mastered[topic.id];save();renderDetail(group);});
+      label.append(check,document.createTextNode('已掌握'));item.append(label);tabs.append(item);
+    }
+    tabs.scrollLeft=previousScroll;
+    for(const [id,mode] of [['practiceMode','practice'],['showMode','show'],['editMode','edit']]){
+      $(id).classList.toggle('active',detailMode===mode);$(id).setAttribute('aria-pressed',String(detailMode===mode));
+    }
+    const topic=assigned.find(item=>item.id===activeTopicId);
+    $('routeTitle').textContent=topic?topic.name+' · '+(detailMode==='practice'?'看题练习':detailMode==='show'?'完整答案':'修改路线'):(detailMode==='edit'?'修改这份素材':'选一道题，开始练习');
+    renderRoute(group,topic);
+    renderSettings(group,assigned);
+  }
+  function routeArrow(){return el('div','route-step-arrow','↓');}
+  function routeSegment(label,value,onChange,id='',ref=null){
+    if(detailMode==='show'){
+      const card=el('section','route-segment'),body=el('div','route-body');
+      if(ref)renderMarkedText(body,value,ref.group,ref.slot);else body.textContent=value?.trim()||'（这一段还没有内容）';
+      card.append(el('h3','',label),body);return card;
+    }
+    const card=el('details','route-segment');card.open=true;
+    const summary=el('summary','',label),field=el('textarea','detail-textarea');
+    if(id)field.id=id;field.value=value||'';field.placeholder='在这里写'+label+'……';field.setAttribute('aria-label',label);
+    let previous=field.value;
+    field.addEventListener('input',()=>{if(ref)shiftMarks(ref.group,ref.slot,previous,field.value);previous=field.value;selectedMark=null;updateMarkToolbar();onChange(field.value);save();});
+    if(ref)for(const event of ['focus','select','keyup','mouseup','touchend'])field.addEventListener(event,()=>captureMarkSelection(field,ref.group,ref.slot));
+    card.append(summary,field);
+    if(ref){
+      const notes=marksFor(ref.group,ref.slot).filter(mark=>mark.type==='note');
+      if(notes.length){const list=el('div','annotation-note-list');
+        for(const note of notes){const button=el('button','','旁注：'+field.value.slice(note.start,note.end));button.type='button';button.addEventListener('click',()=>openNotePopup(ref.group,ref.slot,note));list.append(button);}
+        card.append(list);
+      }
+    }
+    return card;
+  }
+  function renderRoute(group,topic){
+    const holder=$('routeFlow');holder.replaceChildren();
+    if(detailMode==='practice'){
+      if(!topic){holder.append(el('div','route-empty','选中上面的一道小题，原始题目就会单独显示在这里。答案会保持隐藏。'));return;}
+      const card=el('section','practice-card');card.append(el('p','practice-eyebrow','IELTS PART 2 · 原始题目'),el('h2','',topic.name));
+      const prompt=state.prompts[topic.id]||'';
+      card.append(el('div','practice-question'+(prompt.trim()?'':' empty'),prompt.trim()||'这道题还没有填写原始题目。切到“修改”，把题目内容粘贴进来。'));
+      holder.append(card);return;
+    }
+    if(!topic&&detailMode==='show'){holder.append(el('div','route-empty','点击上面的小题，就会在这里完整显示：专属开头 → 共用中间段 → 所属分支 → 专属结尾。'));return;}
+    if(topic&&detailMode==='edit'){
+      const card=el('section','prompt-edit-card'),field=el('textarea');field.id='originalQuestionInput';field.value=state.prompts[topic.id]||'';
+      field.placeholder='粘贴这道小题的英文原题、提示点或你要练习的问题……';field.setAttribute('aria-label','“'+topic.name+'”的原始题目');
+      field.addEventListener('input',()=>{state.prompts[topic.id]=field.value;save();});
+      card.append(el('h2','','原始题目'),el('p','','练习模式只显示这里的题目，不显示下面写好的答案。'),field);holder.append(card);
+    }
+    if(topic&&detailMode==='edit'){
+      const placement=el('label','route-assignment','这道题使用哪个分支？'),select=el('select');select.setAttribute('aria-label','“'+topic.name+'”所属分支');
+      const direct=el('option','','不使用分支，直接接结尾');direct.value='';select.append(direct);
+      for(const branch of group.branches){const option=el('option','',branch.title.trim()||'未命名分支');option.value=branch.id;select.append(option);}
+      select.value=group.topicBranches[topic.id]||'';
+      select.addEventListener('change',()=>{if(select.value)group.topicBranches[topic.id]=select.value;else delete group.topicBranches[topic.id];save();renderDetail(group);});
+      placement.append(select);holder.append(placement);
+    }
+    const flow=el('div','route-stack');holder.append(flow);
+    const note=topic?(group.questionNotes[topic.id]||{opening:'',ending:''}):null;
+    if(topic){flow.append(routeSegment('① '+topic.name+' · 专属开头',note.opening,value=>{const draft=group.questionNotes[topic.id]||(group.questionNotes[topic.id]={opening:'',ending:''});draft.opening=value;},'',{group,slot:'opening:'+topic.id}),routeArrow());}
+    flow.append(routeSegment(topic?'② 所有题共用的中间段':'所有题共用的中间段',group.content,value=>{group.content=value;},'detailContent',{group,slot:'common'}));
+    if(!topic)return;
+    const branch=group.branches.find(item=>item.id===group.topicBranches[topic.id]);
+    if(branch){
+      const siblings=group.branches.filter(item=>item.id!==branch.id),row=el('div','route-branch-row'+(siblings.length?'':' no-siblings'));
+      row.append(routeSegment('③ '+(branch.title.trim()||'未命名分支')+' · 共用段',branch.content,value=>{branch.content=value;},'',{group,slot:'branch:'+branch.id}));
+      if(siblings.length)row.append(branchRail(group,siblings));
+      flow.append(routeArrow(),row);
+    }else if(group.branches.length){flow.append(branchRail(group,group.branches));}
+    flow.append(routeArrow(),routeSegment((branch?'④ ':'③ ')+topic.name+' · 专属结尾',note.ending,value=>{const draft=group.questionNotes[topic.id]||(group.questionNotes[topic.id]={opening:'',ending:''});draft.ending=value;},'',{group,slot:'ending:'+topic.id}));
+  }
+  function branchRail(group,branches){
+    const rail=el('div','branch-rail');rail.append(el('div','branch-rail-label','其他分支'));
+    for(const branch of branches){
+      const matches=orderedTopics(group.id).filter(topic=>group.topicBranches[topic.id]===branch.id);
+      const chip=el('button','branch-chip',branch.title.trim()||'未命名分支');chip.type='button';chip.dataset.branchId=branch.id;
+      chip.title=matches.length?'点此切到这条分支的第一道题':'这条分支还没有题目';chip.disabled=!matches.length;
+      chip.addEventListener('click',()=>{activeTopicId=matches[0].id;renderDetail(group);});rail.append(chip);
+    }
+    return rail;
+  }
+  function renderSettings(group,assigned){
+    const holder=$('editSettings');holder.replaceChildren();if(detailMode!=='edit')return;
+    const panel=el('details','settings-panel'),summary=el('summary','','素材概况与分支设置');panel.append(summary);
+    const noteLabel=el('label','','素材概况（和整理板的情况描述同步）'),note=el('textarea','detail-textarea detail-summary');
+    note.id='detailSummary';note.value=group.note;note.placeholder='用一两句话记下这份素材是什么。';note.addEventListener('input',()=>{group.note=note.value;save();});noteLabel.append(note);panel.append(noteLabel);
+    const add=el('button','button small','＋ 新增分支');add.id='addBranch';add.type='button';add.addEventListener('click',()=>{
+      const letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ',used=new Set(group.branches.map(branch=>branch.title.trim()));
+      const free=[...letters].map(letter=>letter+'组').find(name=>!used.has(name));
+      const id=(crypto.randomUUID?crypto.randomUUID():Date.now()+'-'+Math.random().toString(36).slice(2));
+      group.branches.push({id,title:free||'分支 '+(group.branches.length+1),content:''});save();renderDetail(group);
+      const newPanel=$('editSettings').querySelector('.settings-panel');newPanel.open=true;
+      newPanel.querySelector('[data-branch-id="'+id+'"] input')?.focus();
+    });panel.append(add);
+    const list=el('div','settings-branches');
+    for(const branch of group.branches){
+      const matches=assigned.filter(topic=>group.topicBranches[topic.id]===branch.id),row=el('div','settings-branch');row.dataset.branchId=branch.id;
+      const name=el('input');name.type='text';name.value=branch.title;name.maxLength=80;name.placeholder='分支名称';name.setAttribute('aria-label','分支名称');
+      name.addEventListener('input',()=>{branch.title=name.value;save();});
+      const count=el('small','',matches.length+' 题'),remove=el('button','button small danger','删除');remove.type='button';
+      remove.addEventListener('click',()=>{
+        if((branch.content.trim()||matches.length)&&!confirm('删除“'+(branch.title.trim()||'未命名分支')+'”？分支中的题目会改为直接连接共用段，分支文字会删除。'))return;
+        group.branches=group.branches.filter(item=>item.id!==branch.id);delete group.annotations['branch:'+branch.id];
+        for(const topic of matches)delete group.topicBranches[topic.id];save();renderDetail(group);$('editSettings').querySelector('.settings-panel').open=true;
+      });row.append(name,count,remove);list.append(row);
+      if(!matches.length){
+        const label=el('label','','这条分支的共用段（分配题目后也可在题目路线里修改）'),field=el('textarea','detail-textarea');
+        field.value=branch.content;field.setAttribute('aria-label',(branch.title||'分支')+'的共用段');let previous=field.value;
+        field.addEventListener('input',()=>{shiftMarks(group,'branch:'+branch.id,previous,field.value);previous=field.value;branch.content=field.value;save();});
+        label.append(field);list.append(label);
+      }
+    }
+    if(!group.branches.length)list.append(el('p','tree-note','不需要分支时，题目会从共用中间段直接接到结尾。'));
+    panel.append(list);holder.append(panel);
+  }
+  function syncView(){
+    let id='';
+    if(location.hash.startsWith('#material='))try{id=decodeURIComponent(location.hash.slice(10));}catch{}
+    const group=state.groups.find(item=>item.id===id);
+    if(group){
+      if(currentDetailId===group.id&&!$('detailView').hidden)return;
+      if(currentDetailId!==group.id){activeTopicId='';detailMode='practice';}
+      $('boardView').hidden=true;$('detailView').hidden=false;renderDetail(group);
+      document.title=groupName(group.id)+' · 雅思口语串题整理板';
+      if(currentDetailId!==group.id)window.scrollTo(0,0);
+      currentDetailId=group.id;
+    }else{
+      const leavingDetail=Boolean(currentDetailId);
+      $('detailView').hidden=true;$('boardView').hidden=false;document.title='雅思口语串题整理板';currentDetailId='';
+      if(leavingDetail){renderBank();renderZones();updateProgress();requestAnimationFrame(()=>window.scrollTo(0,boardScrollY));}
+    }
+  }
+  function assign(topicId,groupId){
+    if((state.assignments[topicId]||'')===groupId)return;
+    placeTopic(topicId,groupId);
+  }
+  function placeTopic(topicId,groupId,targetId='',after=false){
+    if(!topicById.has(topicId))return;
+    if(groupId && !state.groups.some(g=>g.id===groupId))return;
+    if(topicId===targetId)return;
+    const oldGroup=state.assignments[topicId];
+    if(oldGroup){const oldOrder=state.order[oldGroup]||[];const oldIndex=oldOrder.indexOf(topicId);if(oldIndex>=0)oldOrder.splice(oldIndex,1);if(oldGroup!==groupId)delete state.groups.find(g=>g.id===oldGroup)?.topicBranches?.[topicId];}
+    if(groupId){
+      state.assignments[topicId]=groupId;
+      const order=state.order[groupId]||(state.order[groupId]=[]);
+      const targetIndex=targetId && state.assignments[targetId]===groupId ? order.indexOf(targetId) : -1;
+      order.splice(targetIndex<0?order.length:targetIndex+(after?1:0),0,topicId);
+    }else delete state.assignments[topicId];
+    save();renderBank();renderZones();updateProgress();
+  }
+  function moveWithinGroup(groupId,topicId,direction){
+    const order=state.order[groupId];if(!order)return;
+    const index=order.indexOf(topicId),next=index+direction;
+    if(index<0||next<0||next>=order.length)return;
+    [order[index],order[next]]=[order[next],order[index]];
+    save();renderZones();
+  }
+  function reorderGroup(groupId,targetId,after){
+    if(groupId===targetId)return;
+    const from=state.groups.findIndex(group=>group.id===groupId);
+    if(from<0||!state.groups.some(group=>group.id===targetId))return;
+    const [group]=state.groups.splice(from,1);
+    const target=state.groups.findIndex(item=>item.id===targetId);
+    state.groups.splice(target+(after?1:0),0,group);
+    save();renderBank();renderZones();
+  }
+  function moveGroupBy(groupId,direction){
+    const index=state.groups.findIndex(group=>group.id===groupId),next=index+direction;
+    if(index<0||next<0||next>=state.groups.length)return;
+    [state.groups[index],state.groups[next]]=[state.groups[next],state.groups[index]];
+    save();renderBank();renderZones();
+    const moved=[...$('zones').querySelectorAll('.zone')].find(zone=>zone.dataset.groupId===groupId);
+    moved?.querySelector('.zone-handle')?.focus({preventScroll:true});
+  }
+  function addGroup(){
+    const id=(crypto.randomUUID ? crypto.randomUUID() : Date.now()+'-'+Math.random().toString(36).slice(2));
+    state.groups.push({id,title:'',note:'',content:'',questionNotes:{},branches:[],topicBranches:{},annotations:{},color:zonePalette[state.groups.length%zonePalette.length],noteCollapsed:false});state.order[id]=[];save();renderBank();renderZones();
+    const input=$('zones').querySelector('[data-group-id="'+id+'"] .zone-title');if(input){input.focus();input.scrollIntoView({block:'nearest',behavior:'smooth'});}
+  }
+  function deleteGroup(id){
+    const group=state.groups.find(g=>g.id===id);if(!group)return;
+    const count=Object.values(state.assignments).filter(value=>value===id).length;
+    if(!confirm('删除“'+groupName(id)+'”？'+(count?'其中 '+count+' 道题会回到未串题。':'')+'情况描述和具体内容会被删除。'))return;
+    state.groups=state.groups.filter(g=>g.id!==id);
+    for(const [topicId,groupId] of Object.entries(state.assignments))if(groupId===id)delete state.assignments[topicId];
+    delete state.order[id];
+    save();render();toast('素材区已删除');
+  }
+  function download(filename,mime,content){
+    const blob=new Blob([content],{type:mime});const url=URL.createObjectURL(blob);const a=el('a');a.href=url;a.download=filename;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
+  }
+  function dateStamp(){const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+  function exportNotes(lines,group,slot,value,indent='  '){
+    for(const note of (group.annotations?.[slot]||[]).filter(mark=>mark.type==='note'))lines.push(indent+'旁注「'+value.slice(note.start,note.end)+'」：'+note.value);
+  }
+  function exportText(){
+    const lines=['雅思口语 Part 2 串题整理','共 '+topics.length+' 道题；已串 '+Object.keys(state.assignments).length+' 道题',''];
+    for(const [index,group] of state.groups.entries()){
+      lines.push((index+1)+'. '+groupName(group.id));lines.push('情况描述：'+(group.note.trim()||'（未填写）'));
+      lines.push('共用中间段：');lines.push(group.content.trim()||'（未填写）');exportNotes(lines,group,'common',group.content);
+      for(const branch of group.branches){lines.push('分支 '+(branch.title.trim()||'未命名分支')+'：');lines.push(branch.content.trim()||'（未填写）');exportNotes(lines,group,'branch:'+branch.id,branch.content);}
+      const assigned=orderedTopics(group.id);
+      lines.push('题目：'+(assigned.length?assigned.map(t=>t.name).join('、'):'（暂无）'));
+      for(const topic of assigned){
+        lines.push('  '+topic.name+(state.mastered[topic.id]?' ✓ 已掌握':''));
+        if(state.prompts[topic.id]?.trim())lines.push('    原始题目：'+state.prompts[topic.id].trim());
+        const branch=group.branches.find(item=>item.id===group.topicBranches[topic.id]);if(branch)lines.push('    所属分支：'+(branch.title.trim()||'未命名分支'));
+        const note=group.questionNotes[topic.id];if(!hasQuestionNote(note))continue;
+        if(note.opening.trim()){lines.push('    开头：'+note.opening.trim());exportNotes(lines,group,'opening:'+topic.id,note.opening,'    ');}
+        if(note.ending.trim()){lines.push('    结尾：'+note.ending.trim());exportNotes(lines,group,'ending:'+topic.id,note.ending,'    ');}
+      }
+      lines.push('');
+    }
+    lines.push('未串题');for(const category of categories){const remaining=topics.filter(t=>t.category===category&&!state.assignments[t.id]);if(remaining.length)lines.push(category+'：'+remaining.map(t=>t.name).join('、'));}
+    download('雅思口语串题整理-'+dateStamp()+'.txt','text/plain;charset=utf-8',lines.join('\n'));toast('整理结果已导出');
+  }
+  function exportBackup(){download('雅思口语串题备份-'+dateStamp()+'.json','application/json;charset=utf-8',JSON.stringify({version:1,groups:state.groups,assignments:state.assignments,order:state.order,prompts:state.prompts,mastered:state.mastered},null,2));$('moreMenu').open=false;toast('备份文件已下载');}
+  async function importBackup(file){
+    try{
+      const parsed=JSON.parse(await file.text());if(!parsed||parsed.version!==1||!Array.isArray(parsed.groups)||!parsed.assignments||typeof parsed.assignments!=='object')throw Error('文件格式不符合备份要求');
+      const groups=parsed.groups.map(normalizedGroup);
+      if(groups.some(g=>!g.id)||new Set(groups.map(g=>g.id)).size!==groups.length)throw Error('素材区数据不完整');
+      const groupIds=new Set(groups.map(g=>g.id)), assignments={};
+      for(const [topicId,groupId] of Object.entries(parsed.assignments))if(topicById.has(topicId)&&groupIds.has(groupId))assignments[topicId]=groupId;
+      if(!confirm('导入备份会覆盖当前整理内容。确定继续吗？'))return;
+      state={groups,assignments,order:normalizedOrder(groups,assignments,parsed.order),prompts:normalizedPrompts(parsed.prompts),mastered:normalizedMastered(parsed.mastered)};save();render();
+      if(currentDetailId){currentDetailId='';syncView();}toast('备份已恢复');
+    }catch(error){alert('无法导入：'+error.message);}
+  }
+  $('search').addEventListener('input',renderBank);
+  $('unassignedOnly').addEventListener('change',renderBank);
+  $('addZone').addEventListener('click',addGroup);
+  $('practiceMode').addEventListener('click',()=>{const group=state.groups.find(item=>item.id===currentDetailId);if(group){detailMode='practice';renderDetail(group);}});
+  $('showMode').addEventListener('click',()=>{const group=state.groups.find(item=>item.id===currentDetailId);if(group){detailMode='show';renderDetail(group);}});
+  $('editMode').addEventListener('click',()=>{const group=state.groups.find(item=>item.id===currentDetailId);if(group){detailMode='edit';renderDetail(group);}});
+  $('annotationToolbar').addEventListener('pointerdown',event=>{if(event.target.closest('[data-mark-action]'))event.preventDefault();});
+  $('annotationToolbar').addEventListener('click',event=>{
+    const button=event.target.closest('[data-mark-action]');if(!button||button.disabled)return;
+    applyMark(button.dataset.markAction,button.dataset.color||'');
+  });
+  $('noteCancel').addEventListener('click',closeNotePopup);
+  $('noteSave').addEventListener('click',()=>{
+    const draft=noteDraft,group=state.groups.find(item=>item.id===draft?.groupId),value=$('noteInput').value.trim();
+    if(!draft||!group)return;if(!value){toast('先写一点旁注内容');return;}
+    const notes=marksFor(group,draft.slot),existing=notes.find(mark=>mark.id===draft.id&&mark.type==='note');
+    if(existing)existing.value=value.slice(0,3000);
+    else if(draft.end>draft.start&&draft.end<=(slotText(group,draft.slot)||'').length)notes.push({id:makeId(),type:'note',start:draft.start,end:draft.end,value:value.slice(0,3000)});
+    save();renderDetail(group);toast('旁注已保存');
+  });
+  $('noteDelete').addEventListener('click',()=>{
+    const draft=noteDraft,group=state.groups.find(item=>item.id===draft?.groupId);if(!draft||!group)return;
+    group.annotations[draft.slot]=marksFor(group,draft.slot).filter(mark=>mark.id!==draft.id);
+    save();renderDetail(group);toast('旁注已删除');
+  });
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!$('notePopup').hidden)closeNotePopup();});
+  $('exportText').addEventListener('click',exportText);
+  $('exportBackup').addEventListener('click',exportBackup);
+  $('importBackup').addEventListener('click',()=>{$('moreMenu').open=false;$('backupFile').click();});
+  $('backupFile').addEventListener('change',event=>{const file=event.target.files[0];if(file)importBackup(file);event.target.value='';});
+  $('backBoard').addEventListener('click',()=>{location.hash='board';syncView();});
+  window.addEventListener('hashchange',syncView);
+  let resizeFrame;
+  window.addEventListener('resize',()=>{cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(renderZones);});
+  let draggingTopicId='',draggingGroupId='';
+  document.addEventListener('dragstart',event=>{const card=event.target.closest('[data-topic-id]');if(!card)return;draggingTopicId=card.dataset.topicId;event.dataTransfer.effectAllowed='move';event.dataTransfer.setData('text/plain',draggingTopicId);requestAnimationFrame(()=>card.classList.add('dragging'));});
+  document.addEventListener('dragend',()=>{draggingTopicId='';draggingGroupId='';document.querySelectorAll('.dragging,.drag-over,.drop-before,.drop-after,.group-dragging,.zone-insert-before,.zone-insert-after').forEach(node=>node.classList.remove('dragging','drag-over','drop-before','drop-after','group-dragging','zone-insert-before','zone-insert-after'));});
+  $('zones').addEventListener('dragover',event=>{
+    const zone=event.target.closest('.zone');if(!zone)return;
+    event.preventDefault();event.dataTransfer.dropEffect='move';
+    document.querySelectorAll('.zone.drag-over,.zone-topic.drop-before,.zone-topic.drop-after,.zone.zone-insert-before,.zone.zone-insert-after').forEach(node=>node.classList.remove('drag-over','drop-before','drop-after','zone-insert-before','zone-insert-after'));
+    if(draggingGroupId){
+      if(zone.dataset.groupId!==draggingGroupId){const middle=zone.getBoundingClientRect().top+zone.getBoundingClientRect().height/2;zone.classList.add(event.clientY<middle?'zone-insert-before':'zone-insert-after');}
+      return;
+    }
+    zone.classList.add('drag-over');
+    const target=event.target.closest('.zone-topic');
+    if(target&&target.dataset.topicId!==draggingTopicId){const middle=target.getBoundingClientRect().top+target.getBoundingClientRect().height/2;target.classList.add(event.clientY<middle?'drop-before':'drop-after');}
+  });
+  $('zones').addEventListener('dragleave',event=>{const zone=event.target.closest('.zone');if(zone&&!zone.contains(event.relatedTarget)){zone.classList.remove('drag-over','zone-insert-before','zone-insert-after');zone.querySelectorAll('.drop-before,.drop-after').forEach(node=>node.classList.remove('drop-before','drop-after'));}});
+  $('zones').addEventListener('drop',event=>{
+    const zone=event.target.closest('.zone');if(!zone)return;
+    event.preventDefault();
+    if(draggingGroupId){
+      const groupId=draggingGroupId;draggingGroupId='';
+      const middle=zone.getBoundingClientRect().top+zone.getBoundingClientRect().height/2;
+      zone.classList.remove('zone-insert-before','zone-insert-after');
+      document.querySelectorAll('.group-dragging').forEach(node=>node.classList.remove('group-dragging'));
+      reorderGroup(groupId,zone.dataset.groupId,event.clientY>=middle);
+      return;
+    }
+    const target=event.target.closest('.zone-topic');
+    const middle=target?target.getBoundingClientRect().top+target.getBoundingClientRect().height/2:0;
+    placeTopic(event.dataTransfer.getData('text/plain'),zone.dataset.groupId,target?.dataset.topicId||'',Boolean(target&&event.clientY>=middle));
+    draggingTopicId='';
+  });
+  document.addEventListener('click',event=>{document.querySelectorAll('.zone-palette[open]').forEach(picker=>{if(!picker.contains(event.target))picker.open=false;});});
+  render();syncView();
+})();
+</script>
+</body>
+</html>
