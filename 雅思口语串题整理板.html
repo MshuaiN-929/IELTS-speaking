@@ -1,0 +1,1119 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <title>雅思口语串题整理板</title>
+  <style>
+    :root{font-family:"Microsoft YaHei UI","PingFang SC",system-ui,sans-serif;color:#26333a;background:#f7f6f2;font-synthesis:none}
+    *{box-sizing:border-box}body{margin:0}button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #76b7ae;outline-offset:2px}
+    .app{max-width:1500px;margin:auto;padding:32px 32px 64px}.top{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:24px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#59847e;margin:0 0 8px}.top h1{font-size:clamp(28px,3vw,42px);letter-spacing:-.05em;margin:0}.subtitle{color:#6d7778;margin:9px 0 0;font-size:14px;line-height:1.6}.top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}.button{border:1px solid #d5dfdb;background:#fff;color:#344d4b;border-radius:11px;padding:10px 14px;font-weight:700;font-size:13px;white-space:nowrap}.button:hover{border-color:#8db7ae;background:#f7fcfa}.button.primary{background:#245c56;color:white;border-color:#245c56}.button.primary:hover{background:#1a4b45}.button.danger{color:#a14d45}.button.small{padding:6px 10px;font-size:12px}.more{position:relative}.more summary{list-style:none}.more summary::-webkit-details-marker{display:none}.more-menu{position:absolute;z-index:20;right:0;top:43px;min-width:164px;display:grid;gap:4px;background:#fff;padding:7px;border:1px solid #dce5df;border-radius:12px;box-shadow:0 16px 38px #253c3523}.more-menu button{background:transparent;border:0;text-align:left;padding:10px;border-radius:7px;color:#344d4b;font-size:13px}.more-menu button:hover{background:#f2f8f5}
+    .progress-card{display:flex;align-items:center;gap:15px;background:#e9f1ec;border:1px solid #d8e8df;padding:12px 17px;border-radius:15px;margin-bottom:22px}.progress-text{font-size:13px;color:#4b625c;white-space:nowrap}.progress-text strong{font-size:18px;color:#1d504a}.progress-bar{height:7px;flex:1;background:#d3e3d9;border-radius:99px;overflow:hidden}.progress-fill{height:100%;background:#4d9a82;border-radius:inherit;transition:width .2s}.save-status{font-size:12px;color:#61736d;white-space:nowrap}
+    .layout{display:grid;grid-template-columns:minmax(340px,390px) minmax(0,1fr);gap:22px;align-items:start}.panel{background:white;border:1px solid #e2e6df;border-radius:20px;box-shadow:0 4px 20px #2a473608}.bank{position:sticky;top:16px;max-height:calc(100vh - 32px);display:flex;flex-direction:column;min-height:380px;min-width:0}.panel-head{padding:20px 20px 14px;border-bottom:1px solid #eef0eb;min-width:0}.section-heading{display:flex;justify-content:space-between;align-items:center;gap:12px}.section-heading h2{font-size:18px;letter-spacing:-.02em;margin:0}.section-heading small{color:#87928e;font-size:12px}.search{width:100%;border:1px solid #dce4de;border-radius:10px;padding:10px 12px;margin:16px 0 12px;background:#fcfdfb;color:#26333a}.filters{display:flex;gap:7px;overflow-x:auto;padding-bottom:3px;scrollbar-width:thin}.filter{border:1px solid #e0e8e0;border-radius:999px;background:#fff;color:#64736c;padding:6px 10px;font-size:12px;white-space:nowrap}.filter:hover{border-color:#a9c7ba}.filter.active{background:#245c56;color:white;border-color:#245c56}.bank-subfilters{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:13px;font-size:12px;color:#78847d}.checkbox{display:inline-flex;align-items:center;gap:6px;cursor:pointer}.checkbox input{accent-color:#245c56}.topic-list{overflow-y:auto;padding:10px 14px 17px;scrollbar-width:thin}.category-title{display:flex;align-items:center;gap:8px;color:#6e8176;font-size:11px;letter-spacing:.04em;font-weight:800;margin:15px 7px 8px}.category-title:first-child{margin-top:3px}.category-title::after{content:"";height:1px;background:#e6ebe4;flex:1}.topic{background:#fbfcfa;border:1px solid #e5ebe4;border-radius:11px;margin:7px 0;padding:10px 11px;display:flex;gap:10px;align-items:flex-start;transition:border-color .15s,background .15s,transform .15s}.topic:hover{border-color:#b7d0c2;background:#f8fbf8}.topic[draggable=true]{cursor:grab}.topic.dragging{opacity:.45}.topic.assigned{background:#f3f8f4}.topic-main{min-width:0;flex:1}.topic-name{font-size:13px;font-weight:700;line-height:1.45}.topic-meta{font-size:11px;color:#7b8c80;margin-top:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.topic select{border:1px solid #dbe5de;background:#fff;border-radius:7px;color:#51665c;padding:5px 6px;font-size:11px;max-width:105px;flex-shrink:0}.topic select:disabled{opacity:.55}.empty-list{padding:30px 12px;color:#7c8781;text-align:center;font-size:13px;line-height:1.6}
+    .workspace{min-width:0}.workspace-intro{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin:2px 2px 18px}.workspace-intro h2{font-size:20px;margin:0 0 5px;letter-spacing:-.025em}.workspace-intro p{font-size:13px;color:#7d8880;margin:0;line-height:1.5}.zones{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px;align-items:start}.zone{background:#fff;border:1px solid #e0e6df;border-radius:18px;min-height:244px;box-shadow:0 4px 20px #2a473608;transition:border-color .15s,background .15s,transform .15s}.zone.drag-over{border-color:#51a384;background:#f2faf4;transform:translateY(-2px)}.zone-head{display:flex;align-items:center;gap:8px;padding:17px 17px 13px}.zone-number{width:25px;height:25px;border-radius:8px;background:#e8f1ea;color:#537666;display:grid;place-items:center;font-size:12px;font-weight:800;flex:none}.zone-title{width:100%;min-width:0;border:1px solid transparent;border-radius:7px;background:transparent;padding:5px 6px;font-size:15px;font-weight:800;color:#294c43}.zone-title:hover,.zone-title:focus{border-color:#c8ded0;background:#f8fbf8}.zone-delete{background:none;border:none;color:#8a9890;font-size:20px;line-height:1;padding:3px 7px;border-radius:6px}.zone-delete:hover{background:#fbedeb;color:#b1534a}.zone-body{padding:0 17px 17px}.zone-caption{font-size:11px;font-weight:800;color:#839288;margin-bottom:7px}.zone textarea{width:100%;resize:vertical;min-height:76px;border:1px solid #e0e9df;background:#fafcf9;border-radius:10px;padding:10px 11px;font-size:12px;line-height:1.6;color:#374942}.zone textarea::placeholder{color:#a0ada2}.zone-count{font-size:11px;color:#789183;font-weight:700;margin:15px 0 7px}.zone-topic-list{min-height:43px}.zone-topic{display:flex;gap:8px;align-items:center;background:#f4f8f4;border:1px solid #e2ece3;border-radius:9px;padding:8px 9px;margin-top:6px;cursor:grab}.zone-topic.dragging{opacity:.45}.zone-topic span{font-size:12px;font-weight:700;line-height:1.45;flex:1}.zone-topic button{border:0;background:transparent;color:#819487;font-size:16px;padding:0 4px}.zone-topic button:hover{color:#ad514a}.drop-hint{border:1px dashed #cadccf;border-radius:9px;color:#9aa99d;text-align:center;padding:11px 7px;font-size:12px}.zone.drag-over .drop-hint{border-color:#68ae8c;color:#428262}.empty-zones{border:1px dashed #bcd6c7;background:#fbfdfa;border-radius:20px;text-align:center;padding:66px 22px;color:#6f887a}.empty-zones strong{display:block;font-size:17px;color:#315a49;margin-bottom:9px}.empty-zones p{font-size:13px;line-height:1.6;margin:0 0 19px}.footnote{font-size:12px;color:#97a19a;margin-top:22px;line-height:1.5}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#2b4941;color:white;border-radius:10px;padding:10px 15px;font-size:12px;box-shadow:0 12px 32px #233d3250;z-index:50;opacity:0;pointer-events:none;transition:opacity .2s}.toast.show{opacity:1}
+    .zone-column{display:flex;flex-direction:column;gap:16px;min-width:0}
+    .zone{border:1px solid color-mix(in srgb,var(--zone-accent,#1557b0) 42%,white);border-left:5px solid var(--zone-accent,#1557b0);border-top:4px solid var(--zone-accent,#1557b0)}.zone-head{background:color-mix(in srgb,var(--zone-accent,#1557b0) 14%,white);border-radius:13px 13px 0 0}.zone-number{background:color-mix(in srgb,var(--zone-accent,#1557b0) 48%,white);color:#172c2f}.zone-topic{background:color-mix(in srgb,var(--zone-accent,#1557b0) 22%,white);border-color:color-mix(in srgb,var(--zone-accent,#1557b0) 38%,white)}.topic.assigned{border-left:4px solid var(--zone-accent,#1557b0);background:color-mix(in srgb,var(--zone-accent,#1557b0) 16%,white)}.zone textarea{background:color-mix(in srgb,var(--zone-accent,#1557b0) 6%,white);border-color:color-mix(in srgb,var(--zone-accent,#1557b0) 28%,white)}
+    .zone-topic.drop-before{box-shadow:0 -3px 0 var(--zone-accent,#4d8b7d)}.zone-topic.drop-after{box-shadow:0 3px 0 var(--zone-accent,#4d8b7d)}.zone-topic .order-button{font-size:13px;line-height:1;min-width:18px}.zone-topic .order-button:disabled{opacity:.25;cursor:default}.zone-topic .order-button:disabled:hover{color:#819487}
+    .zone .note-toggle{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:28px;padding:3px 2px 7px;margin:0;border:0;background:transparent;text-align:left;cursor:pointer}.note-toggle .toggle-hint{font-weight:600;color:#87968a}.note-toggle:hover .toggle-hint{color:#3e7a67}.zone.note-collapsed{min-height:0}.zone.note-collapsed .zone-count{margin-top:7px}.zone textarea[hidden]{display:none}
+    .zone{position:relative}.zone-handle{border:0;background:transparent;color:#92a29a;padding:4px 0;min-width:19px;font-size:15px;line-height:1;cursor:grab;flex:none}.zone-handle:hover{color:#356f61}.zone-handle:active{cursor:grabbing}.zone.group-dragging{opacity:.45}.zone.zone-insert-before::before,.zone.zone-insert-after::after{content:"";position:absolute;left:0;right:0;height:5px;background:#31836d;border-radius:99px;pointer-events:none}.zone.zone-insert-before::before{top:-10px}.zone.zone-insert-after::after{bottom:-10px}.zone-palette{position:relative;flex:none}.zone-color-trigger{display:grid;place-items:center;width:28px;height:28px;padding:3px;border:1px solid #d8e3d9;border-radius:50%;background:#fff;cursor:pointer;list-style:none}.zone-color-trigger::-webkit-details-marker{display:none}.zone-color-trigger .color-dot{width:19px;height:19px;border-radius:50%;background:var(--chosen-color,#4d8b7d)}.zone-palette-menu{position:absolute;right:0;top:35px;z-index:40;display:grid;grid-template-columns:repeat(5,28px);gap:7px;padding:11px;background:#fff;border:1px solid #dce5df;border-radius:12px;box-shadow:0 14px 30px #233d322b}.palette-choice{width:28px;height:28px;border:2px solid #fff;border-radius:50%;background:var(--choice-color);box-shadow:0 0 0 1px #d8e0d9;cursor:pointer}.palette-choice:hover{transform:scale(1.1)}.palette-choice.selected{box-shadow:0 0 0 2px #2e5c50}
+    #boardView[hidden],#detailView[hidden]{display:none}.zone-tools{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:15px 0 7px}.zone-tools .zone-count{margin:0}.detail-link{border:1px solid color-mix(in srgb,var(--zone-accent) 40%,white);background:color-mix(in srgb,var(--zone-accent) 13%,white);color:#304741;border-radius:8px;padding:5px 9px;font-size:11px;font-weight:800;white-space:nowrap}.detail-link:hover{background:color-mix(in srgb,var(--zone-accent) 24%,white)}.detail-view{max-width:1060px;margin:0 auto}.detail-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px}.detail-back{border:0;background:transparent;color:#356b60;font-size:14px;font-weight:800;padding:8px 0}.detail-back:hover{text-decoration:underline}.detail-save-status{font-size:12px;color:#718079}.detail-hero{border:1px solid color-mix(in srgb,var(--detail-accent) 44%,white);border-left:6px solid var(--detail-accent);border-radius:18px;padding:25px 28px;background:color-mix(in srgb,var(--detail-accent) 13%,white)}.detail-hero .eyebrow{margin-bottom:7px;color:#536c68}.detail-hero h1{font-size:clamp(27px,3vw,38px);margin:0;letter-spacing:-.04em}.detail-hero p{margin:9px 0 0;color:#5f706b;font-size:13px;line-height:1.6}.detail-card{background:white;border:1px solid #e0e6df;border-radius:18px;padding:23px 25px;margin-top:17px;box-shadow:0 4px 20px #2a473608}.detail-card h2{font-size:18px;margin:0 0 6px}.detail-help{font-size:12px;color:#7c8a81;line-height:1.6;margin:0 0 13px}.detail-textarea{display:block;width:100%;resize:vertical;border:1px solid #ccdcd2;border-radius:10px;background:#fcfdfb;padding:13px 14px;color:#26333a;line-height:1.75;font-size:14px}.detail-summary{min-height:86px}.detail-story{min-height:340px}.detail-question-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.detail-question{border:1px solid #dfe7df;border-left:4px solid var(--detail-accent);border-radius:11px;background:#fbfcfa;min-width:0}.detail-question summary{display:flex;justify-content:space-between;align-items:center;gap:12px;list-style:none;padding:12px 14px;cursor:pointer;font-size:13px;font-weight:800}.detail-question summary::-webkit-details-marker{display:none}.detail-question summary span:first-child{min-width:0}.detail-question .question-hint{font-size:11px;font-weight:600;color:#7d8d83;white-space:nowrap}.detail-question textarea{width:calc(100% - 28px);min-height:120px;resize:vertical;margin:0 14px 14px;padding:10px 11px;border:1px solid #d7e4d9;border-radius:8px;background:#fff;line-height:1.6;font-size:13px}.detail-empty{padding:22px;color:#7d8b81;text-align:center;font-size:13px;border:1px dashed #d1dfd4;border-radius:10px}@media(max-width:700px){.detail-card{padding:19px}.detail-hero{padding:20px}.detail-question-grid{grid-template-columns:1fr}}
+    .detail-question .question-fields{display:grid;gap:12px;padding:0 14px 14px}.detail-question .question-field-label{display:block;margin-bottom:5px;font-size:12px;font-weight:800;color:#52665b}.detail-question .question-fields textarea{display:block;width:100%;min-height:112px;margin:0;font-weight:400;color:#26333a}
+    .tree-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:20px;align-items:start}.theme-sidebar{position:sticky;top:16px;background:#fff;border:1px solid #e0e6df;border-radius:16px;padding:15px;max-height:calc(100vh - 32px);overflow:auto}.theme-sidebar h2{font-size:14px;margin:0 0 11px}.theme-list{display:grid;gap:7px}.theme-choice{width:100%;text-align:left;border:1px solid #e1e8e1;border-left:4px solid var(--theme-accent);border-radius:9px;background:#fff;padding:10px;font-size:12px;font-weight:700;line-height:1.4;color:#355047;overflow-wrap:anywhere}.theme-choice.active{background:color-mix(in srgb,var(--theme-accent) 13%,white);border-color:var(--theme-accent)}.theme-choice:hover{background:#f5faf6}.tree-main{min-width:0}.tree-main .detail-card{margin-top:14px}.tree-main .detail-story{min-height:170px}.tree-step{display:flex;align-items:center;gap:9px}.tree-number{display:inline-grid;place-items:center;min-width:23px;height:23px;border-radius:8px;background:color-mix(in srgb,var(--detail-accent) 17%,white);color:#284f47;font-size:12px}.tree-arrow{height:21px;display:grid;place-items:center;color:#88a39a;font-size:20px;line-height:1}.tree-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.tree-branches{display:grid;gap:13px}.branch-card{border:1px solid #dbe5de;border-left:5px solid var(--detail-accent);border-radius:13px;background:#fbfdfb;padding:13px}.branch-card.active{background:color-mix(in srgb,var(--detail-accent) 7%,white)}.branch-head{display:flex;align-items:center;gap:8px}.branch-toggle{flex:1;min-width:0;text-align:left;border:0;background:transparent;padding:5px 2px;font-size:14px;font-weight:800;color:#294942}.branch-head .button{flex:none}.branch-content{padding:10px 2px 7px}.branch-title-input{width:100%;border:1px solid #d7e3d9;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-weight:700}.branch-content textarea{min-height:135px}.leaf-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:10px 0 0 20px;border-left:2px solid #cdded3;margin:8px 0 0 11px}.leaf-card{min-width:0;border:1px solid #dbe5de;border-radius:10px;background:#fff}.leaf-card.active{grid-column:1/-1;border-color:var(--detail-accent);box-shadow:0 2px 12px #2a473610}.leaf-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;text-align:left;border:0;background:transparent;padding:10px 12px;font-size:12px;font-weight:800;color:#2d4840}.leaf-toggle span:first-child{overflow-wrap:anywhere}.leaf-toggle small{flex:none;color:#85968c;font-weight:600}.leaf-fields{border-top:1px solid #e8eee7;padding:13px;display:grid;gap:11px}.leaf-fields label{display:grid;gap:5px;font-size:12px;font-weight:800;color:#52665b}.leaf-fields textarea{min-height:105px}.leaf-fields select{border:1px solid #d4e1d7;border-radius:8px;padding:8px;background:#fff}.tree-direct{margin-top:13px}.tree-direct h3{font-size:13px;margin:0 0 7px;color:#587569}.full-answer{white-space:pre-wrap;overflow-wrap:anywhere;background:#f6faf7;border:1px solid #dce8df;border-radius:11px;padding:16px;line-height:1.8;font-size:14px;min-height:76px}.full-answer p{margin:0 0 13px}.full-answer p:last-child{margin-bottom:0}.answer-placeholder{color:#8b9d91}.tree-empty{padding:15px;border:1px dashed #cbded1;border-radius:10px;color:#84958a;font-size:12px}.tree-note{color:#789084;font-size:11px;line-height:1.5;margin:7px 0 0}@media(max-width:800px){.tree-layout{grid-template-columns:1fr}.theme-sidebar{position:static;max-height:none}.theme-list{display:flex;overflow-x:auto}.theme-choice{min-width:135px;max-width:190px}.leaf-list{grid-template-columns:1fr}}
+    @media(max-width:900px){.layout{grid-template-columns:minmax(0,1fr)}.bank{position:static;max-height:520px}.app{padding:22px 17px 50px}.top{align-items:flex-start;flex-direction:column}.top-actions{justify-content:flex-start}.workspace-intro{margin-top:4px}}@media(max-width:560px){.progress-card{flex-wrap:wrap}.progress-bar{flex-basis:100%;order:3}.save-status{margin-left:auto;white-space:normal;text-align:right}.workspace-intro{flex-direction:column}.zones{grid-template-columns:1fr}.bank{max-height:480px}.top-actions{width:100%}}
+    .board-left{position:sticky;top:16px;max-height:calc(100vh - 32px);display:flex;flex-direction:column;gap:12px;min-width:0}.board-left .bank{position:static;top:auto;min-height:0;max-height:min(60vh,620px);flex:1 1 auto;overflow:hidden}.board-panel-actions{display:flex;align-items:center;gap:8px;min-width:0}.board-panel-toggle{flex:none;width:29px;height:29px;display:grid;place-items:center;padding:0;border:1px solid #dce7df;border-radius:8px;background:#f7faf7;color:#426d5b;font-size:19px;line-height:1}.board-panel-toggle:hover{background:#eaf4ec}.board-left .bank.is-collapsed{flex:none;max-height:none}.bank.is-collapsed .panel-head{border-bottom:0;padding-bottom:17px}.bank.is-collapsed .search,.bank.is-collapsed .filters,.bank.is-collapsed .bank-subfilters,.bank.is-collapsed .topic-list{display:none}.zone-index{display:flex;flex-direction:column;min-height:0;max-height:min(31vh,320px);overflow:hidden}.zone-index-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:15px 17px 12px;border-bottom:1px solid #eef0eb}.zone-index-head h2{font-size:16px;margin:0}.zone-index-head small{font-size:11px;color:#87928e}.zone-index-list{display:grid;align-content:start;gap:6px;min-height:0;overflow-y:auto;padding:10px 12px 14px;scrollbar-width:thin}.zone-index-item{display:flex;align-items:center;gap:9px;width:100%;min-width:0;border:1px solid color-mix(in srgb,var(--zone-accent) 28%,white);border-left:4px solid var(--zone-accent);border-radius:9px;background:color-mix(in srgb,var(--zone-accent) 8%,white);padding:8px 9px;text-align:left;color:#344b43;font-size:12px}.zone-index-item:hover{background:color-mix(in srgb,var(--zone-accent) 16%,white)}.zone-index-number{flex:none;display:grid;place-items:center;min-width:23px;height:23px;border-radius:6px;background:color-mix(in srgb,var(--zone-accent) 24%,white);font-size:10px;font-weight:800}.zone-index-name{flex:1;min-width:0;overflow-wrap:anywhere;font-weight:800}.zone-index-count{flex:none;color:#7b8c80;font-size:11px;white-space:nowrap}.zone-index-empty{color:#89998d;font-size:12px;padding:8px 3px}.zone-index.is-collapsed{flex:none;max-height:none}.zone-index.is-collapsed .zone-index-head{border-bottom:0;padding-bottom:15px}.zone-index.is-collapsed .zone-index-list{display:none}.zone.zone-located{outline:3px solid var(--zone-accent);outline-offset:3px}@media(max-width:900px){.board-left{position:static;max-height:none}.board-left .bank{max-height:520px}.zone-index{max-height:300px}}@media(max-width:560px){.board-left .bank{max-height:480px}.board-panel-actions small{display:none}}
+    .route-picker{background:#fff;border:1px solid #e0e6df;border-radius:16px;padding:17px 18px;margin-top:14px;box-shadow:0 4px 20px #2a473608}.route-picker h2{font-size:16px;margin:0 0 5px}.route-picker p{color:#7c8a81;font-size:12px;margin:0 0 12px}.topic-tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 1px 9px;scrollbar-width:thin}.topic-tab{flex:none;max-width:220px;text-align:left;border:1px solid #dce7df;border-radius:10px;background:#fff;padding:9px 12px;color:#36534a;font-size:12px;font-weight:700;line-height:1.45}.topic-tab.active{border-color:var(--detail-accent);background:color-mix(in srgb,var(--detail-accent) 13%,white);box-shadow:inset 0 0 0 1px var(--detail-accent)}.topic-tab:hover{border-color:var(--detail-accent)}.topic-tab small{display:block;color:#87968a;font-size:10px;font-weight:600;margin-top:2px}.route-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:17px 0 11px}.route-toolbar strong{font-size:15px;line-height:1.45}.mode-switch{display:flex;padding:3px;border:1px solid #d9e6dc;border-radius:10px;background:#edf3ee;flex:none}.mode-switch button{border:0;border-radius:7px;padding:7px 15px;background:transparent;color:#637b70;font-size:12px;font-weight:800}.mode-switch button.active{background:#fff;color:#245c56;box-shadow:0 1px 5px #203d2b1c}.route-stack{display:grid;gap:0}.route-segment{background:#fff;border:1px solid #dfe8df;border-left:4px solid var(--detail-accent);border-radius:13px;padding:17px 19px;box-shadow:0 4px 20px #2a473608;min-width:0}.route-segment h3{font-size:13px;color:#58766a;margin:0 0 11px}.route-body{font-size:14px;line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere;min-height:25px}.route-body.empty{color:#9ba9a0}.route-segment[open] summary{margin-bottom:12px}.route-segment summary{cursor:pointer;font-size:13px;font-weight:800;color:#416155;list-style:none}.route-segment summary::-webkit-details-marker{display:none}.route-segment summary::before{content:'▸';display:inline-block;margin-right:8px}.route-segment[open] summary::before{content:'▾'}.route-segment textarea{min-height:110px}.route-step-arrow{display:grid;place-items:center;height:25px;color:#8ea79a;font-size:20px}.route-branch-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(105px,160px);gap:10px;align-items:start}.route-branch-row.no-siblings{grid-template-columns:1fr}.branch-rail{display:grid;gap:6px}.branch-rail-label{font-size:11px;color:#819489;font-weight:700;margin-bottom:1px}.branch-chip{width:100%;text-align:left;border:1px solid #dce5dd;border-radius:9px;padding:8px 9px;background:#f8faf8;color:#567164;font-size:11px;font-weight:700;overflow-wrap:anywhere}.branch-chip:hover{border-color:#9fbca9}.branch-chip:disabled{cursor:default}.route-empty{border:1px dashed #cdded1;border-radius:13px;background:#fbfdfb;padding:23px;color:#72877a;font-size:13px;line-height:1.6}.route-edit-actions{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}.settings-panel{background:#fff;border:1px solid #dfe8df;border-radius:13px;padding:15px 18px;margin-top:13px}.settings-panel summary{cursor:pointer;font-size:13px;font-weight:800;color:#456456}.settings-panel[open] summary{margin-bottom:15px}.settings-panel label{display:grid;gap:6px;font-size:12px;font-weight:800;color:#587064;margin-bottom:12px}.settings-panel textarea{min-height:80px}.settings-branches{display:grid;gap:8px;margin-top:12px}.settings-branch{display:flex;align-items:center;gap:8px;padding:8px;border:1px solid #e3ebe4;border-radius:9px}.settings-branch input{flex:1;min-width:0;border:1px solid #d5e3d8;border-radius:7px;padding:8px 9px;font-size:12px;font-weight:700}.settings-branch small{color:#85968a;white-space:nowrap}.settings-branch .button{padding:6px 8px}.route-assignment{display:grid;gap:6px;border:1px solid #dfe8df;border-radius:11px;background:#fbfdfb;padding:11px 13px;margin-bottom:12px;color:#526b5d;font-size:12px;font-weight:800}.route-assignment select{width:100%;border:1px solid #d1e0d5;border-radius:7px;background:white;padding:8px;color:#334f42}.route-no-branch{font-size:12px;color:#83968a;margin:0 0 10px}@media(max-width:700px){.route-branch-row{grid-template-columns:1fr}.branch-rail{display:flex;overflow-x:auto}.branch-rail-label{flex:none;white-space:nowrap;align-self:center}.branch-chip{min-width:120px}.route-toolbar{align-items:flex-start;flex-direction:column}.settings-branch{flex-wrap:wrap}}
+    #annotationToolbar[hidden],#notePopup[hidden],.note-read[hidden],.note-input[hidden],.note-actions button[hidden]{display:none}.annotation-toolbar{display:flex;align-items:center;gap:7px;flex-wrap:wrap;background:#f0f6f1;border:1px solid #d4e4d8;border-radius:11px;padding:9px 11px;margin:0 0 13px}.annotation-toolbar .annotation-help{font-size:11px;color:#5e7869;flex:1;min-width:150px}.mark-button{border:1px solid #cfdfd3;background:#fff;border-radius:7px;padding:6px 9px;color:#315344;font-size:12px;font-weight:800}.mark-button:hover:not(:disabled){border-color:#6eac81}.mark-button:disabled{opacity:.4;cursor:default}.mark-color{width:27px;height:27px;padding:3px;border-radius:50%;background:var(--mark-color);border:2px solid #fff;box-shadow:0 0 0 1px #b8cfc0;flex:none}.marked-note{background:#fff1c9;border-bottom:2px dotted #b57600}.note-marker{display:inline-flex;vertical-align:super;align-items:center;justify-content:center;border:0;border-radius:99px;background:#fff0b8;color:#825900;padding:1px 4px;margin:0 2px;font-size:10px;line-height:1.2;font-weight:800}.note-marker:hover{background:#ffe081}.annotation-note-list{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.annotation-note-list button{border:1px solid #e7d49a;background:#fff9e8;color:#785c1e;border-radius:7px;padding:5px 8px;font-size:11px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.note-popup{position:fixed;right:18px;bottom:18px;z-index:60;width:min(380px,calc(100vw - 36px));background:#fff;border:1px solid #dce5dd;border-radius:15px;padding:17px;box-shadow:0 18px 45px #182e2640}.note-popup h2{margin:0 0 7px;font-size:16px}.note-quote{color:#6c7d70;font-size:12px;line-height:1.5;margin:0 0 10px;max-height:70px;overflow:auto}.note-read{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65;font-size:13px}.note-input{width:100%;min-height:110px;resize:vertical;border:1px solid #cad9cf;border-radius:8px;padding:9px;line-height:1.55;font-size:13px}.note-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}.note-actions button{border:1px solid #d7e3d9;border-radius:8px;background:#fff;padding:6px 10px;font-size:12px;font-weight:700}.note-actions button.primary{background:#245c56;color:white;border-color:#245c56}.note-actions button.danger{color:#ab4e41}
+    .more-menu .backup-hint{display:block;color:#84958a;font-size:10px;line-height:1.5;padding:3px 10px 5px;white-space:normal}
+    .practice-card{border:1px solid color-mix(in srgb,var(--detail-accent) 35%,white);border-top:5px solid var(--detail-accent);border-radius:17px;background:#fff;padding:27px 30px;box-shadow:0 4px 20px #2a473608;min-height:200px}.practice-card .practice-eyebrow{margin:0 0 10px;color:#678276;font-size:11px;font-weight:800;letter-spacing:.08em}.practice-card h2{margin:0 0 19px;font-size:21px;color:#284940;line-height:1.45}.practice-question{white-space:pre-wrap;overflow-wrap:anywhere;font-size:17px;line-height:1.9;color:#263b32}.practice-question.empty{color:#91a299;font-size:14px}.prompt-edit-card{background:#fff;border:1px solid #dfe8df;border-left:4px solid var(--detail-accent);border-radius:13px;padding:17px 19px;margin-bottom:13px;box-shadow:0 4px 20px #2a473608}.prompt-edit-card summary{cursor:pointer;list-style:none;font-size:14px;font-weight:800;color:#416155}.prompt-edit-card summary::-webkit-details-marker{display:none}.prompt-edit-card summary::before{content:'▸';display:inline-block;margin-right:8px}.prompt-edit-card[open] summary::before{content:'▾'}.prompt-edit-card[open] summary{margin-bottom:8px}.prompt-edit-card p{font-size:11px;color:#84978a;margin:0 0 11px}.prompt-edit-card textarea{display:block;width:100%;min-height:150px;resize:vertical;border:1px solid #cfdfd4;border-radius:9px;background:#fcfefc;padding:11px 12px;font-size:13px;line-height:1.7;color:#293c32}@media(max-width:700px){.practice-card{padding:21px}.practice-question{font-size:16px}}
+    .theme-choice,.theme-choice.active,.theme-choice:hover{background-image:linear-gradient(90deg,rgba(79,178,103,.28) var(--mastery-progress,0%),transparent var(--mastery-progress,0%))}.theme-choice small{display:block;color:#648072;font-size:10px;font-weight:700;margin-top:3px}.topic-tab-item{display:flex;flex-direction:column;flex:none;min-width:132px;max-width:220px;gap:5px}.topic-tab-item .topic-tab{width:100%;max-width:none;flex:1}.mastery-check{display:flex;align-items:center;gap:5px;padding:2px 3px;color:#587765;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap}.mastery-check input{margin:0;accent-color:#32915a;width:15px;height:15px}.route-branch-row{grid-template-columns:minmax(0,1fr) 44px}.branch-rail{display:grid;grid-template-columns:1fr;gap:6px;width:44px;justify-self:end;align-self:start;overflow:visible}.branch-rail-label{text-align:right;white-space:nowrap}.branch-chip{width:100%;min-width:0;padding:6px 3px}.branch-chip + .branch-chip{margin-top:0}@media(max-width:700px){.route-branch-row{grid-template-columns:1fr}.branch-rail{display:grid;width:44px;justify-self:end;overflow:visible}.branch-rail-label{align-self:auto;text-align:right}.branch-chip{min-width:0}}
+    .topic-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;overflow:visible;padding:2px 0 0}
+    .topic-tabs > .tree-note{grid-column:1/-1}
+    .topic-tab-item{display:grid;grid-template-columns:20px minmax(0,1fr);align-items:center;gap:8px;min-width:0;max-width:none;min-height:58px;border:1px solid #dce7df;border-radius:10px;background:#fff;padding:8px 10px}
+    .topic-tab-item.branch-assigned{border-color:color-mix(in srgb,var(--branch-accent) 48%,white);border-left:4px solid var(--branch-accent);background:color-mix(in srgb,var(--branch-accent) 16%,white);padding-left:7px}
+    .topic-tab-item.branch-assigned.active{border-color:var(--branch-accent);background:color-mix(in srgb,var(--branch-accent) 25%,white);box-shadow:inset 0 0 0 1px var(--branch-accent)}
+    .topic-tab-item.active{border-color:var(--detail-accent);background:color-mix(in srgb,var(--detail-accent) 13%,white);box-shadow:inset 0 0 0 1px var(--detail-accent)}
+    .topic-tab-item .topic-tab,.topic-tab-item .topic-tab.active{width:100%;min-width:0;max-width:none;flex:none;border:0;box-shadow:none;border-radius:0;background:transparent;padding:0;color:#36534a}
+    .topic-tab-item .topic-tab:hover{border:0;background:transparent;color:#245c56}
+    .topic-tab-item .topic-tab small{font-size:10px;line-height:1.35;overflow-wrap:anywhere}
+    .topic-edited{color:#237d54;font-weight:800;white-space:nowrap}
+    .branch-placement{display:flex;align-items:center;gap:8px;margin:0 0 12px;color:#587064;font-size:12px;font-weight:800}
+    .branch-placement select{max-width:100%;border:1px solid #d1e0d5;border-radius:8px;background:#fff;padding:6px 8px;color:#334f42;font-size:12px;font-weight:700}
+    .route-stack.answer-mode{gap:9px}
+    .practice-notes{margin-top:12px;border:1px solid #dce8df;border-radius:13px;background:#fff;padding:15px 18px}.practice-notes label{display:block;margin-bottom:8px;color:#416155;font-size:13px;font-weight:800}.practice-notes small{color:#84968a;font-size:11px;font-weight:600}.practice-notes textarea{display:block;width:100%;min-height:125px;resize:vertical;border:1px solid #d4e3d8;border-radius:9px;background:#fcfefc;padding:10px 12px;color:#293c32;font-size:13px;line-height:1.65}
+    .theme-sidebar-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:11px}.theme-sidebar-head h2{margin:0}.theme-sidebar-toggle{display:grid;place-items:center;flex:none;width:26px;height:26px;border:1px solid #dce7df;border-radius:7px;background:#f7faf7;color:#3b6956;font-size:18px;line-height:1;cursor:pointer}.theme-sidebar-toggle:hover{background:#e9f2eb}.theme-toggle-label{display:none}.tree-layout.sidebar-collapsed{grid-template-columns:36px minmax(0,1fr);gap:10px}.tree-layout.sidebar-collapsed .theme-sidebar{position:sticky;top:16px;width:36px;max-height:none;padding:4px 3px;overflow:hidden;border-radius:10px}.tree-layout.sidebar-collapsed .theme-sidebar-head{display:block;margin:0}.tree-layout.sidebar-collapsed .theme-sidebar-head h2,.tree-layout.sidebar-collapsed .theme-list{display:none}.tree-layout.sidebar-collapsed .theme-sidebar-toggle{display:flex;flex-direction:column;gap:8px;width:28px;height:auto;min-height:102px;padding:6px 2px}.tree-layout.sidebar-collapsed .theme-toggle-label{display:block;writing-mode:vertical-rl;font-size:11px;font-weight:800;letter-spacing:2px;line-height:1}
+    .theme-sort{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin:-2px 0 10px}.theme-sort button{min-width:0;border:1px solid #dce7df;border-radius:7px;background:#f7faf7;color:#5c7466;padding:6px 4px;font-size:10px;font-weight:800;line-height:1.3}.theme-sort button.active{background:#e1f1e8;border-color:#75a78a;color:#245d44}.theme-sort button:hover{border-color:#94bba3}.tree-layout.sidebar-collapsed .theme-sort{display:none}
+    .route-branch-row.inline-branches{display:block}.route-branch-row.inline-branches>.route-segment{width:100%}.branch-header{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:11px}.branch-header h3{flex:1 1 150px;min-width:0;margin:0}.branch-header .branch-rail{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:5px;width:auto;max-width:100%;align-self:auto;justify-self:auto;overflow:visible}.branch-header .branch-chip{width:auto;min-width:40px;max-width:140px;padding:5px 8px;line-height:1.3;white-space:normal}
+    .route-top-controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;margin-bottom:13px;align-items:stretch}.route-top-controls.no-topic{grid-template-columns:1fr}.route-top-controls .route-assignment{margin:0}.route-structure-actions{min-width:0;display:flex;flex-direction:column;gap:8px;border:1px solid #dfe8df;border-radius:11px;background:#fbfdfb;padding:11px 13px}.route-structure-actions strong{font-size:12px;color:#526b5d}.route-structure-buttons{display:flex;gap:7px;flex-wrap:wrap}.route-structure-actions .button{margin:0}.route-structure-actions label{display:grid;gap:5px;font-size:11px;font-weight:800;color:#587064}.route-structure-actions #extraCommonScope{width:100%;min-width:0;border:1px solid #d1e0d5;border-radius:8px;background:#fff;padding:7px;color:#334f42;font-size:12px}@media(max-width:640px){.route-top-controls{grid-template-columns:1fr}}
+    .detail-hero{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .detail-hero-copy{flex:1;min-width:0}
+    .practice-timer{flex:none;width:220px;border:1px solid color-mix(in srgb,var(--detail-accent) 30%,white);border-radius:13px;background:#ffffffb8;padding:11px 12px;color:#36534a}
+    .practice-timer[data-phase="speak"]{background:#fff9e9}
+    .practice-timer[data-phase="done"]{background:#edf2ed}
+    .practice-timer-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
+    .practice-timer-top span{font-size:12px;font-weight:800;white-space:nowrap}
+    .practice-timer-top strong{font-variant-numeric:tabular-nums;font-size:28px;line-height:1;letter-spacing:.02em}
+    .practice-timer-actions{display:flex;gap:5px}
+    .practice-timer-actions button{flex:1;border:1px solid color-mix(in srgb,var(--detail-accent) 28%,white);border-radius:7px;background:#fff;padding:6px 4px;color:#385b50;font-size:11px;font-weight:800;white-space:nowrap}
+    .practice-timer-actions button:hover{background:#f4faf6}
+    .practice-timer-actions button[hidden]{display:none}
+    @media(max-width:560px){.detail-hero{align-items:stretch;flex-direction:column}.practice-timer{width:100%}}
+    .mastery-check{display:flex;align-items:center;justify-content:center;padding:0;cursor:pointer}
+    .mastery-check input{width:18px;height:18px;margin:0;accent-color:#32915a}
+    @media(max-width:700px){.topic-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:480px){.topic-tabs{grid-template-columns:1fr}}
+    .edit-control-row{display:grid;grid-template-columns:minmax(300px,1.1fr) minmax(250px,1fr);gap:10px;align-items:stretch;margin-bottom:13px}.edit-control-row[hidden]{display:none}.edit-control-row .route-top-controls{margin:0;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);height:100%}.edit-control-row .route-top-controls.no-topic{grid-template-columns:1fr}.edit-control-row .route-assignment,.edit-control-row .route-structure-actions{padding:9px;gap:5px}.edit-control-row .route-assignment select{padding:6px}.edit-control-row .route-structure-buttons{gap:4px}.edit-control-row .route-structure-actions .button{padding:5px 7px;font-size:10px}.edit-control-row .annotation-toolbar{margin:0;align-content:center;padding:8px 10px}.edit-control-row .annotation-help{flex-basis:100%;min-width:0}.middle-placement{display:flex;align-items:center;gap:9px;margin:0 0 10px;color:#526b5d;font-size:12px;font-weight:800}.middle-placement select{min-width:0;max-width:100%;border:1px solid #d1e0d5;border-radius:7px;background:white;padding:6px;color:#334f42}@media(max-width:950px){.edit-control-row{grid-template-columns:1fr}}@media(max-width:560px){.edit-control-row .route-top-controls{grid-template-columns:1fr}}
+    #p1View[hidden]{display:none}.part-nav{display:flex;gap:7px;margin:0 0 23px;padding:4px;width:max-content;max-width:100%;border:1px solid #dce7df;border-radius:12px;background:#eaf1ec}.part-nav button{border:0;border-radius:8px;background:transparent;padding:9px 17px;color:#5c7468;font-size:13px;font-weight:800}.part-nav button.active{background:#fff;color:#245c56;box-shadow:0 1px 7px #24402b1c}.part-nav button:hover{color:#245c56}
+    .p1-view{max-width:1100px;margin:0 auto}.p1-hero{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}.p1-hero h1{font-size:clamp(27px,3vw,38px);margin:0;letter-spacing:-.04em}.p1-hero p:last-child{color:#73837a;font-size:13px;line-height:1.55;margin:8px 0 0}.p1-layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:18px;align-items:start}.p1-side,.p1-main{background:#fff;border:1px solid #dfe8df;border-radius:17px;box-shadow:0 4px 20px #2a473608}.p1-side{padding:15px;position:sticky;top:16px;max-height:calc(100vh - 32px);display:flex;flex-direction:column;gap:11px}.p1-side-head{display:flex;align-items:center;justify-content:space-between;gap:7px}.p1-side h2{font-size:15px;margin:0}.p1-side-list{display:grid;gap:6px;overflow-y:auto;min-height:0;scrollbar-width:thin}.p1-topic-button{width:100%;border:1px solid #e0e9e2;border-left:4px solid #7bac8b;border-radius:9px;background:#fff;color:#365348;padding:10px;text-align:left;font-size:13px;font-weight:800;overflow-wrap:anywhere}.p1-topic-button.active{background:#eaf5ed;border-color:#3f9060}.p1-topic-button small{display:block;margin-top:4px;color:#87968b;font-size:11px;font-weight:600}.p1-main{padding:22px;min-height:350px}.p1-main-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px}.p1-main-head h2{font-size:21px;margin:0 0 5px}.p1-main-head p{font-size:12px;color:#84948a;margin:0}.p1-mode{display:flex;gap:4px;border:1px solid #dce8df;background:#f0f6f1;border-radius:9px;padding:3px}.p1-mode button{border:0;background:transparent;border-radius:6px;padding:7px 12px;color:#587269;font-size:12px;font-weight:800}.p1-mode button.active{background:white;color:#245c56;box-shadow:0 1px 5px #203d2b1c}.p1-question-list{display:grid;gap:10px}.p1-question{border:1px solid #dce8df;border-left:4px solid #4c9370;border-radius:11px;background:#fbfdfb;padding:15px 17px;font-size:16px;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere}.p1-question.current{border-color:#2e8c58;background:#eaf6ed;box-shadow:0 0 0 2px #a7d8b1}.p1-question small{display:block;color:#69917a;font-size:11px;font-weight:800;margin-bottom:4px}.p1-edit{display:grid;gap:14px}.p1-edit label{display:grid;gap:6px;color:#516b5c;font-size:12px;font-weight:800}.p1-edit input,.p1-edit textarea{width:100%;border:1px solid #cbded0;border-radius:9px;background:#fcfefc;color:#263b30;padding:10px 12px;font-size:14px}.p1-edit textarea{min-height:300px;resize:vertical;line-height:1.8}.p1-edit small{font-size:11px;color:#819287}.p1-edit-actions{display:flex;justify-content:flex-end}.p1-empty{border:1px dashed #cbddd0;border-radius:11px;padding:30px;color:#7c9082;text-align:center;font-size:13px;line-height:1.7}@media(max-width:760px){.p1-layout{grid-template-columns:1fr}.p1-side{position:static;max-height:none}.p1-side-list{display:flex;overflow-x:auto}.p1-topic-button{min-width:135px;max-width:220px}.p1-main{padding:18px}}@media(max-width:480px){.p1-hero{align-items:flex-start}.p1-main-head{flex-direction:column}.p1-question{font-size:15px}}
+    .p1-question{text-align:left;cursor:pointer;width:100%}.board-left{position:static;max-height:none}.board-left .bank{flex:none;max-height:min(48vh,500px)}.board-left .zone-index{flex:none;min-height:0;max-height:none;overflow:visible}.board-left .zone-index-list{overflow:visible;min-height:0}.board-left .zone-index.is-collapsed{min-height:0;flex:none}.zone-index-row{display:flex;align-items:center;gap:4px;min-width:0;position:relative;border-radius:9px}.zone-index-row.dragging{opacity:.45}.zone-index-row.drop-before::before,.zone-index-row.drop-after::after{content:"";position:absolute;left:0;right:0;height:3px;border-radius:99px;background:#31836d;pointer-events:none}.zone-index-row.drop-before::before{top:-4px}.zone-index-row.drop-after::after{bottom:-4px}.zone-index-row .zone-index-item{flex:1;min-width:0;padding:8px 7px}.zone-index-handle,.zone-index-order{flex:none;border:0;background:transparent;color:#698476;border-radius:6px;min-width:22px;height:28px;padding:0;font-size:15px;line-height:1}.zone-index-handle{cursor:grab;font-weight:900}.zone-index-handle:active{cursor:grabbing}.zone-index-order:hover:not(:disabled),.zone-index-handle:hover{background:#e9f4ec;color:#245c56}.zone-index-order:disabled{opacity:.3;cursor:default}@media(max-width:900px){.board-left .bank{max-height:480px}.board-left .zone-index{max-height:none;min-height:0}}
+    .p1-category{border:1px solid #dde8df;border-radius:10px;background:#fff;overflow:hidden}.p1-category summary{display:flex;align-items:center;gap:7px;list-style:none;padding:10px;color:#355847;font-size:12px;font-weight:800;cursor:pointer;background-image:linear-gradient(90deg,rgba(79,178,103,.22) var(--p1-progress,0%),transparent var(--p1-progress,0%))}.p1-category summary::-webkit-details-marker{display:none}.p1-category summary::before{content:'▸';color:#668b73}.p1-category[open] summary::before{content:'▾'}.p1-category summary span{flex:1;min-width:0}.p1-category summary small{font-size:10px;color:#64806b;white-space:nowrap}.p1-category-topics{display:grid;gap:6px;padding:6px}.p1-topic-button{min-width:0;max-width:none;background-image:linear-gradient(90deg,rgba(79,178,103,.22) var(--p1-progress,0%),transparent var(--p1-progress,0%))}.p1-question{display:grid;grid-template-columns:22px minmax(0,1fr) minmax(135px,190px);gap:10px;align-items:center;cursor:default}.p1-question-check{cursor:pointer}.p1-question-check input{width:18px;height:18px;margin:0;accent-color:#32915a}.p1-question-text{border:0;background:transparent;color:#26333a;padding:0;text-align:left;font-size:16px;line-height:1.7;cursor:pointer;white-space:pre-wrap;overflow-wrap:anywhere}.p1-question-text small{line-height:1.3}.p1-question-vocab{width:100%;min-width:0;border:1px solid #cbded0;border-radius:8px;background:#fff;padding:8px 9px;font-size:12px;line-height:1.5;color:#26333a}.p1-question-vocab::placeholder{color:#8c9b90}.p1-question.mastered{border-color:#aad5b5}.p1-edit select{width:100%;border:1px solid #cbded0;border-radius:9px;background:#fcfefc;color:#263b30;padding:10px 12px;font-size:14px}@media(max-width:760px){.p1-side-list{display:grid;overflow:visible}.p1-topic-button{min-width:0;max-width:none}}@media(max-width:650px){.p1-question{grid-template-columns:22px minmax(0,1fr)}.p1-question-vocab{grid-column:2}}@media(max-width:480px){.p1-question-text{font-size:15px}}
+  </style>
+</head>
+<body>
+<main class="app">
+  <nav class="part-nav" aria-label="口语部分"><button id="navP1" type="button">Part 1 · 看题练习</button><button id="navP2" type="button" class="active">Part 2 · 串题整理</button></nav>
+  <section class="p1-view" id="p1View" hidden aria-label="Part 1 看题练习"><header class="p1-hero"><div><p class="eyebrow">IELTS Speaking · Part 1</p><h1>看题练习</h1><p>按话题放入题目，练习时只看问题，直接开口说。</p></div><div class="top-actions"><button class="button" id="p1ExportBackup" type="button">下载备份</button><button class="button" id="p1ImportBackup" type="button">导入备份</button></div></header><div class="p1-layout"><aside class="p1-side" aria-label="Part 1 话题"><div class="p1-side-head"><h2>话题分类</h2><button class="button small primary" id="p1AddTopic" type="button">＋ 新增话题</button></div><div class="p1-side-list" id="p1TopicList"></div></aside><div class="p1-main" id="p1Main"></div></div><p class="footnote">P1 和 P2 共用一份备份；下载一次即可在另一台设备恢复。</p></section>
+  <div id="boardView">
+  <header class="top"><div><p class="eyebrow">IELTS Speaking · Part 2</p><h1>串题整理板</h1><p class="subtitle">先给题目找素材，再把同一个故事能回答的题放到一起。</p></div><div class="top-actions"><button class="button" id="exportText">导出文字版</button><details class="more" id="moreMenu"><summary class="button">备份与恢复 ▾</summary><div class="more-menu"><button id="exportBackup">下载备份文件</button><button id="importBackup">导入备份文件</button><small class="backup-hint">备份包含 P1/P2 题目、答案及掌握进度</small></div></details></div></header>
+  <div class="progress-card" aria-live="polite"><div class="progress-text"><strong id="assignedCount">0</strong> / <span id="totalCount">63</span> 道题已串</div><div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div><div class="save-status" id="saveStatus">自动保存到当前浏览器</div></div>
+  <div class="layout">
+    <div class="board-left"><section class="panel bank" id="bankPanel" aria-labelledby="bankTitle"><div class="panel-head"><div class="section-heading"><h2 id="bankTitle">题目库</h2><div class="board-panel-actions"><small>拖动或用下拉框归类</small><button class="board-panel-toggle" id="toggleBank" type="button" aria-label="收起题目库" aria-expanded="true" title="收起题目库">⌃</button></div></div><input class="search" id="search" type="search" placeholder="搜索题目关键词…" aria-label="搜索题目"><div class="filters" id="filters" aria-label="按题目类别筛选"></div><div class="bank-subfilters"><label class="checkbox"><input id="unassignedOnly" type="checkbox"> 只看未串题</label><span id="visibleCount"></span></div></div><div class="topic-list" id="topicList"></div></section><section class="panel zone-index" id="zoneIndexPanel" aria-labelledby="zoneIndexTitle"><div class="zone-index-head"><h2 id="zoneIndexTitle">素材区分类</h2><div class="board-panel-actions"><small>拖动或点箭头排序</small><button class="board-panel-toggle" id="toggleZoneIndex" type="button" aria-label="收起素材区分类" aria-expanded="true" title="收起素材区分类">⌃</button></div></div><div class="zone-index-list" id="zoneIndexList"></div></section></div>
+    <section class="workspace" aria-labelledby="zoneTitle"><div class="workspace-intro"><div><h2 id="zoneTitle">我的素材区</h2><p>拖动左上角把手调整素材区顺序；区内题目也可以拖动排序。</p></div><button class="button primary" id="addZone">＋ 新增素材区</button></div><div class="zones" id="zones"></div><p class="footnote">整理内容只保存在当前浏览器。换浏览器或清除浏览数据前，建议下载备份文件。</p></section>
+  </div>
+  </div>
+  <section class="detail-view" id="detailView" hidden aria-label="素材内容页">
+    <div class="detail-nav"><button class="detail-back" id="backBoard" type="button">← 返回整理板</button><span class="detail-save-status" id="detailSaveStatus">自动保存到当前浏览器</span></div>
+    <div class="tree-layout" id="treeLayout"><aside class="theme-sidebar" aria-label="切换大主题"><div class="theme-sidebar-head"><h2>大主题</h2><button class="theme-sidebar-toggle" id="themeSidebarToggle" type="button" aria-label="收起大主题" aria-expanded="true" title="收起大主题"><span class="theme-toggle-arrow">‹</span><span class="theme-toggle-label">大主题</span></button></div><div class="theme-sort" role="group" aria-label="大主题排序"><button id="sortThemesModified" type="button" aria-pressed="false" title="再次点击恢复原顺序">按修改完成度</button><button id="sortThemesMastered" type="button" aria-pressed="false" title="再次点击恢复原顺序">按掌握程度</button></div><div class="theme-list" id="themeList"></div></aside><div class="tree-main">
+      <header class="detail-hero" id="detailHero"><div class="detail-hero-copy"><p class="eyebrow">IELTS Speaking · 内容树</p><h1 id="detailTitle"></h1><p id="detailSubtitle"></p></div><div class="practice-timer" id="practiceTimer" data-phase="prep" aria-label="口语练习计时器"><div class="practice-timer-top"><span id="timerPhase" aria-live="polite">准备时间</span><strong id="timerTime" role="timer" aria-live="off">01:00</strong></div><div class="practice-timer-actions"><button id="timerToggle" type="button">开始</button><button id="timerSkip" type="button">直接作答</button><button id="timerReset" type="button">重置</button></div></div></header>
+      <section class="route-picker"><h2>选择小题</h2><p>同一分支的题会自动排在一起；勾选左侧方框记录掌握情况。</p><div class="topic-tabs" id="topicTabs"></div></section>
+      <div class="route-toolbar"><strong id="routeTitle">选一道题，开始练习</strong><div class="mode-switch" role="group" aria-label="内容模式"><button id="practiceMode" type="button">练习</button><button id="showMode" type="button">展示答案</button><button id="editMode" type="button">修改</button></div></div>
+      <div class="edit-control-row" id="editControlRow"><div id="routeTopControls"></div>
+      <div class="annotation-toolbar" id="annotationToolbar" hidden><span class="annotation-help" id="annotationHelp">选中下面输入框中的文字，再点标注</span><button class="mark-button" type="button" data-mark-action="bold" title="加粗"><strong>B</strong></button><button class="mark-button" type="button" data-mark-action="underline" title="下划线"><u>U</u></button><button class="mark-button mark-color" type="button" data-mark-action="color" data-color="#b42318" style="--mark-color:#b42318" aria-label="红色文字"></button><button class="mark-button mark-color" type="button" data-mark-action="color" data-color="#1557b0" style="--mark-color:#1557b0" aria-label="蓝色文字"></button><button class="mark-button mark-color" type="button" data-mark-action="color" data-color="#147347" style="--mark-color:#147347" aria-label="绿色文字"></button><button class="mark-button mark-color" type="button" data-mark-action="color" data-color="#7a3daf" style="--mark-color:#7a3daf" aria-label="紫色文字"></button><button class="mark-button mark-color" type="button" data-mark-action="color" data-color="#ad5b00" style="--mark-color:#ad5b00" aria-label="橙色文字"></button><button class="mark-button" type="button" data-mark-action="note">＋旁注</button><button class="mark-button" type="button" data-mark-action="clear">清除格式</button></div></div>
+      <div id="routeFlow"></div><div id="editSettings"></div>
+    </div></div>
+  </section>
+</main>
+<input type="file" id="backupFile" accept="application/json,.json" hidden>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<section class="note-popup" id="notePopup" role="dialog" aria-label="文字旁注" hidden><h2 id="noteTitle">文字旁注</h2><p class="note-quote" id="noteQuote"></p><div class="note-read" id="noteRead"></div><textarea class="note-input" id="noteInput" aria-label="旁注内容" placeholder="写下这句话的提示或解释……"></textarea><div class="note-actions"><button id="noteDelete" class="danger" type="button">删除旁注</button><button id="noteCancel" type="button">关闭</button><button id="noteSave" class="primary" type="button">保存旁注</button></div></section>
+<script>
+(() => {
+  'use strict';
+  const categories = ['人物','经历与活动','地点与建筑','物品与作品','决定、改变与目标','法律与公共信息'];
+  const topicGroups = [
+    ['人物',['做困难事情并成功的人','快乐人士','有条理的人','喜欢拍照的人','尊敬的比你年长的人','擅长做手工的人','学习并喜欢历史的人','教你新技能的人','受欢迎的人','钦佩的运动员','有健康习惯和作息的人','喜欢在家/花园种菜的人','发小','想从事医疗行业的人','拥有成功商业的人','擅长学习和说语言的人','一见且想继续了解的人','有创造力的朋友']],
+    ['经历与活动',['看过的名人采访','小时候学到的新技能','好的购物服务','和朋友度过的愉快夜晚','浪费时间的活动','不喜欢的短途旅行','印象深刻的聚会','帮助他人','早起经历','在团队中工作','喜欢的现场体育赛事','遇到的科技问题','很久没收到回复的信息','印象深刻的课程','公共场所丢物品','听不感兴趣的话','不会用的科技产品']],
+    ['地点与建筑',['嘈杂地','喜欢的城市自然之地','拥挤地方','喜欢的公共建筑','喜欢或不喜欢的高建筑','去过的无聊地方','推荐旅行过的地方','喜欢拜访但不想住的家','想再去一次的城市']],
+    ['物品与作品',['攒钱买特别物品','不喜欢的电影','读起来开心的书','有趣视频','特别场合的食物','名人出演的广告','包含动物的故事或书','送朋友的礼物']],
+    ['决定、改变与目标',['对结果开心的重要决定','近期改变的计划','重要决定','长久目标/抱负','改变重要想法','近期改变','节约时间的方法/改变']],
+    ['法律与公共信息',['想颁布的新法律','保护环境的法律','想要颁布的环保法律','当地新闻']]
+  ];
+  let topicCounter = 1;
+  const topics = topicGroups.flatMap(([category,names]) => names.map(name => ({id:'t'+(topicCounter++),name,category})));
+  const topicById = new Map(topics.map(topic => [topic.id,topic]));
+  const pdfPromptSeed = /* PDF_PROMPT_SEED */ {"t1":"Describe a person you know who did something difficult and was successful\nYou should say:\nWho this person is\nWhat difficult thing this person did\nWhy this person was successful\nAnd explain how you feel about this person","t2":"Describe a happy person you know\nYou should say:\nWho this person is\nWhat he/she is like\nHow he/she shows happiness\nAnd explain why you think he/she is a happy person","t3":"Describe a person you know who is very organized\nYou should say:\nWho this person is\nWhat this person usually does to stay organized\nIn what situations you have noticed this quality\nAnd explain why you think being organized is important to him/her","t4":"Describe a person you know who really likes taking photos\nYou should say:\nWho the person is\nWhen and how you got to know him/her\nWhere he/she takes photos\nAnd explain how you feel about him/her","t5":"Describe someone who is older than you that you admire\nYou should say:\nWho this person is\nHow you knew this person\nWhat kinds of things you like to do together\nAnd explain how you feel about this person","t6":"Describe a person who is good at making things by hand\nYou should say:\nWho this person is\nWhat he/she makes\nWhat materials or technologies he/she uses\nAnd why you think this person is good at making things by hand","t7":"Describe a person who learns history and loves history\nYou should say:\nWho this person is\nHow he/she learns history\nWhy he/she loves history\nAnd explain how you feel about him/her","t8":"Describe a person who taught you a new skill\nYou should say:\nWho this person was\nWhat the skill was\nHow you learned it\nAnd explain how you felt about this person","t9":"Describe a popular person\nYou should say:\nWho this person is\nWhat kind of person he or she is\nWhen you see him/her normally\nAnd explain why you think this person is popular","t10":"Describe a successful sportsperson you admire\nYou should say:\nWho he/she is\nWhat you know about him/her\nWhat he/she is like in real life\nWhat achievement he/she has made","t11":"Describe a person you know who has healthy habits and a healthy daily routine\nYou should say:\nWho this person is\nHow you got to know each other\nWhat he/she does to keep this lifestyle\nAnd explain how you feel about him/her","t12":"Describe a person who loves to grow plants (e.g. vegetables, flowers) at home or in the garden\nYou should say:\nWho this person is\nWhat plants he/she grows\nHow he/she grows the plants\nAnd explain why he/she loves growing plants","t13":"Describe a friend from your childhood\nYou should say:\nWho he/she is\nWhere and how you met each other\nWhat you often did together\nAnd explain what made you like him/her","t14":"Describe a person you know who would like to choose a career in the medical field (e.g. a doctor, a nurse)\nYou should say:\nWhen you knew him/her\nWhen he/she started to think about that\nWhat he/she would like to do\nAnd explain why he/she would like to choose this career","t15":"Describe a person you know who has a successful business\nYou should say:\nWho this person is\nHow you got to know him/her\nWhy and how he/she started the business\nWhat business he/she does\nAnd explain why you think the business is successful","t16":"Describe a person who is good at learning and speaking new languages\nYou should say:\nHow you got to know him/her\nHow he/she learns a new language\nWhat languages he/she can speak\nAnd explain how you feel about him/her","t17":"Describe a person you only met once recently and want to know more about\nYou should say:\nWho he/she is\nWhen you met him/her\nWhy you want to know more about him/her\nAnd explain how you feel about him/her","t18":"Describe a friend of yours who is creative\nYou should say:\nWho he/she is\nHow you met him/her\nWhat materials he/she uses when making things by hand\nAnd explain why you think he/she is a creative person","t19":"Describe a time you watched a famous person being interviewed\nYou should say:\nWho the famous person was\nWhat the interview was about\nWhen and where you watched the interview\nAnd explain how you felt about the interview","t20":"Describe a new skill you learned when you were a child\nYou should say:\nWhat the skill was\nWho taught you this skill\nHow you learned it\nAnd explain how you felt about learning the skill","t21":"Describe a time when you received good service in a shop/store/company\nYou should say:\nWhere the shop/store/company is\nWhen you went to the shop/store/company\nWhat service you received from the staff\nAnd explain how you felt about the service","t22":"Describe an enjoyable evening you had with your friends\nYou should say:\nWhen and where it was\nWhat you did\nWho you spent the evening with\nAnd explain why it was enjoyable","t23":"Describe an activity you do regularly that you think is a waste of time\nYou should say:\nWhat it is\nWhen you usually do it\nWhy you do it\nAnd explain why you think it is a waste of time","t24":"Describe a short trip you often take but do not like\nYou should say:\nWhere you go\nWhen you go there\nWhy you go there\nAnd explain why you do not like the trip","t25":"Describe a party for a special event that impressed you a lot\nYou should say:\nWhen and where it was held\nWhat the party was held for\nHow many people attended it\nAnd explain why it impressed you a lot","t26":"Describe a time when you helped someone\nYou should say:\nWhere you helped him/her\nWhy you helped\nHow you helped\nAnd explain how you felt about it","t27":"Describe a time when you got up early\nYou should say:\nWhen it was\nWhat you did\nWhy you got up early\nAnd how you felt about it","t28":"Describe a time when you worked in a group\nYou should say:\nWhat you did\nWho you worked with\nWhat problems you faced\nAnd explain why you worked in the group","t29":"Describe a live sports event you watched and liked\nYou should say:\nWhat it was\nWhen and where you watched it\nWho you watched it with\nAnd explain why you liked it","t30":"Describe a challenging technological problem you faced\nYou should say:\nWhat the problem was\nWhen and where you faced it\nHow challenging it was\nAnd explain how you solved it","t31":"Describe a time when you sent a message or an email to someone but received no reply for a long time\nYou should say:\nWho you sent it to\nWhat the message/email was about\nWhether you finally received the reply\nAnd explain how you felt about the experience","t32":"Describe a course that impressed you a lot\nYou should say:\nWhat the course was about\nWhere you took the course\nWhat you did during the course\nAnd explain why it impressed you a lot","t33":"Describe an occasion that you lost something in public\nYou should say:\nWhat you lost\nWhen and where you lost it\nWhat you did to find it\nAnd explain how you felt about it","t34":"Describe a time when someone talked about something you were not interested in but you kept listening\nYou should say:\nWho the person was\nWhat he/she talked about\nWhy you kept listening\nAnd explain how you felt about the experience","t35":"Describe a piece of technology that you didn’t know how to use (e.g. a computer, a smartphone, etc.)\nYou should say:\nWhat it was\nWhy you didn’t know how to use it\nWhether you learned to use it at last\nAnd explain how you felt about it","t36":"Describe a noisy place you have been to\nYou should say:\nWhere it is\nWhen you went there\nWhat you did there\nAnd explain why you feel it’s a noisy place","t37":"Describe a natural place in your city that you enjoy visiting\nYou should say:\nWhere it is\nWhat it is like\nHow often you go there\nWho you often go there with\nAnd explain why you enjoy visiting there","t38":"Describe a crowded place you went to\nYou should say:\nWhere it was\nWhen you went there\nWho you went there with\nWhat you did there","t39":"Describe a public building you enjoy visiting (e.g. a library, a shopping mall, a sports hall, etc.)\nYou should say:\nWhere it is\nHow you knew it\nWhat it looks like\nAnd explain why you enjoy visiting it","t40":"Describe a tall building you like or dislike\nYou should say:\nWhat it is used for\nWhere it is\nWhat it looks like\nAnd explain why you like/dislike it","t41":"Describe a boring place\nYou should say:\nWhere it is\nWho you went there with\nWhat you did there\nAnd explain why you think it is a boring place","t42":"Describe a place you have travelled to that you would like to recommend to others\nYou should say:\nWhat it is\nWhere it is\nWhat you saw and did there\nAnd explain why you would like to recommend it to others","t43":"Describe a home that you like to visit but do not want to live in\nYou should say:\nWhere it is\nWhat it is like\nWhy you like to visit it\nAnd explain why you would not like to live there","t44":"Describe a city that you have been to and would like to visit again\nYou should say:\nWhen you visited it\nWhat you did there\nWhat it was like\nAnd explain why you would like to visit it again","t45":"Describe a time when you saved money to buy something special\nYou should say:\nWhat the special thing was\nWhy you wanted to buy it\nHow you saved money for it\nAnd explain how you felt after buying it","t46":"Describe a movie/film you don’t like\nYou should say:\nWhen you watched it\nWhere you watched it\nWhat it was about\nAnd explain why don’t like it","t47":"Describe a book you enjoyed reading and that made you happy\nYou should say:\nWhat kind of book it was\nWhat it was about\nWhy you read it\nAnd explain why it made you happy","t48":"Describe an interesting video\nYou should say:\nWhen and where you watched it\nWhat it is about\nWhy you watched it\nAnd explain how you feel about it","t49":"Describe a food that people eat on special occasions/events\nYou should say:\nWhat it is\nWhat the special event/occasion is\nHow it is cooked/made\nAnd explain why people eat it on that special occasion/event","t50":"Describe an advertisement with a famous person in it\nYou should say:\nWho the person is\nWhere you can see it\nWhat the advertisement is about\nAnd explain how you feel about the advertisement","t51":"Describe a story/book with animals in it\nYou should say:\nWhat animals are in it\nWhat the story/book is about\nWhy you read the story/book\nAnd explain what you think of this story/book","t52":"Describe a gift you would like to buy for your friend\nYou should say:\nHow you knew your friend\nHow long you have known him/her\nHow you would choose a gift for him/her\nAnd explain why you would choose that gift for him/her","t53":"Describe a time you made an important decision and were happy with the result\nYou should say:\nWhat the decision was\nWhy you made the decision\nHow easy it was for you to make the decision\nAnd explain why you were happy with the result","t54":"Describe a plan that you had to change recently\nYou should say:\nWhen this happened\nWhat made you change the plan\nWhat the new plan was\nAnd how you felt about the change","t55":"Describe an important decision that you made\nYou should say:\nWhat the decision was\nHow you made your decision\nWhat the results of the decision were\nAnd explain why it was important","t56":"Describe a long-term goal/ambition you would like to achieve\nYou should say:\nHow long you have had this goal/ambition\nWhat it is\nHow you will achieve it\nAnd explain why you set it","t57":"Describe a time when you changed an important opinion of yours\nYou should say:\nWhen you changed your opinion\nWhat the original opinion was\nWhy you changed it\nAnd explain how you felt about the experience","t58":"Describe a change that you made recently\nYou should say:\nWhat the change was\nWhat caused the change\nWhat you did for the change\nAnd explain how you feel about the change","t59":"Describe a way/change that helps you save a lot of time\nYou should say:\nWhat it is\nHow you implement it\nHow difficult it is\nAnd explain how you feel about the way/change","t60":"Describe a new law you would like to introduce in your country\nYou should say:\nWhat law it is\nWhat changes this law brings\nWhether this new law will be popular\nHow you came up with the new law\nAnd explain how you feel about this new law","t61":"Describe a law on environmental protection\nYou should say:\nWhat it is\nHow you first learned about it\nWho benefits from it\nAnd explain how you feel about this law","t62":"Describe an environmental law you would like your country to introduce\nYou should say:\nWhat law it should be\nWhy people should follow the law\nWhether the law will be popular\nAnd explain how you feel about this law","t63":"Describe a piece of local news that people are interested in\nYou should say:\nWhat it was about\nWhere you saw/heard it\nWho was involved\nAnd explain why people were interested in it"};
+  const p1PdfSeed = [{"id":"pdf-p1-01","title":"Travelling","questions":["What transport do you often use when travelling?","Do you often ride a bicycle?","Do you prefer to sit by the window when travelling?","Did you have a long journey with your family as a child?"]},{"id":"pdf-p1-02","title":"Rubbish and recycling","questions":["Did you recycle when you were a kid?","Is waste sorting common in your country?","How do you recycle things like paper and plastic?","What do you do when you see rubbish on the street?"]},{"id":"pdf-p1-03","title":"Tiredness","questions":["What do you do when you feel tired?","When would you feel tired?","Do you often feel tired?","When you feel tired, do you still go out with your friends?"]},{"id":"pdf-p1-04","title":"Shoes","questions":["Which do you prefer, fashionable shoes or comfortable shoes?","How much money do you usually spend on shoes?","Have you ever bought shoes online?","Do you like buying shoes? How often?"]},{"id":"pdf-p1-05","title":"Politeness","questions":["What did you do to show your politeness as a child?","On what occasions should we be polite?","Do you think being polite is very important?","How did you learn to be polite as a child?"]},{"id":"pdf-p1-06","title":"Fruit and vegetables","questions":["Do people in your country like planting vegetables?","Were there any kind of fruits and vegetables you disliked as a child?","What kind of fruits and vegetables do you dislike?","Where do you usually buy fruit and vegetables?","How often do you eat fruit and vegetables?"]},{"id":"pdf-p1-07","title":"Advertisement","questions":["Do you often see advertisements when you are on your phone or computer?","What kind of advertising do you like?","Do you like advertisements?","Do you see a lot of advertising on trains or other transport?","Is there an advertisement that made an impression on you when you were a child?","Have you ever bought something because of an advertisement?"]},{"id":"pdf-p1-08","title":"Paper","questions":["Do you carry paper and pens with you when you go out?","Do people still keep handwritten letters today?","Do you still write physical letters?","What did you like to do with paper as a child?","Have you made any crafts with paper?"]},{"id":"pdf-p1-09","title":"Secondary school","questions":["Is there anything you miss about your secondary school?","What was your favourite subject at secondary school?","Were there any subjects that you found difficult at secondary school?","Do you remember your first day at secondary school?"]},{"id":"pdf-p1-10","title":"Name","questions":["Do you often forget people's names?","How do you feel when people can't remember your name?","How do you remember people's names?","Is it easy for you to remember people's names?"]},{"id":"pdf-p1-11","title":"Opportunities","questions":["Do you often get new opportunities?","Do you like taking on new opportunities?","Should people try as many different things as they can?","Did you have any opportunities to take part in new activities as a child?"]},{"id":"pdf-p1-12","title":"Music","questions":["Do you prefer sad or happy music?","Does happy music make you feel more excited?","Have you taken any music classes?","Do you listen to music while doing other things?"]},{"id":"pdf-p1-13","title":"Teachers","questions":["Do you have a favorite teacher?","Do you want to be a teacher in the future?","Do you have a teacher from your past that you still remember?","Are you still in touch with your primary school teachers?","In what way has your favourite teacher helped you?","Do you like your primary school teachers more than your high school teachers?"]},{"id":"pdf-p1-14","title":"Social media","questions":["Have you ever posted anything on social media?","When did you start using social media?","Do you think you spend too much time on social media?","Do your friends use social media?","What do people often do on social media?"]},{"id":"pdf-p1-15","title":"Tidiness","questions":["Do you like to keep things tidy?","Did you keep your room tidy as a child?","How do you keep your work or study space tidy?","Do you think that it is necessary to be tidy?","Do you think there are people who can always stay tidy?","What do you think of the people who are not very tidy?"]},{"id":"pdf-p1-16","title":"Websites","questions":["What kinds of websites do you often visit?","What is your favourite website?","Are there any changes to the websites you often visit?","What kinds of websites are popular in your country?","Do you prefer getting information from websites or books?","Would you like to have your own website?","What have you learned from websites that help with your life or studies?"]},{"id":"pdf-p1-17","title":"Watch","questions":["Do you wear a watch?","Have you ever got a watch as a gift?","Why do some people wear expensive watches?","Do you think it is important to wear a watch? Why?"]},{"id":"pdf-p1-18","title":"Shopping","questions":["Do you like shopping?","How often do you go shopping?","Do you prefer online shopping or in-store shopping?","Have you ever returned anything you bought online?"]},{"id":"pdf-p1-19","title":"Cars","questions":["Did you enjoy traveling by car when you were a kid?","What types of cars do you like?","Do you prefer to be a driver or a passenger?","What do you usually do when there is a traffic jam?","Do you think car colours are important?","Will you buy an expensive car in the future?"]},{"id":"pdf-p1-20","title":"Public gardens and parks","questions":["Did you like going to parks as a child?","Do you still like going to parks now?","Would you like to see more parks in your city?","Are there any parks you want to go to in the future?","Would you prefer to play in a personal garden or public garden?","How are the parks today different from those you visited as a kid?","What do you like to do when visiting a park?","Would you like to play in a public garden or park?"]},{"id":"pdf-p1-21","title":"Science","questions":["Do you like science?","When did you start to learn about science?","Which science subject is interesting to you?","What kinds of interesting things have you done with science?","Do you like watching science TV programs?","Do Chinese people often visit science museums?"]},{"id":"pdf-p1-22","title":"Mirrors","questions":["Do you like looking at yourself in the mirror? How often?","Have you ever bought mirrors?","Do you usually take a mirror with you?","Would you use mirrors to decorate your room?"]},{"id":"pdf-p1-23","title":"Outer space and stars","questions":["Have you ever learnt about outer space and stars?","Do you like science fiction movies? Why?","Do you want to know more about outer space?","Do you want to go into outer space in the future?"]},{"id":"pdf-p1-24","title":"Singing","questions":["Do you like singing? Why?","Have you ever learnt how to sing?","Who do you want to sing for?","Do you think singing can bring happiness to people?","Do you like listening to others singing?","Have you ever taken a singing class?"]},{"id":"pdf-p1-25","title":"Clothing","questions":["What kind of clothes do you like to wear?","Do you prefer to wear comfortable and casual clothes or smart clothes?","Do you like wearing T-shirts?","Do you spend a lot of time choosing clothes?","Do you wear different styles of clothes on weekdays and weekends?","What colour clothes do you like?"]},{"id":"pdf-p1-26","title":"Jokes & Comedies","questions":["Are you good at telling jokes?","Do your friends like to tell jokes?","Do you like to watch comedies?","Have you ever watched a live show?","Are comedy shows popular in your country?"]},{"id":"pdf-p1-27","title":"Headphones","questions":["Do you use headphones?","What type of headphones do you use?","When would you use headphones?","In what conditions would you not use headphones?","Is wearing headphones comfortable?"]},{"id":"pdf-p1-28","title":"Morning time","questions":["Do you spend your mornings doing the same things on both weekends and weekdays? Why?","Are there any differences between what you do in the morning now and what you did in the past?","What did you do in the morning when you were little? Why?","What do you usually do in the morning?","Do you like getting up early in the morning?"]},{"id":"pdf-p1-29","title":"Work or studies","questions":["What subjects are you studying?","Do you like your subject?","Why did you choose to study that subject?","Do you think that your subject is popular in your country?","Do you have any plans for your studies in the next five years?","What are the benefits of being your age?","Do you want to change your major?","Do you prefer to study in the mornings or in the afternoons?","How much time do you spend on your studies each week?","Are you looking forward to working?","What technology do you use when you study?","What changes would you like to see in your school?","What work do you do?","Why did you choose to do that type of work (or that job)?","Do you like your job?","What requirements did you need to meet to get your current job?","Do you have any plans for your work in the next five years?","What do you think is the most important at the moment?","Do you want to change to another job?","Do you miss being a student?","What technology do you use at work?","Who helps you the most? And how?"]},{"id":"pdf-p1-30","title":"Home/accommodation","questions":["What kind of house or apartment do you want to live in in the future?","Are the transport facilities to your home very good?","Do you prefer living in a house or an apartment?","Please describe the room you live in.","What part of your home do you like the most?","How long have you lived there?","Do you plan to live there for a long time?","What's the difference between where you are living now and where you have lived in the past?","Can you describe the place where you live?","What room does your family spend most of the time in?","What's your favorite room in your apartment or house?","What makes you feel pleasant in your home?","Do you think it is important to live in a comfortable environment?","Do you live in an apartment or a house?","Who do you live with?","What do you usually do in your apartment?","What kinds of accommodation do you live in?"]},{"id":"pdf-p1-31","title":"Hometown","questions":["Where is your hometown?","Is that a big city or a small place?","Please describe your hometown a little.","How long have you been living there?","Do you think you will continue living there for a long time?","Do you like your hometown?","Do you like living there?","What do you like (most) about your hometown?","Is there anything you dislike about it?","What's your hometown famous for?","Did you learn about the history of your hometown at school?","Are there many young people in your hometown?","Is your hometown a good place for young people to pursue their careers?","Have you learned anything about the history of your hometown?","Did you learn about the culture of your hometown in your childhood?"]},{"id":"pdf-p1-32","title":"The area you live in","questions":["Do you like the area that you live in?","Where do you like to go in that area?","Do you know any famous people in your area?","What are some changes in the area recently?","Do you know any of your neighbors?","Are the people in your neighborhood nice and friendly?","Do you live in a noisy or a quiet area?"]},{"id":"pdf-p1-33","title":"The city you live in","questions":["What city do you live in?","Do you like this city? Why?","How long have you lived in this city?","Are there big changes in this city?","Is this city your permanent residence?","Are there people of different ages living in this city?","Are the people friendly in the city?","Is the city friendly to children and old people?","Do you often see your neighbors?","What's the weather like where you live?","Would you recommend your city to others?"]},{"id":"pdf-p1-34","title":"Lost and found","questions":["Have you ever lost your keys?","Will you post on social media if you lose your item?","Have you ever lost things?","Do you report to the police when finding something lost by others? Why?","What will you do if you find something lost by others?"]},{"id":"pdf-p1-35","title":"Computers/tablets","questions":["Would you like to use a computer or tablet?","In what conditions would you use a computer or tablet?","When was the first time you used a computer or tablet?","What would your life be like without computers or tablets?","In what conditions would it be difficult for you to use a computer or tablet?"]},{"id":"pdf-p1-36","title":"Collecting things","questions":["Do you collect things?","Where do you usually keep things you need?","Would you keep old things for a long time? Why?","Are there any things you have kept from your childhood?"]},{"id":"pdf-p1-37","title":"Street market","questions":["Are there many street markets in China?","When was the last time you went to a street market?","Do you prefer to go shopping in the shopping mall or on the street market?","What do people usually buy on the street market?"]},{"id":"pdf-p1-38","title":"Feeling bored","questions":["Do you think childhood is boring or adulthood is boring?","What do you do when you feel bored?","When would you feel bored?","Do you often feel bored?"]},{"id":"pdf-p1-39","title":"Friends","questions":["Would you invite friends to your home?","Do you prefer to spend time with one friend or with a group of friends?","Do you have a friend you have known for a long time?","What do you usually do with your friends?","Where do you often meet each other?","Do you often go out with your friends?","How important are friends to you?","Why are some places suitable for meeting while others are not?","Is there a difference between where you meet friends now and where you used to meet them in the past?"]}];
+  const previousPalette = ['#4d8b7d','#9b79ad','#cb8967','#678db2','#8a9b64','#c27c96','#a78350','#6a9ca1','#c76e72','#737db2','#70a06e','#ae7da0','#d0a254','#5b9dbc','#947a68','#9a86bc','#bf7656','#708f9b','#7e9e88','#b89274'];
+  const zonePalette = ['#1557b0','#e36a13','#178a4c','#a53ac3','#c92a2a','#008a94','#d63384','#9c6a00','#5f3dc4','#d9480f','#4c9400','#c2255c','#087f5b','#1971c2','#7b4a12','#9b2c9b','#0c8599','#e8590c','#5c6b73','#a61e4d'];
+  const branchPalette = ['#1557b0','#e36a13','#a53ac3','#178a4c','#c92a2a','#008a94','#9c6a00','#d63384'];
+  const p1CategoryTopics = {
+    '人物与日常':['Tiredness','Politeness','Name','Tidiness','Morning time','Feeling bored','Friends','Lost and found','Rubbish and recycling','Fruit and vegetables'],
+    '家乡与地点':['Public gardens and parks','Home/accommodation','Hometown','The area you live in','The city you live in','Street market'],
+    '学习与工作':['Secondary school','Teachers','Science','Work or studies','Opportunities'],
+    '购物与物品':['Shoes','Paper','Watch','Shopping','Cars','Mirrors','Clothing','Collecting things'],
+    '兴趣与活动':['Travelling','Music','Singing','Jokes & Comedies','Outer space and stars'],
+    '科技与媒体':['Advertisement','Social media','Websites','Headphones','Computers/tablets']
+  };
+  const p1Categories=[...Object.keys(p1CategoryTopics),'未分类'];
+  const p1CategoryByTitle=new Map(Object.entries(p1CategoryTopics).flatMap(([category,names])=>names.map(name=>[name.toLowerCase(),category])));
+  const p1CategoryForTitle=title=>p1CategoryByTitle.get(String(title||'').trim().toLowerCase())||'未分类';
+  const markColors = ['#b42318','#1557b0','#147347','#7a3daf','#ad5b00'];
+  const validColor = (value,fallback) => /^#[0-9a-f]{6}$/i.test(String(value)) ? String(value) : fallback;
+  const updatedColor = (value,index) => {const color=String(value||'').toLowerCase(),oldIndex=previousPalette.indexOf(color);return oldIndex<0?validColor(color,zonePalette[index%zonePalette.length]):zonePalette[oldIndex];};
+  const storageKey = 'ielts-part2-material-board-v1';
+  const promptSeedKey = storageKey + '-2026-11-pdf-prompts-v2';
+  const sidebarKey = storageKey + '-theme-sidebar-collapsed';
+  const themeSortKey = storageKey + '-theme-sort';
+  const p1CollapseKey = storageKey + '-p1-category-collapsed';
+  const boardPanelKeys = {bank:storageKey+'-bank-collapsed',index:storageKey+'-zone-index-collapsed'};
+  const $ = id => document.getElementById(id);
+  const el = (tag,className,text) => {const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
+  let state = {groups:[],assignments:{},order:{},prompts:{},mastered:{},p1Topics:[],p1Mastered:{},p1Vocabulary:{},p1SeedVersion:0};
+  let activeP1TopicId='',p1Mode='practice';
+  let p1CollapsedCategories={};
+  try{const savedCollapsed=JSON.parse(localStorage.getItem(p1CollapseKey)||'{}');if(savedCollapsed&&typeof savedCollapsed==='object'&&!Array.isArray(savedCollapsed))p1CollapsedCategories=savedCollapsed;}catch{}
+  let categoryFilter = '全部';
+  let sidebarCollapsed=false;
+  try{sidebarCollapsed=localStorage.getItem(sidebarKey)==='1';}catch{}
+  let themeSort='original';
+  try{const savedSort=localStorage.getItem(themeSortKey);if(savedSort==='modified'||savedSort==='mastered')themeSort=savedSort;}catch{}
+  const boardPanelCollapsed={bank:false,index:false};
+  try{for(const kind of ['bank','index'])boardPanelCollapsed[kind]=localStorage.getItem(boardPanelKeys[kind])==='1';}catch{}
+  let toastTimer;
+  try {
+    const saved = JSON.parse(localStorage.getItem(storageKey) || 'null');
+    if(saved && Array.isArray(saved.groups) && saved.assignments && typeof saved.assignments==='object') {
+      state.groups = saved.groups.filter(g => g && typeof g.id==='string').map(normalizedGroup);
+      const groupIds = new Set(state.groups.map(g => g.id));
+      for(const [topicId,groupId] of Object.entries(saved.assignments)) if(topicById.has(topicId) && groupIds.has(groupId)) state.assignments[topicId]=groupId;
+      state.order=normalizedOrder(state.groups,state.assignments,saved.order);
+      state.prompts=normalizedPrompts(saved.prompts);
+      state.mastered=normalizedMastered(saved.mastered);
+      state.p1Topics=normalizedP1Topics(saved.p1Topics);
+      state.p1Mastered=normalizedP1Mastered(saved.p1Mastered);
+      state.p1Vocabulary=normalizedP1Vocabulary(saved.p1Vocabulary);
+      state.p1SeedVersion=saved.p1SeedVersion===1?1:0;
+      let regrouped=false;for(const group of state.groups)regrouped=regroupTopics(group.id)||regrouped;if(regrouped)save();
+    }
+  } catch { $('saveStatus').textContent='无法读取本地记录';$('detailSaveStatus').textContent='无法读取本地记录'; }
+  function save(){
+    try{localStorage.setItem(storageKey,JSON.stringify(state));$('saveStatus').textContent='已自动保存到当前浏览器';$('detailSaveStatus').textContent='已自动保存到当前浏览器';return true;}
+    catch{$('saveStatus').textContent='无法自动保存，请下载备份';$('detailSaveStatus').textContent='无法自动保存，请下载备份';return false;}
+  }
+  function setSidebarCollapsed(collapsed,persist=true){
+    sidebarCollapsed=collapsed;$('treeLayout').classList.toggle('sidebar-collapsed',collapsed);
+    const button=$('themeSidebarToggle'),label=collapsed?'展开大主题':'收起大主题';
+    button.querySelector('.theme-toggle-arrow').textContent=collapsed?'›':'‹';button.setAttribute('aria-label',label);button.setAttribute('aria-expanded',String(!collapsed));button.title=label;
+    if(persist)try{localStorage.setItem(sidebarKey,collapsed?'1':'0');}catch{}
+  }
+  function setBoardPanelCollapsed(kind,collapsed,persist=true){
+    boardPanelCollapsed[kind]=collapsed;
+    const panel=$(kind==='bank'?'bankPanel':'zoneIndexPanel'),button=$(kind==='bank'?'toggleBank':'toggleZoneIndex');
+    const title=kind==='bank'?'题目库':'素材区分类',label=(collapsed?'展开':'收起')+title;
+    panel.classList.toggle('is-collapsed',collapsed);button.textContent=collapsed?'⌄':'⌃';
+    button.setAttribute('aria-label',label);button.setAttribute('aria-expanded',String(!collapsed));button.title=label;
+    if(persist)try{localStorage.setItem(boardPanelKeys[kind],collapsed?'1':'0');}catch{}
+  }
+  function seedPdfPrompts(){
+    try{
+      if(localStorage.getItem(promptSeedKey)==='1')return;
+      for(const [id,prompt] of Object.entries(pdfPromptSeed))if(!state.prompts[id]?.trim())state.prompts[id]=prompt;
+      if(save())localStorage.setItem(promptSeedKey,'1');
+    }catch{for(const [id,prompt] of Object.entries(pdfPromptSeed))if(!state.prompts[id]?.trim())state.prompts[id]=prompt;}
+  }
+  function seedP1Questions(){
+    if(state.p1SeedVersion===1)return;
+    const comparable=value=>value.trim().toLowerCase().replace(/\s+/g,' ');
+    for(const seed of p1PdfSeed){
+      if(state.p1Topics.some(topic=>topic.id===seed.id))continue;
+      const existing=state.p1Topics.find(topic=>comparable(topic.title)===comparable(seed.title));
+      if(!existing){state.p1Topics.push({id:seed.id,title:seed.title,questions:seed.questions.join('\n'),category:p1CategoryForTitle(seed.title)});continue;}
+      const seen=new Set(p1QuestionLines(existing).map(comparable)),missing=seed.questions.filter(question=>!seen.has(comparable(question)));
+      if(missing.length)existing.questions=existing.questions.trimEnd()+(existing.questions.trim()?'\n':'')+missing.join('\n');
+    }
+    state.p1SeedVersion=1;save();
+  }
+  function toast(message){const node=$('toast');node.textContent=message;node.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>node.classList.remove('show'),2600);}
+  function groupName(id){const group=state.groups.find(g=>g.id===id);return group ? (group.title.trim()||'未命名素材') : '';}
+  function groupColor(id){return state.groups.find(g=>g.id===id)?.color||zonePalette[0];}
+  function normalizedQuestionNotes(raw){
+    const result={};
+    if(raw&&typeof raw==='object'&&!Array.isArray(raw))for(const [id,value] of Object.entries(raw))if(topicById.has(id)&&(typeof value==='string'||value&&typeof value==='object'&&!Array.isArray(value)))result[id]=normalizedQuestionNote(value);
+    return result;
+  }
+  function normalizedPrompts(raw){
+    const result={};if(raw&&typeof raw==='object'&&!Array.isArray(raw))for(const [id,value] of Object.entries(raw))if(topicById.has(id)&&typeof value==='string')result[id]=value;
+    return result;
+  }
+  function promptsWithOriginalQuestions(raw){
+    const result=normalizedPrompts(raw);
+    for(const [id,prompt] of Object.entries(pdfPromptSeed))if(!result[id]?.trim())result[id]=state.prompts[id]?.trim()?state.prompts[id]:prompt;
+    return result;
+  }
+  function normalizedMastered(raw){
+    const result={};if(raw&&typeof raw==='object'&&!Array.isArray(raw))for(const [id,value] of Object.entries(raw))if(topicById.has(id)&&value===true)result[id]=true;
+    return result;
+  }
+  function normalizedP1Topics(raw){
+    if(!Array.isArray(raw))return [];
+    const seen=new Set();return raw.filter(item=>item&&typeof item==='object').map(item=>({id:typeof item.id==='string'?item.id:'',title:typeof item.title==='string'?item.title.slice(0,100):'',questions:typeof item.questions==='string'?item.questions.slice(0,100000):'',category:p1Categories.includes(item.category)?item.category:p1CategoryForTitle(item.title)})).filter(item=>{if(!item.id||seen.has(item.id))return false;seen.add(item.id);return true;});
+  }
+  function normalizedP1Mastered(raw){
+    const result={};if(raw&&typeof raw==='object'&&!Array.isArray(raw))for(const [key,value] of Object.entries(raw))if(value===true&&key.length<1000)result[key]=true;
+    return result;
+  }
+  function normalizedP1Vocabulary(raw){
+    const result={};if(raw&&typeof raw==='object'&&!Array.isArray(raw))for(const [key,value] of Object.entries(raw))if(typeof value==='string'&&value&&key.length<1000)result[key]=value.slice(0,2000);
+    return result;
+  }
+  function normalizedQuestionNote(value){
+    if(value&&typeof value==='object'&&!Array.isArray(value))return {opening:typeof value.opening==='string'?value.opening:'',ending:typeof value.ending==='string'?value.ending:'',standalone:value.standalone===true,draft:typeof value.draft==='string'?value.draft:'',middle:typeof value.middle==='string'?value.middle:'',middleEnabled:typeof value.middleEnabled==='boolean'?value.middleEnabled:Boolean(value.middle),middlePosition:['afterOpening','afterCommon','afterBranch','beforeEnding'].includes(value.middlePosition)?value.middlePosition:'afterBranch'};
+    const original=typeof value==='string'?value:'';
+    const endingMark=/(?:^|\r?\n)[ \t]*(?:结尾|ending)[ \t]*[:：][ \t]*/i.exec(original);
+    const first=endingMark?original.slice(0,endingMark.index):original;
+    const last=endingMark?original.slice(endingMark.index+endingMark[0].length):'';
+    return {opening:first.trim().replace(/^(?:开头|opening)[ \t]*[:：][ \t]*/i,'').trim(),ending:last.trim()};
+  }
+  function hasQuestionNote(value){return Boolean(value?.standalone?value?.draft?.trim():value?.opening?.trim()||(value?.middleEnabled&&value?.middle?.trim())||value?.ending?.trim());}
+  function normalizedGroup(g,index){
+    const branches=[],seen=new Set();
+    if(Array.isArray(g.branches))for(const item of g.branches){
+      if(!item||typeof item.id!=='string'||!item.id||seen.has(item.id))continue;
+      branches.push({id:item.id,title:String(item.title||''),content:String(item.content||''),position:item.position==='before'?'before':'after'});seen.add(item.id);
+    }
+    const topicBranches={};
+    if(g.topicBranches&&typeof g.topicBranches==='object'&&!Array.isArray(g.topicBranches))for(const [id,branchId] of Object.entries(g.topicBranches))if(topicById.has(id)&&seen.has(branchId))topicBranches[id]=branchId;
+    const extraCommon=g.extraCommon&&typeof g.extraCommon==='object'&&!Array.isArray(g.extraCommon)?{content:String(g.extraCommon.content||''),scope:seen.has(g.extraCommon.scope)?g.extraCommon.scope:'all'}:null;
+    const group={id:String(g.id),title:String(g.title||''),note:String(g.note||''),content:String(g.content||''),extraCommon,questionNotes:normalizedQuestionNotes(g.questionNotes),branches,topicBranches,color:updatedColor(g.color,index),noteCollapsed:g.noteCollapsed===true,annotations:{}};
+    group.annotations=normalizedAnnotations(g.annotations,group);return group;
+  }
+  function slotText(group,slot){
+    if(slot==='common')return group.content;
+    if(slot==='extraCommon')return group.extraCommon?.content;
+    if(slot.startsWith('branch:'))return group.branches.find(branch=>branch.id===slot.slice(7))?.content;
+    const match=/^(opening|middle|ending|draft):(t\d+)$/.exec(slot);
+    return match&&topicById.has(match[2])?(group.questionNotes[match[2]]?.[match[1]]||''):undefined;
+  }
+  function normalizedAnnotations(raw,group){
+    const result={};if(!raw||typeof raw!=='object'||Array.isArray(raw))return result;
+    for(const [slot,items] of Object.entries(raw)){
+      const value=slotText(group,slot);if(typeof value!=='string'||!Array.isArray(items))continue;
+      const clean=[];
+      for(const item of items){
+        if(!item||!['bold','underline','color','note'].includes(item.type))continue;
+        const start=Number(item.start),end=Number(item.end);
+        if(!Number.isInteger(start)||!Number.isInteger(end)||start<0||end<=start||end>value.length)continue;
+        const mark={id:typeof item.id==='string'&&item.id?item.id:makeId(),type:item.type,start,end};
+        if(item.type==='color'){if(!markColors.includes(item.value))continue;mark.value=item.value;}
+        if(item.type==='note')mark.value=String(item.value||'').slice(0,3000);
+        clean.push(mark);
+      }
+      if(clean.length)result[slot]=clean;
+    }
+    return result;
+  }
+  function makeId(){return crypto.randomUUID?crypto.randomUUID():Date.now()+'-'+Math.random().toString(36).slice(2);}
+  function marksFor(group,slot){return group.annotations[slot]||(group.annotations[slot]=[]);}
+  function normalizedOrder(groups,assignments,stored){
+    const result={};
+    for(const group of groups){
+      const order=[],seen=new Set(),saved=Array.isArray(stored?.[group.id])?stored[group.id]:[];
+      for(const id of saved)if(topicById.has(id)&&assignments[id]===group.id&&!seen.has(id)){order.push(id);seen.add(id);}
+      for(const topic of topics)if(assignments[topic.id]===group.id&&!seen.has(topic.id))order.push(topic.id);
+      result[group.id]=order;
+    }
+    return result;
+  }
+  function orderedTopics(groupId){return (state.order[groupId]||[]).map(id=>topicById.get(id)).filter(Boolean);}
+  function topicBranchId(group,topicId){return group.questionNotes[topicId]?.standalone?'':group.branches.some(branch=>branch.id===group.topicBranches[topicId])?group.topicBranches[topicId]:'';}
+  function regroupTopics(groupId){
+    const group=state.groups.find(item=>item.id===groupId),order=state.order[groupId];if(!group||!order?.length||!group.branches.length)return false;
+    const buckets=new Map(group.branches.map(branch=>[branch.id,[]])),unbranched=[];
+    for(const id of order){const bucket=buckets.get(topicBranchId(group,id));if(bucket)bucket.push(id);else unbranched.push(id);}
+    const grouped=[...buckets.values()].flat().concat(unbranched);
+    if(grouped.every((id,index)=>id===order[index]))return false;
+    state.order[groupId]=grouped;return true;
+  }
+  function updateProgress(){const count=Object.keys(state.assignments).length;$('assignedCount').textContent=count;$('totalCount').textContent=topics.length;$('progressFill').style.width=(count/topics.length*100)+'%';}
+  function renderFilters(){
+    const holder=$('filters');holder.replaceChildren();
+    for(const name of ['全部',...categories]){
+      const button=el('button','filter'+(categoryFilter===name?' active':''),name);
+      button.type='button';button.setAttribute('aria-pressed',String(categoryFilter===name));
+      button.addEventListener('click',()=>{categoryFilter=name;renderFilters();renderBank();});holder.append(button);
+    }
+  }
+  function createBankCard(topic){
+    const card=el('div','topic'+(state.assignments[topic.id]?' assigned':''));card.draggable=true;card.dataset.topicId=topic.id;
+    if(state.assignments[topic.id])card.style.setProperty('--zone-accent',groupColor(state.assignments[topic.id]));
+    const main=el('div','topic-main');main.append(el('div','topic-name',topic.name));
+    const meta=el('div','topic-meta',state.assignments[topic.id] ? '已归入：'+groupName(state.assignments[topic.id]) : '尚未串题');main.append(meta);card.append(main);
+    const select=el('select');select.setAttribute('aria-label','将“'+topic.name+'”移至素材区');select.dataset.topicId=topic.id;
+    const empty=el('option','',state.groups.length?'未串题':'先建素材区');empty.value='';select.append(empty);
+    for(const group of state.groups){const option=el('option','',groupName(group.id));option.value=group.id;select.append(option);}
+    select.value=state.assignments[topic.id]||'';select.disabled=state.groups.length===0;
+    select.addEventListener('change',()=>assign(topic.id,select.value));card.append(select);return card;
+  }
+  function renderBank(){
+    const list=$('topicList'), oldScroll=list.scrollTop, query=$('search').value.trim().toLocaleLowerCase(), unassigned=$('unassignedOnly').checked;
+    const filtered=topics.filter(t=>(categoryFilter==='全部'||t.category===categoryFilter)&&(!unassigned||!state.assignments[t.id])&&(!query||t.name.toLocaleLowerCase().includes(query)));
+    $('visibleCount').textContent='显示 '+filtered.length+' / '+topics.length;
+    const fragment=document.createDocumentFragment();
+    for(const category of categories){
+      const matches=filtered.filter(t=>t.category===category);if(!matches.length)continue;
+      fragment.append(el('div','category-title',category+' · '+matches.length));
+      for(const topic of matches)fragment.append(createBankCard(topic));
+    }
+    if(!filtered.length)fragment.append(el('div','empty-list','没有符合条件的题目。试试其他关键词或筛选条件。'));
+    list.replaceChildren(fragment);list.scrollTop=oldScroll;
+  }
+  function renderZoneIndex(){
+    const list=$('zoneIndexList');list.replaceChildren();
+    if(!state.groups.length){list.append(el('div','zone-index-empty','还没有素材区。'));return;}
+    for(const [index,group] of state.groups.entries()){
+      const row=el('div','zone-index-row');row.dataset.groupId=group.id;
+      const handle=el('button','zone-index-handle','⋮⋮');handle.type='button';handle.draggable=true;handle.title='拖动调整素材区顺序';handle.setAttribute('aria-label','拖动“'+groupName(group.id)+'”调整顺序');
+      handle.addEventListener('dragstart',event=>{draggingGroupId=group.id;event.dataTransfer.effectAllowed='move';event.dataTransfer.setData('application/x-ielts-zone',group.id);event.dataTransfer.setData('text/plain',group.id);requestAnimationFrame(()=>row.classList.add('dragging'));});
+      const item=el('button','zone-index-item');item.type='button';item.dataset.groupId=group.id;
+      item.style.setProperty('--zone-accent',group.color);item.setAttribute('aria-label','跳到“'+groupName(group.id)+'”素材区');
+      item.append(el('span','zone-index-number',String(index+1).padStart(2,'0')),el('span','zone-index-name',groupName(group.id)),el('span','zone-index-count',orderedTopics(group.id).length+'题'));
+      item.addEventListener('click',()=>{
+        const zone=[...$('zones').querySelectorAll('.zone')].find(node=>node.dataset.groupId===group.id);
+        if(!zone)return;zone.scrollIntoView({behavior:'smooth',block:'center'});zone.classList.add('zone-located');setTimeout(()=>zone.classList.remove('zone-located'),1500);
+      });row.append(handle,item);
+      for(const [direction,label] of [[-1,'↑'],[1,'↓']]){
+        const button=el('button','zone-index-order',label);button.type='button';button.disabled=direction<0?index===0:index===state.groups.length-1;
+        button.setAttribute('aria-label','将“'+groupName(group.id)+'”'+(direction<0?'上移':'下移'));
+        button.addEventListener('click',()=>moveGroupBy(group.id,direction,'left'));row.append(button);
+      }
+      list.append(row);
+    }
+  }
+  function createZone(group,index){
+    const zone=el('article','zone'+(group.noteCollapsed?' note-collapsed':''));zone.dataset.groupId=group.id;zone.style.setProperty('--zone-accent',group.color);
+    const head=el('div','zone-head');
+    const handle=el('button','zone-handle','⋮⋮');handle.type='button';handle.draggable=true;handle.title='拖动调整素材区顺序；也可按上下方向键';handle.setAttribute('aria-label','调整“'+groupName(group.id)+'”的顺序');
+    handle.addEventListener('dragstart',event=>{draggingGroupId=group.id;event.dataTransfer.effectAllowed='move';event.dataTransfer.setData('application/x-ielts-zone',group.id);event.dataTransfer.setData('text/plain',group.id);requestAnimationFrame(()=>zone.classList.add('group-dragging'));});
+    handle.addEventListener('keydown',event=>{if(event.key==='ArrowUp'||event.key==='ArrowDown'){event.preventDefault();moveGroupBy(group.id,event.key==='ArrowUp'?-1:1);}});head.append(handle);
+    head.append(el('div','zone-number',String(index+1).padStart(2,'0')));
+    const title=el('input','zone-title');title.type='text';title.placeholder='给这个素材起个名字';title.maxLength=80;title.value=group.title;title.setAttribute('aria-label','素材区名称');
+    title.addEventListener('input',()=>{group.title=title.value;save();renderBank();renderZoneIndex();});head.append(title);
+    const picker=el('details','zone-palette'),trigger=el('summary','zone-color-trigger'),dot=el('span','color-dot'),menu=el('div','zone-palette-menu');
+    trigger.title='从 20 种颜色中选择';trigger.setAttribute('aria-label','选择“'+groupName(group.id)+'”的颜色');dot.style.setProperty('--chosen-color',group.color);trigger.append(dot);picker.append(trigger);
+    menu.setAttribute('role','group');menu.setAttribute('aria-label','20 种固定颜色');
+    zonePalette.forEach((hex,paletteIndex)=>{
+      const choice=el('button','palette-choice'+(group.color===hex?' selected':''));choice.type='button';choice.style.setProperty('--choice-color',hex);choice.title='颜色 '+(paletteIndex+1);choice.setAttribute('aria-label','选择第 '+(paletteIndex+1)+' 种颜色');choice.setAttribute('aria-pressed',String(group.color===hex));
+      choice.addEventListener('click',()=>{group.color=hex;zone.style.setProperty('--zone-accent',hex);dot.style.setProperty('--chosen-color',hex);menu.querySelectorAll('.palette-choice').forEach(button=>{const selected=button===choice;button.classList.toggle('selected',selected);button.setAttribute('aria-pressed',String(selected));});save();renderBank();renderZoneIndex();picker.open=false;});menu.append(choice);
+    });picker.append(menu);head.append(picker);
+    const remove=el('button','zone-delete','×');remove.type='button';remove.title='删除素材区';remove.setAttribute('aria-label','删除素材区 '+groupName(group.id));
+    remove.addEventListener('click',()=>deleteGroup(group.id));head.append(remove);zone.append(head);
+    const body=el('div','zone-body');
+    const toggle=el('button','zone-caption note-toggle');toggle.type='button';toggle.setAttribute('aria-expanded',String(!group.noteCollapsed));toggle.setAttribute('aria-label',(group.noteCollapsed?'展开':'收起')+'“'+groupName(group.id)+'”的情况描述');
+    toggle.append(el('span','','情况描述'),el('span','toggle-hint',group.noteCollapsed?'展开 ▾':'收起 ▴'));
+    toggle.addEventListener('click',()=>{group.noteCollapsed=!group.noteCollapsed;save();renderZones();const updated=[...$('zones').querySelectorAll('.zone')].find(node=>node.dataset.groupId===group.id);updated?.querySelector('.note-toggle')?.focus({preventScroll:true});});body.append(toggle);
+    const note=el('textarea');note.placeholder='例如：和朋友一起准备生日蛋糕，过程中遇到一点困难，最后成功了……';note.value=group.note;note.hidden=group.noteCollapsed;note.setAttribute('aria-label',groupName(group.id)+'的情况描述');
+    note.addEventListener('input',()=>{group.note=note.value;save();});body.append(note);
+    const assigned=orderedTopics(group.id),toolsRow=el('div','zone-tools');
+    toolsRow.append(el('div','zone-count','已放入 '+assigned.length+' 道题'));
+    const detailLink=el('button','detail-link',group.content.trim()||Object.values(group.questionNotes).some(hasQuestionNote)?'继续写内容 →':'写具体内容 →');detailLink.type='button';detailLink.setAttribute('aria-label','打开“'+groupName(group.id)+'”的内容页');detailLink.addEventListener('click',()=>openDetail(group.id));toolsRow.append(detailLink);body.append(toolsRow);
+    const topicList=el('div','zone-topic-list');
+    if(!assigned.length)topicList.append(el('div','drop-hint','把题目拖到这里，或在左侧选择此素材区'));
+    for(const [index,topic] of assigned.entries()){
+      const item=el('div','zone-topic');item.draggable=true;item.dataset.topicId=topic.id;
+      item.append(el('span','',topic.name));
+      for(const [symbol,direction] of [['↑',-1],['↓',1]]){
+        const neighbor=assigned[index+direction],disabled=!neighbor||topicBranchId(group,topic.id)!==topicBranchId(group,neighbor.id);
+        const move=el('button','order-button',symbol);move.type='button';move.disabled=disabled;move.title=direction<0?'上移':'下移';move.setAttribute('aria-label','将“'+topic.name+'”'+(direction<0?'上移':'下移'));
+        move.addEventListener('click',()=>moveWithinGroup(group.id,topic.id,direction));item.append(move);
+      }
+      const unassign=el('button','','×');unassign.type='button';unassign.title='移回未串题';unassign.setAttribute('aria-label','将“'+topic.name+'”移回未串题');
+      unassign.addEventListener('click',()=>assign(topic.id,''));item.append(unassign);topicList.append(item);
+    }
+    body.append(topicList);zone.append(body);return zone;
+  }
+  function renderZones(){
+    renderZoneIndex();
+    const holder=$('zones');holder.replaceChildren();holder.style.gridTemplateColumns='';
+    if(!state.groups.length){
+      const empty=el('div','empty-zones');empty.append(el('strong','','从一个素材开始'));
+      empty.append(el('p','','先新建素材区，写下大概的故事或经历，再把能共用它的题目放进来。'));
+      const button=el('button','button primary','＋ 新增第一个素材区');button.type='button';button.addEventListener('click',addGroup);empty.append(button);holder.append(empty);return;
+    }
+    const columnCount=Math.min(state.groups.length,Math.max(1,Math.floor((holder.clientWidth+16)/336)));
+    holder.style.gridTemplateColumns='repeat('+columnCount+',minmax(0,1fr))';
+    const columns=Array.from({length:columnCount},()=>el('div','zone-column'));
+    holder.append(...columns);
+    const heights=columns.map(()=>0);
+    state.groups.forEach((group,index)=>{
+      let target=0;
+      for(let i=1;i<heights.length;i++)if(heights[i]<heights[target])target=i;
+      const zone=createZone(group,index);columns[target].append(zone);
+      heights[target]+=zone.getBoundingClientRect().height+16;
+    });
+  }
+  function render(){renderFilters();renderBank();renderZones();updateProgress();}
+  function p1QuestionLines(topic){return topic.questions.split(/\r?\n/).map(line=>line.trim()).filter(Boolean);}
+  function p1QuestionKey(topic,question){return topic.id+'\u001f'+question.trim().replace(/\s+/g,' ').toLowerCase();}
+  function p1TopicProgress(topic){const questions=p1QuestionLines(topic);return {total:questions.length,done:questions.filter(question=>state.p1Mastered[p1QuestionKey(topic,question)]).length};}
+  function p1TopicCategory(topic){return p1Categories.includes(topic.category)?topic.category:p1CategoryForTitle(topic.title);}
+  function saveP1Collapsed(){try{localStorage.setItem(p1CollapseKey,JSON.stringify(p1CollapsedCategories));}catch{}}
+  function renderP1Topics(){
+    const list=$('p1TopicList'),scrollTop=list.scrollTop;list.replaceChildren();
+    if(!state.p1Topics.length){list.append(el('div','p1-empty','还没有话题，先点“新增话题”。'));return;}
+    for(const category of p1Categories){
+      const topicsInCategory=state.p1Topics.filter(topic=>p1TopicCategory(topic)===category);if(!topicsInCategory.length)continue;
+      const total=topicsInCategory.reduce((sum,topic)=>sum+p1TopicProgress(topic).total,0),done=topicsInCategory.reduce((sum,topic)=>sum+p1TopicProgress(topic).done,0);
+      const section=el('details','p1-category');section.dataset.category=category;
+      section.open=p1CollapsedCategories[category]===false||(p1CollapsedCategories[category]===undefined&&topicsInCategory.some(topic=>topic.id===activeP1TopicId));
+      const heading=el('summary');heading.style.setProperty('--p1-progress',total?(done/total*100)+'%':'0%');heading.append(el('span','',category),el('small','','已掌握 '+done+'/'+total));
+      heading.addEventListener('click',()=>{p1CollapsedCategories[category]=section.open;saveP1Collapsed();});section.append(heading);
+      const body=el('div','p1-category-topics');
+      for(const topic of topicsInCategory){
+        const progress=p1TopicProgress(topic),button=el('button','p1-topic-button'+(topic.id===activeP1TopicId?' active':''));button.type='button';button.dataset.p1TopicId=topic.id;
+        button.style.setProperty('--p1-progress',progress.total?(progress.done/progress.total*100)+'%':'0%');
+        button.append(document.createTextNode(topic.title.trim()||'未命名话题'),el('small','','已掌握 '+progress.done+'/'+progress.total));
+        button.addEventListener('click',()=>{activeP1TopicId=topic.id;p1Mode='practice';renderP1();});body.append(button);
+      }
+      section.append(body);list.append(section);
+    }
+    list.scrollTop=scrollTop;
+  }
+  function renderP1(){
+    if(!state.p1Topics.some(topic=>topic.id===activeP1TopicId))activeP1TopicId=state.p1Topics[0]?.id||'';
+    renderP1Topics();const main=$('p1Main');main.replaceChildren();
+    const topic=state.p1Topics.find(item=>item.id===activeP1TopicId);
+    if(!topic){main.append(el('div','p1-empty','新增一个话题，再把问题按“一行一道题”粘贴进去。'));return;}
+    const header=el('div','p1-main-head'),copy=el('div'),mode=el('div','p1-mode');mode.setAttribute('role','group');mode.setAttribute('aria-label','Part 1 模式');
+    const progress=p1TopicProgress(topic);
+    copy.append(el('h2','',topic.title.trim()||'未命名话题'),el('p','',progress.total+' 道题 · 已掌握 '+progress.done+'/'+progress.total+' · '+(p1Mode==='practice'?'只看题目，直接练习':'一行一道题，自动保存')));
+    for(const [value,label] of [['practice','练习'],['edit','编辑题目']]){const button=el('button',p1Mode===value?'active':'',label);button.type='button';button.dataset.p1Mode=value;button.setAttribute('aria-pressed',String(p1Mode===value));button.addEventListener('click',()=>{p1Mode=value;renderP1();});mode.append(button);}
+    header.append(copy,mode);main.append(header);
+    if(p1Mode==='practice'){
+      const questions=p1QuestionLines(topic);if(!questions.length){main.append(el('div','p1-empty','这个话题还没有题目。点“编辑题目”，把问题粘贴进去。'));return;}
+      const list=el('div','p1-question-list');
+      questions.forEach((question,index)=>{
+        const key=p1QuestionKey(topic,question),card=el('div','p1-question'+(state.p1Mastered[key]?' mastered':'')),label=el('label','p1-question-check'),check=el('input');check.type='checkbox';check.checked=state.p1Mastered[key]===true;check.setAttribute('aria-label','第 '+(index+1)+' 题已掌握');
+        check.addEventListener('change',()=>{if(check.checked)state.p1Mastered[key]=true;else delete state.p1Mastered[key];card.classList.toggle('mastered',check.checked);save();renderP1Topics();const progress=p1TopicProgress(topic);copy.querySelector('p').textContent=progress.total+' 道题 · 已掌握 '+progress.done+'/'+progress.total+' · 只看题目，直接练习';});label.append(check);
+        const textButton=el('button','p1-question-text');textButton.type='button';textButton.setAttribute('aria-label','第 '+(index+1)+' 题：'+question);textButton.append(el('small','','第 '+(index+1)+' 题'),document.createTextNode(question));textButton.addEventListener('click',()=>{for(const item of list.children)item.classList.remove('current');card.classList.add('current');});
+        const vocabulary=el('input','p1-question-vocab');vocabulary.type='text';vocabulary.maxLength=2000;vocabulary.placeholder='词汇、短语…';vocabulary.value=state.p1Vocabulary[key]||'';vocabulary.setAttribute('aria-label','第 '+(index+1)+' 题的词汇提示');
+        vocabulary.addEventListener('input',()=>{if(vocabulary.value)state.p1Vocabulary[key]=vocabulary.value;else delete state.p1Vocabulary[key];save();});
+        card.append(label,textButton,vocabulary);list.append(card);
+      });
+      main.append(list);return;
+    }
+    const edit=el('div','p1-edit'),titleLabel=el('label','','话题名称'),title=el('input');title.type='text';title.maxLength=100;title.value=topic.title;title.placeholder='例如：家乡、学习、购物';title.setAttribute('aria-label','Part 1 话题名称');
+    title.addEventListener('input',()=>{topic.title=title.value;save();renderP1Topics();header.querySelector('h2').textContent=title.value.trim()||'未命名话题';});titleLabel.append(title);
+    const categoryLabel=el('label','','粗分类'),categorySelect=el('select');categorySelect.setAttribute('aria-label','Part 1 话题分类');
+    for(const category of p1Categories){const option=el('option','',category);option.value=category;categorySelect.append(option);}categorySelect.value=p1TopicCategory(topic);
+    categorySelect.addEventListener('change',()=>{topic.category=categorySelect.value;p1CollapsedCategories[topic.category]=false;saveP1Collapsed();save();renderP1Topics();});categoryLabel.append(categorySelect);
+    const questionLabel=el('label','','题目（一行一道）'),questions=el('textarea');questions.value=topic.questions;questions.placeholder='Do you like your hometown?\nWhat do you like most about it?';questions.setAttribute('aria-label','Part 1 题目，一行一道');
+    questions.addEventListener('input',()=>{topic.questions=questions.value;save();renderP1Topics();const progress=p1TopicProgress(topic);header.querySelector('p').textContent=progress.total+' 道题 · 已掌握 '+progress.done+'/'+progress.total+' · 一行一道题，自动保存';});questionLabel.append(questions,el('small','','可以一次粘贴多道题；空行会自动忽略。'));
+    const actions=el('div','p1-edit-actions'),remove=el('button','button small danger','删除这个话题');remove.type='button';remove.addEventListener('click',()=>{if(!confirm('删除“'+(topic.title.trim()||'未命名话题')+'”及其全部题目？'))return;state.p1Topics=state.p1Topics.filter(item=>item.id!==topic.id);for(const key of Object.keys(state.p1Mastered))if(key.startsWith(topic.id+'\u001f'))delete state.p1Mastered[key];for(const key of Object.keys(state.p1Vocabulary))if(key.startsWith(topic.id+'\u001f'))delete state.p1Vocabulary[key];activeP1TopicId=state.p1Topics[0]?.id||'';p1Mode='practice';save();renderP1();});actions.append(remove);
+    edit.append(titleLabel,categoryLabel,questionLabel,actions);main.append(edit);
+  }
+  let boardScrollY=0,currentDetailId='',activeTopicId='',detailMode='practice',selectedMark=null,noteDraft=null;
+  const prepDuration=60000,speakDuration=120000;
+  let practiceTimer={themeId:'',phase:'prep',remainingMs:prepDuration,deadline:0,running:false,intervalId:null};
+  function timerText(ms){const seconds=Math.ceil(Math.max(0,ms)/1000);return String(Math.floor(seconds/60)).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0');}
+  function updatePracticeTimer(){
+    $('practiceTimer').dataset.phase=practiceTimer.phase;
+    $('timerPhase').textContent=practiceTimer.phase==='prep'?'准备时间':practiceTimer.phase==='speak'?'作答时间':'时间到';
+    $('timerTime').textContent=timerText(practiceTimer.remainingMs);
+    $('timerToggle').textContent=practiceTimer.running?'暂停':practiceTimer.phase==='done'?'重新开始':practiceTimer.remainingMs<(practiceTimer.phase==='prep'?prepDuration:speakDuration)?'继续':'开始';
+    $('timerSkip').hidden=practiceTimer.phase!=='prep';
+  }
+  function resetPracticeTimer(themeId=''){
+    if(practiceTimer.intervalId)clearInterval(practiceTimer.intervalId);
+    practiceTimer={themeId,phase:'prep',remainingMs:prepDuration,deadline:0,running:false,intervalId:null};
+    updatePracticeTimer();
+  }
+  function tickPracticeTimer(){
+    if(!practiceTimer.running)return;
+    const now=Date.now();
+    if(practiceTimer.phase==='prep'&&now>=practiceTimer.deadline){practiceTimer.phase='speak';practiceTimer.deadline+=speakDuration;}
+    if(practiceTimer.phase==='speak'&&now>=practiceTimer.deadline){
+      practiceTimer.phase='done';practiceTimer.remainingMs=0;practiceTimer.running=false;
+      clearInterval(practiceTimer.intervalId);practiceTimer.intervalId=null;
+    }else practiceTimer.remainingMs=Math.max(0,practiceTimer.deadline-now);
+    updatePracticeTimer();
+  }
+  function togglePracticeTimer(){
+    if(practiceTimer.running){
+      tickPracticeTimer();if(!practiceTimer.running)return;
+      practiceTimer.remainingMs=Math.max(0,practiceTimer.deadline-Date.now());
+      practiceTimer.running=false;clearInterval(practiceTimer.intervalId);practiceTimer.intervalId=null;
+    }else{
+      if(practiceTimer.phase==='done')resetPracticeTimer(practiceTimer.themeId);
+      practiceTimer.deadline=Date.now()+practiceTimer.remainingMs;
+      practiceTimer.running=true;practiceTimer.intervalId=setInterval(tickPracticeTimer,200);
+    }
+    updatePracticeTimer();
+  }
+  function skipPreparation(){
+    if(practiceTimer.intervalId)clearInterval(practiceTimer.intervalId);
+    practiceTimer.phase='speak';practiceTimer.remainingMs=speakDuration;
+    practiceTimer.deadline=Date.now()+speakDuration;practiceTimer.running=true;
+    practiceTimer.intervalId=setInterval(tickPracticeTimer,200);updatePracticeTimer();
+  }
+  function openDetail(groupId){
+    if(!state.groups.some(group=>group.id===groupId))return;
+    if(!$('boardView').hidden)boardScrollY=window.scrollY;
+    location.hash='material='+encodeURIComponent(groupId);syncView();
+  }
+  function updateMarkToolbar(){
+    $('editControlRow').hidden=detailMode!=='edit';
+    $('annotationToolbar').hidden=detailMode!=='edit';
+    $('annotationHelp').textContent=selectedMark?'已选中：'+selectedMark.quote.slice(0,35)+(selectedMark.quote.length>35?'…':''):'选中下面输入框中的文字，再点标注';
+    for(const button of $('annotationToolbar').querySelectorAll('[data-mark-action]'))button.disabled=!selectedMark;
+  }
+  function captureMarkSelection(field,group,slot){
+    if(detailMode!=='edit')return;
+    const start=field.selectionStart,end=field.selectionEnd;
+    selectedMark=end>start?{groupId:group.id,slot,start,end,quote:field.value.slice(start,end)}:null;
+    updateMarkToolbar();
+  }
+  function shiftMarks(group,slot,oldText,newText){
+    const marks=marksFor(group,slot);if(!marks.length||oldText===newText)return;
+    let prefix=0;while(prefix<oldText.length&&prefix<newText.length&&oldText[prefix]===newText[prefix])prefix++;
+    let suffix=0;while(suffix<oldText.length-prefix&&suffix<newText.length-prefix&&oldText[oldText.length-1-suffix]===newText[newText.length-1-suffix])suffix++;
+    const oldEnd=oldText.length-suffix,newEnd=newText.length-suffix,delta=newText.length-oldText.length;
+    const mapStart=position=>position<=prefix?position:position>=oldEnd?position+delta:prefix;
+    const mapEnd=position=>position<=prefix?position:position>=oldEnd?position+delta:newEnd;
+    group.annotations[slot]=marks.map(mark=>({...mark,start:mapStart(mark.start),end:mapEnd(mark.end)})).filter(mark=>mark.end>mark.start&&mark.end<=newText.length);
+  }
+  function subtractMark(mark,start,end){
+    if(mark.end<=start||mark.start>=end)return [mark];
+    const parts=[];
+    if(mark.start<start)parts.push({...mark,end:start});
+    if(mark.end>end)parts.push({...mark,id:makeId(),start:end});
+    return parts;
+  }
+  function fullyCovered(marks,type,start,end){
+    let cursor=start;
+    for(const mark of marks.filter(item=>item.type===type&&item.end>start&&item.start<end).sort((a,b)=>a.start-b.start)){
+      if(mark.start>cursor)return false;cursor=Math.max(cursor,mark.end);if(cursor>=end)return true;
+    }
+    return false;
+  }
+  function applyMark(type,value=''){
+    const selection=selectedMark;if(!selection)return;
+    const group=state.groups.find(item=>item.id===selection.groupId);
+    if(!group||group.id!==currentDetailId||slotText(group,selection.slot)?.slice(selection.start,selection.end)!==selection.quote){toast('请重新选中要标注的文字');return;}
+    if(type==='note'){openNotePopup(group,selection.slot,null,selection);return;}
+    const marks=marksFor(group,selection.slot),remove=type==='clear'?['bold','underline','color']:[type];
+    const shouldAdd=(type==='bold'||type==='underline')?!fullyCovered(marks,type,selection.start,selection.end):type==='color';
+    group.annotations[selection.slot]=marks.flatMap(mark=>remove.includes(mark.type)?subtractMark(mark,selection.start,selection.end):[mark]);
+    if(shouldAdd)group.annotations[selection.slot].push({id:makeId(),type,start:selection.start,end:selection.end,...(type==='color'?{value}:{})});
+    save();toast(type==='clear'?'格式已清除':'标注已保存');
+  }
+  function renderMarkedText(body,value,group,slot){
+    body.replaceChildren();body.dataset.markSlot=slot;
+    if(!value?.trim()){body.classList.add('empty');body.textContent='（这一段还没有内容）';return;}
+    body.classList.remove('empty');
+    const marks=marksFor(group,slot).filter(mark=>mark.start>=0&&mark.end<=value.length&&mark.end>mark.start);
+    const points=[...new Set([0,value.length,...marks.flatMap(mark=>[mark.start,mark.end])])].sort((a,b)=>a-b);
+    for(let i=0;i<points.length-1;i++){
+      const start=points[i],end=points[i+1],span=el('span');
+      const active=marks.filter(mark=>mark.start<=start&&mark.end>=end);
+      if(active.some(mark=>mark.type==='bold'))span.style.fontWeight='800';
+      if(active.some(mark=>mark.type==='underline'))span.style.textDecoration='underline';
+      const color=active.filter(mark=>mark.type==='color').at(-1);if(color)span.style.color=color.value;
+      if(active.some(mark=>mark.type==='note'))span.classList.add('marked-note');
+      span.textContent=value.slice(start,end);body.append(span);
+      for(const note of marks.filter(mark=>mark.type==='note'&&mark.end===end)){
+        const marker=el('button','note-marker','注');marker.type='button';marker.title='查看旁注';marker.setAttribute('aria-label','查看“'+value.slice(note.start,note.end).slice(0,30)+'”的旁注');
+        marker.addEventListener('click',()=>openNotePopup(group,slot,note));body.append(marker);
+      }
+    }
+  }
+  function markField(slot){return [...$('routeFlow').querySelectorAll('textarea[data-mark-slot]')].find(field=>field.dataset.markSlot===slot);}
+  function noteListFor(group,slot,value){
+    const notes=marksFor(group,slot).filter(mark=>mark.type==='note');if(!notes.length)return null;
+    const list=el('div','annotation-note-list');
+    for(const note of notes){const button=el('button','','旁注：'+value.slice(note.start,note.end));button.type='button';button.addEventListener('click',()=>openNotePopup(group,slot,note));list.append(button);}
+    return list;
+  }
+  function refreshNoteList(group,slot){
+    const field=markField(slot);if(!field)return;
+    const card=field.closest('.route-segment');card.querySelector('.annotation-note-list')?.remove();
+    const list=noteListFor(group,slot,field.value);if(list)card.append(list);
+  }
+  function closeNotePopup(restore=false){
+    const draft=noteDraft;$('notePopup').hidden=true;noteDraft=null;
+    if(restore&&detailMode==='edit'&&draft){
+      const field=markField(draft.slot),group=state.groups.find(item=>item.id===draft.groupId);
+      if(field&&group){field.focus({preventScroll:true});field.setSelectionRange(draft.start,draft.end);captureMarkSelection(field,group,draft.slot);}
+    }
+  }
+  function openNotePopup(group,slot,note,selection=null){
+    const start=note?.start??selection?.start,end=note?.end??selection?.end;
+    if(!Number.isInteger(start)||!Number.isInteger(end))return;
+    noteDraft={groupId:group.id,slot,id:note?.id||'',start,end};
+    const reading=detailMode==='show';$('noteTitle').textContent=reading?'文字旁注':note?'修改旁注':'添加旁注';
+    $('noteQuote').textContent='“'+(slotText(group,slot)||'').slice(start,end)+'”';
+    $('noteRead').hidden=!reading;$('noteRead').textContent=note?.value||'';
+    $('noteInput').hidden=reading;$('noteInput').value=note?.value||'';
+    $('noteSave').hidden=reading;$('noteDelete').hidden=reading||!note;
+    $('notePopup').hidden=false;if(!reading)$('noteInput').focus();
+  }
+  function renderThemeChoices(activeGroup){
+    const themes=$('themeList'),oldScroll=themes.scrollTop;themes.replaceChildren();
+    const groups=[...state.groups],originalIndex=new Map(groups.map((group,index)=>[group.id,index]));
+    if(themeSort!=='original')groups.sort((a,b)=>{
+      const topicsA=orderedTopics(a.id),topicsB=orderedTopics(b.id);
+      const count=group=>themeSort==='modified'?orderedTopics(group.id).filter(topic=>hasQuestionNote(group.questionNotes[topic.id])).length:orderedTopics(group.id).filter(topic=>state.mastered[topic.id]).length;
+      const ratioA=topicsA.length?count(a)/topicsA.length:0,ratioB=topicsB.length?count(b)/topicsB.length:0;
+      return ratioB-ratioA||(ratioA===1?topicsB.length-topicsA.length:0)||originalIndex.get(a.id)-originalIndex.get(b.id);
+    });
+    for(const item of groups){
+      const themeTopics=orderedTopics(item.id),done=themeTopics.filter(topic=>state.mastered[topic.id]).length,edited=themeTopics.filter(topic=>hasQuestionNote(item.questionNotes[topic.id])).length;
+      const button=el('button','theme-choice'+(item.id===activeGroup.id?' active':''));
+      button.type='button';button.dataset.groupId=item.id;button.style.setProperty('--theme-accent',item.color);button.setAttribute('aria-current',item.id===activeGroup.id?'page':'false');
+      button.style.setProperty('--mastery-progress',themeTopics.length?(done/themeTopics.length*100)+'%':'0%');
+      button.title='已修改：已填写该小题的专属开头、专属中间段、结尾或独立稿子';
+      button.append(el('span','',groupName(item.id)),el('small','theme-progress-text','已修改 '+edited+'/'+themeTopics.length+' · 已掌握 '+done+'/'+themeTopics.length));
+      button.addEventListener('click',()=>openDetail(item.id));themes.append(button);
+    }
+    themes.scrollTop=oldScroll;
+    for(const [id,mode] of [['sortThemesModified','modified'],['sortThemesMastered','mastered']]){$(id).classList.toggle('active',themeSort===mode);$(id).setAttribute('aria-pressed',String(themeSort===mode));}
+  }
+  function chooseThemeSort(mode){
+    themeSort=themeSort===mode?'original':mode;
+    try{localStorage.setItem(themeSortKey,themeSort);}catch{}
+    const group=state.groups.find(item=>item.id===currentDetailId);if(group)renderThemeChoices(group);
+  }
+  function renderDetail(group){
+    selectedMark=null;closeNotePopup();updateMarkToolbar();
+    if(practiceTimer.themeId!==group.id)resetPracticeTimer(group.id);else tickPracticeTimer();
+    const assigned=orderedTopics(group.id);
+    if(activeTopicId&&!assigned.some(topic=>topic.id===activeTopicId))activeTopicId='';
+    $('detailHero').style.setProperty('--detail-accent',group.color);
+    $('detailView').style.setProperty('--detail-accent',group.color);
+    $('detailTitle').textContent=groupName(group.id);
+    $('detailSubtitle').textContent='关联 '+assigned.length+' 道题 · 选题练习，或切换到答案与修改。';
+    renderThemeChoices(group);
+    const tabs=$('topicTabs');tabs.replaceChildren();
+    if(!assigned.length)tabs.append(el('span','tree-note','这里还没有题目。回整理板把题目放进这个素材区。'));
+    for(const topic of assigned){
+      const branch=group.branches.find(item=>item.id===topicBranchId(group,topic.id));
+      const item=el('div','topic-tab-item'+(branch?' branch-assigned':'')+(activeTopicId===topic.id?' active':''));
+      if(branch){item.dataset.branchId=branch.id;item.style.setProperty('--branch-accent',branchPalette[group.branches.indexOf(branch)%branchPalette.length]);}
+      const tab=el('button','topic-tab'+(activeTopicId===topic.id?' active':''));tab.type='button';tab.dataset.topicId=topic.id;
+      const meta=el('small','',group.questionNotes[topic.id]?.standalone?'独立稿子':branch?.title?.trim()||'直接连接共用段');
+      if(hasQuestionNote(group.questionNotes[topic.id]))meta.append(el('span','topic-edited',' · 已修改'));
+      tab.setAttribute('aria-pressed',String(activeTopicId===topic.id));tab.append(document.createTextNode(topic.name),meta);
+      tab.addEventListener('click',()=>{activeTopicId=topic.id;renderDetail(group);});
+      const label=el('label','mastery-check'),check=el('input');check.type='checkbox';check.checked=state.mastered[topic.id]===true;
+      check.setAttribute('aria-label','“'+topic.name+'”已掌握');
+      check.addEventListener('change',()=>{if(check.checked)state.mastered[topic.id]=true;else delete state.mastered[topic.id];save();renderDetail(group);});
+      label.append(check);item.append(label,tab);tabs.append(item);
+    }
+    for(const [id,mode] of [['practiceMode','practice'],['showMode','show'],['editMode','edit']]){
+      $(id).classList.toggle('active',detailMode===mode);$(id).setAttribute('aria-pressed',String(detailMode===mode));
+    }
+    const topic=assigned.find(item=>item.id===activeTopicId);
+    $('routeTitle').textContent=topic?topic.name+' · '+(detailMode==='practice'?'看题练习':detailMode==='show'?'完整答案':'修改路线'):(detailMode==='edit'?'修改这份素材':'选一道题，开始练习');
+    renderRoute(group,topic);
+    renderSettings(group,assigned);
+  }
+  function refreshModifiedStatus(group,topicId){
+    const assigned=orderedTopics(group.id),edited=assigned.filter(topic=>hasQuestionNote(group.questionNotes[topic.id])).length,mastered=assigned.filter(topic=>state.mastered[topic.id]).length;
+    if(themeSort==='modified')renderThemeChoices(group);
+    const theme=[...$('themeList').children].find(button=>button.dataset.groupId===group.id);
+    if(theme)theme.querySelector('.theme-progress-text').textContent='已修改 '+edited+'/'+assigned.length+' · 已掌握 '+mastered+'/'+assigned.length;
+    const tab=[...$('topicTabs').querySelectorAll('.topic-tab')].find(button=>button.dataset.topicId===topicId);
+    if(!tab)return;
+    const meta=tab.querySelector('small'),mark=meta.querySelector('.topic-edited');
+    if(hasQuestionNote(group.questionNotes[topicId])){if(!mark)meta.append(el('span','topic-edited',' · 已修改'));}
+    else mark?.remove();
+  }
+  function routeArrow(){return detailMode==='show'?document.createDocumentFragment():el('div','route-step-arrow','↓');}
+  function routeSegment(label,value,onChange,id='',ref=null){
+    if(detailMode==='show'){
+      const card=el('section','route-segment'),body=el('div','route-body');
+      if(ref)renderMarkedText(body,value,ref.group,ref.slot);else body.textContent=value?.trim()||'（这一段还没有内容）';
+      card.append(el('h3','',label),body);return card;
+    }
+    const card=el('details','route-segment');card.open=true;
+    const summary=el('summary','',label),field=el('textarea','detail-textarea');
+    if(id)field.id=id;field.value=value||'';field.placeholder='在这里写'+label+'……';field.setAttribute('aria-label',label);
+    let previous=field.value;
+    field.addEventListener('input',()=>{if(ref)shiftMarks(ref.group,ref.slot,previous,field.value);previous=field.value;selectedMark=null;updateMarkToolbar();onChange(field.value);if(ref&&/^(opening|middle|ending|draft):t\d+$/.test(ref.slot))refreshModifiedStatus(ref.group,ref.slot.split(':')[1]);save();});
+    if(ref){field.dataset.markSlot=ref.slot;for(const event of ['focus','select','keyup','mouseup','touchend'])field.addEventListener(event,()=>captureMarkSelection(field,ref.group,ref.slot));}
+    card.append(summary,field);
+    if(ref){const list=noteListFor(ref.group,ref.slot,field.value);if(list)card.append(list);}
+    return card;
+  }
+  function renderTopControls(group,topic){
+    const row=el('div','route-top-controls'+(topic?'':' no-topic'));
+    if(topic){
+      const placement=el('label','route-assignment','这道题使用哪个分支或稿子？'),select=el('select');select.setAttribute('aria-label','“'+topic.name+'”所属分支或稿子');
+      const direct=el('option','','不使用分支，直接接结尾');direct.value='';select.append(direct);
+      for(const branch of group.branches){const option=el('option','',branch.title.trim()||'未命名分支');option.value=branch.id;select.append(option);}
+      const standalone=el('option','','独立稿子（不使用任何共用段）');standalone.value='standalone';select.append(standalone);
+      select.value=group.questionNotes[topic.id]?.standalone?'standalone':group.topicBranches[topic.id]||'';
+      select.addEventListener('change',()=>{
+        const note=group.questionNotes[topic.id]||(group.questionNotes[topic.id]={opening:'',ending:'',draft:''});
+        note.standalone=select.value==='standalone';
+        if(!note.standalone&&select.value)group.topicBranches[topic.id]=select.value;else delete group.topicBranches[topic.id];
+        regroupTopics(group.id);save();renderDetail(group);
+      });
+      placement.append(select);row.append(placement);
+    }
+    const actions=el('div','route-structure-actions'),buttons=el('div','route-structure-buttons');actions.append(el('strong','','素材结构'),buttons);
+    const add=el('button','button small','＋ 新增分支');add.id='addBranch';add.type='button';add.addEventListener('click',()=>{
+      const letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ',used=new Set(group.branches.map(branch=>branch.title.trim()));
+      const free=[...letters].map(letter=>letter+'组').find(name=>!used.has(name));
+      const id=(crypto.randomUUID?crypto.randomUUID():Date.now()+'-'+Math.random().toString(36).slice(2));
+      group.branches.push({id,title:free||'分支 '+(group.branches.length+1),content:'',position:'after'});save();renderDetail(group);
+      $('routeTopControls').querySelector('.route-assignment select')?.focus();
+    });buttons.append(add);
+    if(!group.extraCommon){
+      const addExtra=el('button','button small','＋ 追加共用段');addExtra.id='addExtraCommon';addExtra.type='button';
+      addExtra.addEventListener('click',()=>{group.extraCommon={content:'',scope:'all'};save();renderDetail(group);$('extraCommonContent')?.focus();});buttons.append(addExtra);
+    }else{
+      const options=el('label','','追加共用段适用于'),scope=el('select');scope.id='extraCommonScope';scope.setAttribute('aria-label','追加共用段适用于');
+      const all=el('option','','所有小题（通用）');all.value='all';scope.append(all);
+      for(const branch of group.branches){const option=el('option','','只给 '+(branch.title.trim()||'未命名分支')+' 的小题');option.value=branch.id;scope.append(option);}
+      scope.value=group.extraCommon.scope;
+      scope.addEventListener('change',()=>{group.extraCommon.scope=scope.value;save();renderDetail(group);$('extraCommonScope')?.focus();});
+      options.append(scope);actions.append(options);
+      const removeExtra=el('button','button small danger','删除追加共用段');removeExtra.id='removeExtraCommon';removeExtra.type='button';
+      removeExtra.addEventListener('click',()=>{if(group.extraCommon.content.trim()&&!confirm('删除追加共用段？这段文字和标注会一起删除。'))return;group.extraCommon=null;delete group.annotations.extraCommon;save();renderDetail(group);});buttons.append(removeExtra);
+    }
+    if(topic&&!group.questionNotes[topic.id]?.standalone){
+      const enabled=group.questionNotes[topic.id]?.middleEnabled===true,middleToggle=el('button','button small',enabled?'停用专属中间段':'＋ 专属中间段');
+      middleToggle.id='toggleTopicMiddle';middleToggle.type='button';middleToggle.setAttribute('aria-pressed',String(enabled));
+      middleToggle.addEventListener('click',()=>{const note=group.questionNotes[topic.id]||(group.questionNotes[topic.id]={opening:'',ending:'',middle:''});note.middlePosition||='afterBranch';note.middleEnabled=!enabled;save();renderDetail(group);if(note.middleEnabled)$('topicMiddleContent')?.focus();});
+      buttons.append(middleToggle);
+    }
+    row.append(actions);return row;
+  }
+  function visibleRouteContent(value){return detailMode!=='show'||Boolean(value?.trim());}
+  function finishAnswerFlow(flow){
+    if(detailMode==='edit'&&flow.querySelector('#topicMiddleContent')){
+      for(const arrow of flow.querySelectorAll(':scope > .route-step-arrow'))arrow.remove();
+      const steps=[...flow.children].filter(node=>node.matches('.route-segment,.route-branch-row,.branch-rail'));
+      for(const step of steps.slice(1))flow.insertBefore(routeArrow(),step);
+    }
+    const headings=[...flow.querySelectorAll('.route-segment h3,.route-segment summary')];
+    if(!headings.length&&detailMode==='show'){flow.append(el('div','route-empty','这道题还没有填写答案。切换到“修改”后就可以写。'));return;}
+    const numbers=['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
+    headings.forEach((heading,index)=>{heading.textContent=(numbers[index]||String(index+1))+' '+heading.textContent.replace(/^[①②③④⑤⑥⑦⑧⑨⑩]\s*/,'');});
+  }
+  function renderRoute(group,topic){
+    const holder=$('routeFlow'),controls=$('routeTopControls');holder.replaceChildren();controls.replaceChildren();
+    if(detailMode==='practice'){
+      if(!topic){holder.append(el('div','route-empty','选中上面的一道小题，原始题目就会单独显示在这里。答案会保持隐藏。'));return;}
+      const card=el('section','practice-card');card.append(el('p','practice-eyebrow','IELTS PART 2 · 原始题目'),el('h2','',topic.name));
+      const prompt=state.prompts[topic.id]||'';
+      card.append(el('div','practice-question'+(prompt.trim()?'':' empty'),prompt.trim()||'这道题还没有填写原始题目。切到“修改”，把题目内容粘贴进来。'));
+      const notes=el('section','practice-notes'),label=el('label','','一分钟准备笔记 '),field=el('textarea');field.id='practiceNotes';field.placeholder='写关键词、例子或回答顺序……';field.setAttribute('aria-label','一分钟准备笔记');
+      label.append(el('small','','（临时，不保存）'));notes.append(label,field);holder.append(card,notes);return;
+    }
+    if(!topic&&detailMode==='show'){holder.append(el('div','route-empty','点击上面的小题，就会按分支设定的位置完整显示开头、共用段和结尾。'));return;}
+    if(detailMode==='edit')controls.append(renderTopControls(group,topic));
+    if(topic&&detailMode==='edit'){
+      const card=el('details','prompt-edit-card'),field=el('textarea');field.id='originalQuestionInput';field.value=state.prompts[topic.id]||'';
+      field.placeholder='粘贴这道小题的英文原题、提示点或你要练习的问题……';field.setAttribute('aria-label','“'+topic.name+'”的原始题目');
+      field.addEventListener('input',()=>{state.prompts[topic.id]=field.value;save();});
+      card.append(el('summary','','原始题目'),el('p','','练习模式只显示这里的题目，不显示下面写好的答案。'),field);holder.append(card);
+    }
+    const flow=el('div','route-stack'+(detailMode==='show'?' answer-mode':''));holder.append(flow);
+    const note=topic?(group.questionNotes[topic.id]||{opening:'',ending:''}):null;
+    if(topic&&note.standalone){
+      if(visibleRouteContent(note.draft))flow.append(routeSegment(topic.name+' · 独立稿子',note.draft||'',value=>{note.draft=value;},'standaloneDraft',{group,slot:'draft:'+topic.id}));
+      finishAnswerFlow(flow);
+      return;
+    }
+    const branch=topic?group.branches.find(item=>item.id===group.topicBranches[topic.id]):null;
+    const branchBefore=branch?.position==='before';
+    const extraApplies=!!(group.extraCommon&&(group.extraCommon.scope==='all'||group.extraCommon.scope===branch?.id));
+    const appendMiddle=position=>{
+      if(!note?.middleEnabled||note.middlePosition!==position||!visibleRouteContent(note.middle))return;
+      const segment=routeSegment('专属中间段',note.middle,value=>{note.middle=value;},'topicMiddleContent',{group,slot:'middle:'+topic.id});
+      if(detailMode==='edit'){
+        const placement=el('label','middle-placement'),select=el('select');placement.append(el('span','','放在'),select);
+        for(const [value,label] of [['afterOpening','开头之后'],['afterCommon','共用中间段之后'],['afterBranch','所属分支之后'],['beforeEnding','结尾之前']]){const option=el('option','',label);option.value=value;select.append(option);}
+        select.value=note.middlePosition;select.setAttribute('aria-label','专属中间段的位置');
+        select.addEventListener('change',()=>{note.middlePosition=select.value;save();renderDetail(group);});
+        segment.insertBefore(placement,segment.querySelector('textarea'));
+      }
+      if(flow.querySelector('.route-segment'))flow.append(routeArrow());flow.append(segment);
+    };
+    let branchRow=null;
+    if(branch&&visibleRouteContent(branch.content)){
+      const siblings=group.branches.filter(item=>item.id!==branch.id);
+      branchRow=el('div','route-branch-row'+(detailMode==='show'?' inline-branches':'')+(siblings.length?'':' no-siblings'));
+      const branchSegment=routeSegment((branchBefore?'② ':'③ ')+(branch.title.trim()||'未命名分支')+' · 共用段',branch.content,value=>{branch.content=value;},'',{group,slot:'branch:'+branch.id});
+      if(detailMode==='edit'){
+        const placement=el('label','branch-placement'),select=el('select');
+        placement.append(el('span','','这段放在'),select);
+        for(const [value,title] of [['before','共用中间段之前'],['after','共用中间段之后']]){const option=el('option','',title);option.value=value;select.append(option);}
+        select.value=branch.position;select.setAttribute('aria-label',(branch.title.trim()||'未命名分支')+'的位置');
+        select.addEventListener('change',()=>{branch.position=select.value;save();renderDetail(group);});
+        branchSegment.insertBefore(placement,branchSegment.querySelector('textarea'));
+      }
+      if(detailMode==='show'&&siblings.length){
+        const heading=branchSegment.querySelector('h3'),header=el('div','branch-header');heading.replaceWith(header);
+        header.append(heading,branchRail(group,siblings));branchSegment.classList.add('branch-with-siblings');
+      }
+      branchRow.append(branchSegment);
+      if(detailMode==='edit'&&siblings.length)branchRow.append(branchRail(group,siblings));
+    }
+    if(topic&&visibleRouteContent(note.opening))flow.append(routeSegment('① '+topic.name+' · 专属开头',note.opening,value=>{const draft=group.questionNotes[topic.id]||(group.questionNotes[topic.id]={opening:'',ending:''});draft.opening=value;},'',{group,slot:'opening:'+topic.id}),routeArrow());
+    if(topic)appendMiddle('afterOpening');
+    if(branchBefore&&branchRow)flow.append(branchRow,routeArrow());
+    if(topic&&branchBefore)appendMiddle('afterBranch');
+    if(visibleRouteContent(group.content))flow.append(routeSegment(topic?(branchBefore?'③ ':'② ')+'所有题共用的中间段':'所有题共用的中间段',group.content,value=>{group.content=value;},'detailContent',{group,slot:'common'}));
+    if(!topic)return;
+    appendMiddle('afterCommon');
+    if(branch&&!branchBefore&&branchRow)flow.append(routeArrow(),branchRow);
+    else if(!branch&&group.branches.length&&detailMode==='edit')flow.append(branchRail(group,group.branches));
+    if(!branchBefore)appendMiddle('afterBranch');
+    if(extraApplies&&visibleRouteContent(group.extraCommon.content)){
+      flow.append(routeArrow(),routeSegment((branch?'④ ':'③ ')+'追加共用段',group.extraCommon.content,value=>{group.extraCommon.content=value;},'extraCommonContent',{group,slot:'extraCommon'}));
+    }
+    appendMiddle('beforeEnding');
+    if(visibleRouteContent(note.ending))flow.append(routeArrow(),routeSegment((branch?(extraApplies?'⑤ ':'④ '):(extraApplies?'④ ':'③ '))+topic.name+' · 专属结尾',note.ending,value=>{const draft=group.questionNotes[topic.id]||(group.questionNotes[topic.id]={opening:'',ending:''});draft.ending=value;},'',{group,slot:'ending:'+topic.id}));
+    finishAnswerFlow(flow);
+  }
+  function branchRail(group,branches){
+    const rail=el('div','branch-rail');rail.setAttribute('aria-label','切换分支');
+    for(const branch of branches){
+      const matches=orderedTopics(group.id).filter(topic=>group.topicBranches[topic.id]===branch.id);
+      const chip=el('button','branch-chip',branch.title.trim()||'未命名分支');chip.type='button';chip.dataset.branchId=branch.id;
+      chip.title=matches.length?'点此切到这条分支的第一道题':'这条分支还没有题目';chip.disabled=!matches.length;
+      chip.addEventListener('click',()=>{activeTopicId=matches[0].id;renderDetail(group);});rail.append(chip);
+    }
+    return rail;
+  }
+  function renderSettings(group,assigned){
+    const holder=$('editSettings');holder.replaceChildren();if(detailMode!=='edit')return;
+    const panel=el('details','settings-panel branch-settings-panel');panel.append(el('summary','','分支管理（改名、删除）'));
+    const list=el('div','settings-branches');
+    for(const branch of group.branches){
+      const matches=assigned.filter(topic=>group.topicBranches[topic.id]===branch.id),row=el('div','settings-branch');row.dataset.branchId=branch.id;
+      const name=el('input');name.type='text';name.value=branch.title;name.maxLength=80;name.placeholder='分支名称';name.setAttribute('aria-label','分支名称');
+      name.addEventListener('input',()=>{branch.title=name.value;save();});
+      const count=el('small','',matches.length+' 题 · 共用段'+(branch.position==='before'?'前':'后')),remove=el('button','button small danger','删除');remove.type='button';
+      remove.addEventListener('click',()=>{
+        if((branch.content.trim()||matches.length)&&!confirm('删除“'+(branch.title.trim()||'未命名分支')+'”？分支中的题目会改为直接连接共用段，分支文字会删除。'))return;
+        group.branches=group.branches.filter(item=>item.id!==branch.id);delete group.annotations['branch:'+branch.id];
+        if(group.extraCommon?.scope===branch.id)group.extraCommon.scope='all';
+        for(const topic of matches)delete group.topicBranches[topic.id];regroupTopics(group.id);save();renderDetail(group);$('editSettings').querySelector('.branch-settings-panel').open=true;
+      });row.append(name,count,remove);list.append(row);
+      if(!matches.length){
+        const label=el('label','','这条分支的共用段（分配题目后也可在题目路线里修改）'),field=el('textarea','detail-textarea');
+        field.value=branch.content;field.setAttribute('aria-label',(branch.title||'分支')+'的共用段');let previous=field.value;
+        field.addEventListener('input',()=>{shiftMarks(group,'branch:'+branch.id,previous,field.value);previous=field.value;branch.content=field.value;save();});
+        label.append(field);list.append(label);
+      }
+    }
+    if(!group.branches.length)list.append(el('p','tree-note','不需要分支时，题目会从共用中间段直接接到结尾。'));
+    panel.append(list);holder.append(panel);
+    const overview=el('details','settings-panel overview-panel');overview.append(el('summary','','素材概况'));
+    const noteLabel=el('label','','素材概况（和整理板的情况描述同步）'),note=el('textarea','detail-textarea detail-summary');
+    note.id='detailSummary';note.value=group.note;note.placeholder='用一两句话记下这份素材是什么。';note.addEventListener('input',()=>{group.note=note.value;save();});noteLabel.append(note);overview.append(noteLabel);holder.append(overview);
+  }
+  function syncView(){
+    const isP1=location.hash==='#part1';
+    $('navP1').classList.toggle('active',isP1);$('navP2').classList.toggle('active',!isP1);
+    $('navP1').setAttribute('aria-current',isP1?'page':'false');$('navP2').setAttribute('aria-current',isP1?'false':'page');
+    if(isP1){if(currentDetailId)resetPracticeTimer('');$('boardView').hidden=true;$('detailView').hidden=true;$('p1View').hidden=false;currentDetailId='';document.title='Part 1 看题练习 · 雅思口语';renderP1();return;}
+    $('p1View').hidden=true;
+    let id='';
+    if(location.hash.startsWith('#material='))try{id=decodeURIComponent(location.hash.slice(10));}catch{}
+    const group=state.groups.find(item=>item.id===id);
+    if(group){
+      if(currentDetailId===group.id&&!$('detailView').hidden)return;
+      if(currentDetailId!==group.id){activeTopicId='';detailMode='practice';}
+      $('boardView').hidden=true;$('detailView').hidden=false;renderDetail(group);
+      document.title=groupName(group.id)+' · 雅思口语串题整理板';
+      if(currentDetailId!==group.id)window.scrollTo(0,0);
+      currentDetailId=group.id;
+    }else{
+      const leavingDetail=Boolean(currentDetailId);
+      if(leavingDetail)resetPracticeTimer('');
+      $('detailView').hidden=true;$('boardView').hidden=false;document.title='雅思口语串题整理板';currentDetailId='';
+      if(leavingDetail){renderBank();renderZones();updateProgress();requestAnimationFrame(()=>window.scrollTo(0,boardScrollY));}
+    }
+  }
+  function assign(topicId,groupId){
+    if((state.assignments[topicId]||'')===groupId)return;
+    placeTopic(topicId,groupId);
+  }
+  function placeTopic(topicId,groupId,targetId='',after=false){
+    if(!topicById.has(topicId))return;
+    if(groupId && !state.groups.some(g=>g.id===groupId))return;
+    if(topicId===targetId)return;
+    const oldGroup=state.assignments[topicId];
+    if(oldGroup){const oldOrder=state.order[oldGroup]||[];const oldIndex=oldOrder.indexOf(topicId);if(oldIndex>=0)oldOrder.splice(oldIndex,1);if(oldGroup!==groupId)delete state.groups.find(g=>g.id===oldGroup)?.topicBranches?.[topicId];}
+    if(groupId){
+      state.assignments[topicId]=groupId;
+      const order=state.order[groupId]||(state.order[groupId]=[]);
+      const targetIndex=targetId && state.assignments[targetId]===groupId ? order.indexOf(targetId) : -1;
+      order.splice(targetIndex<0?order.length:targetIndex+(after?1:0),0,topicId);
+    }else delete state.assignments[topicId];
+    if(oldGroup)regroupTopics(oldGroup);if(groupId&&groupId!==oldGroup)regroupTopics(groupId);
+    save();renderBank();renderZones();updateProgress();
+  }
+  function moveWithinGroup(groupId,topicId,direction){
+    const order=state.order[groupId];if(!order)return;
+    const index=order.indexOf(topicId),next=index+direction;
+    if(index<0||next<0||next>=order.length)return;
+    [order[index],order[next]]=[order[next],order[index]];
+    regroupTopics(groupId);
+    save();renderZones();
+  }
+  function reorderGroup(groupId,targetId,after){
+    if(groupId===targetId)return;
+    const from=state.groups.findIndex(group=>group.id===groupId);
+    if(from<0||!state.groups.some(group=>group.id===targetId))return;
+    const [group]=state.groups.splice(from,1);
+    const target=state.groups.findIndex(item=>item.id===targetId);
+    state.groups.splice(target+(after?1:0),0,group);
+    save();renderBank();renderZones();
+  }
+  function moveGroupBy(groupId,direction,focusTarget='right'){
+    const index=state.groups.findIndex(group=>group.id===groupId),next=index+direction;
+    if(index<0||next<0||next>=state.groups.length)return;
+    [state.groups[index],state.groups[next]]=[state.groups[next],state.groups[index]];
+    save();renderBank();renderZones();
+    const moved=focusTarget==='left'?[...$('zoneIndexList').querySelectorAll('.zone-index-row')].find(row=>row.dataset.groupId===groupId)?.querySelector('.zone-index-handle'):[...$('zones').querySelectorAll('.zone')].find(zone=>zone.dataset.groupId===groupId)?.querySelector('.zone-handle');
+    moved?.focus({preventScroll:true});
+  }
+  function addGroup(){
+    const id=(crypto.randomUUID ? crypto.randomUUID() : Date.now()+'-'+Math.random().toString(36).slice(2));
+    state.groups.push({id,title:'',note:'',content:'',extraCommon:null,questionNotes:{},branches:[],topicBranches:{},annotations:{},color:zonePalette[state.groups.length%zonePalette.length],noteCollapsed:false});state.order[id]=[];save();renderBank();renderZones();
+    const input=$('zones').querySelector('[data-group-id="'+id+'"] .zone-title');if(input){input.focus();input.scrollIntoView({block:'nearest',behavior:'smooth'});}
+  }
+  function deleteGroup(id){
+    const group=state.groups.find(g=>g.id===id);if(!group)return;
+    const count=Object.values(state.assignments).filter(value=>value===id).length;
+    if(!confirm('删除“'+groupName(id)+'”？'+(count?'其中 '+count+' 道题会回到未串题。':'')+'情况描述和具体内容会被删除。'))return;
+    state.groups=state.groups.filter(g=>g.id!==id);
+    for(const [topicId,groupId] of Object.entries(state.assignments))if(groupId===id)delete state.assignments[topicId];
+    delete state.order[id];
+    save();render();toast('素材区已删除');
+  }
+  function download(filename,mime,content){
+    const blob=new Blob([content],{type:mime});const url=URL.createObjectURL(blob);const a=el('a');a.href=url;a.download=filename;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
+  }
+  function dateStamp(){const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+  function exportNotes(lines,group,slot,value,indent='  '){
+    for(const note of (group.annotations?.[slot]||[]).filter(mark=>mark.type==='note'))lines.push(indent+'旁注「'+value.slice(note.start,note.end)+'」：'+note.value);
+  }
+  function exportText(){
+    const lines=['雅思口语 Part 2 串题整理','共 '+topics.length+' 道题；已串 '+Object.keys(state.assignments).length+' 道题',''];
+    for(const [index,group] of state.groups.entries()){
+      lines.push((index+1)+'. '+groupName(group.id));lines.push('情况描述：'+(group.note.trim()||'（未填写）'));
+      lines.push('共用中间段：');lines.push(group.content.trim()||'（未填写）');exportNotes(lines,group,'common',group.content);
+      for(const branch of group.branches){lines.push('分支 '+(branch.title.trim()||'未命名分支')+'（共用中间段'+(branch.position==='before'?'之前':'之后')+'）：');lines.push(branch.content.trim()||'（未填写）');exportNotes(lines,group,'branch:'+branch.id,branch.content);}
+      if(group.extraCommon){const scope=group.extraCommon.scope==='all'?'所有小题':(group.branches.find(branch=>branch.id===group.extraCommon.scope)?.title.trim()||'未命名分支')+'的小题';lines.push('追加共用段（'+scope+'）：');lines.push(group.extraCommon.content.trim()||'（未填写）');exportNotes(lines,group,'extraCommon',group.extraCommon.content);}
+      const assigned=orderedTopics(group.id);
+      lines.push('题目：'+(assigned.length?assigned.map(t=>t.name).join('、'):'（暂无）'));
+      for(const topic of assigned){
+        lines.push('  '+topic.name+(state.mastered[topic.id]?' ✓ 已掌握':''));
+        if(state.prompts[topic.id]?.trim())lines.push('    原始题目：'+state.prompts[topic.id].trim());
+        const note=group.questionNotes[topic.id];
+        if(note?.standalone){lines.push('    类型：独立稿子');lines.push('    完整稿子：'+(note.draft?.trim()||'（未填写）'));exportNotes(lines,group,'draft:'+topic.id,note.draft||'','    ');continue;}
+        const branch=group.branches.find(item=>item.id===group.topicBranches[topic.id]);if(branch)lines.push('    所属分支：'+(branch.title.trim()||'未命名分支'));
+        if(!hasQuestionNote(note))continue;
+        if(note.opening.trim()){lines.push('    开头：'+note.opening.trim());exportNotes(lines,group,'opening:'+topic.id,note.opening,'    ');}
+        if(note.middleEnabled&&note.middle?.trim()){const position={afterOpening:'开头之后',afterCommon:'共用中间段之后',afterBranch:'所属分支之后',beforeEnding:'结尾之前'}[note.middlePosition]||'所属分支之后';lines.push('    专属中间段（'+position+'）：'+note.middle.trim());exportNotes(lines,group,'middle:'+topic.id,note.middle,'    ');}
+        if(note.ending.trim()){lines.push('    结尾：'+note.ending.trim());exportNotes(lines,group,'ending:'+topic.id,note.ending,'    ');}
+      }
+      lines.push('');
+    }
+    lines.push('未串题');for(const category of categories){const remaining=topics.filter(t=>t.category===category&&!state.assignments[t.id]);if(remaining.length)lines.push(category+'：'+remaining.map(t=>t.name).join('、'));}
+    if(state.p1Topics.length){lines.push('','Part 1 看题练习');for(const topic of state.p1Topics){lines.push(topic.title.trim()||'未命名话题');for(const question of p1QuestionLines(topic)){const key=p1QuestionKey(topic,question);lines.push('  '+(state.p1Mastered[key]?'✓ 已掌握 · ':'')+question);if(state.p1Vocabulary[key])lines.push('    词汇提示：'+state.p1Vocabulary[key]);}}}
+    download('雅思口语串题整理-'+dateStamp()+'.txt','text/plain;charset=utf-8',lines.join('\n'));toast('整理结果已导出');
+  }
+  function exportBackup(){download('雅思口语串题备份-'+dateStamp()+'.json','application/json;charset=utf-8',JSON.stringify({version:1,groups:state.groups,assignments:state.assignments,order:state.order,prompts:state.prompts,mastered:state.mastered,p1Topics:state.p1Topics,p1Mastered:state.p1Mastered,p1Vocabulary:state.p1Vocabulary,p1SeedVersion:state.p1SeedVersion},null,2));$('moreMenu').open=false;toast('备份文件已下载');}
+  async function importBackup(file){
+    try{
+      const parsed=JSON.parse(await file.text());if(!parsed||parsed.version!==1||!Array.isArray(parsed.groups)||!parsed.assignments||typeof parsed.assignments!=='object')throw Error('文件格式不符合备份要求');
+      const groups=parsed.groups.map(normalizedGroup);
+      if(groups.some(g=>!g.id)||new Set(groups.map(g=>g.id)).size!==groups.length)throw Error('素材区数据不完整');
+      const groupIds=new Set(groups.map(g=>g.id)), assignments={};
+      for(const [topicId,groupId] of Object.entries(parsed.assignments))if(topicById.has(topicId)&&groupIds.has(groupId))assignments[topicId]=groupId;
+      if(parsed.p1Topics!==undefined&&!Array.isArray(parsed.p1Topics))throw Error('Part 1 话题数据不完整');
+      const p1Topics=parsed.p1Topics===undefined?state.p1Topics:normalizedP1Topics(parsed.p1Topics);
+      const p1Mastered=parsed.p1Topics===undefined?state.p1Mastered:normalizedP1Mastered(parsed.p1Mastered);
+      const p1Vocabulary=parsed.p1Topics===undefined?state.p1Vocabulary:normalizedP1Vocabulary(parsed.p1Vocabulary);
+      if(!confirm('导入备份会覆盖当前整理内容；'+(parsed.p1Topics===undefined?'旧备份没有 Part 1，当前 Part 1 会保留。':'Part 1 也会从备份恢复。')+'缺失的英文原题会自动补齐。确定继续吗？'))return;
+      state={groups,assignments,order:normalizedOrder(groups,assignments,parsed.order),prompts:promptsWithOriginalQuestions(parsed.prompts),mastered:normalizedMastered(parsed.mastered),p1Topics,p1Mastered,p1Vocabulary,p1SeedVersion:parsed.p1Topics===undefined?state.p1SeedVersion:(parsed.p1SeedVersion===1?1:0)};resetPracticeTimer('');for(const group of groups)regroupTopics(group.id);seedP1Questions();save();render();
+      if(currentDetailId)currentDetailId='';syncView();toast('备份已恢复');
+    }catch(error){alert('无法导入：'+error.message);}
+  }
+  $('search').addEventListener('input',renderBank);
+  $('unassignedOnly').addEventListener('change',renderBank);
+  $('addZone').addEventListener('click',addGroup);
+  $('timerToggle').addEventListener('click',togglePracticeTimer);
+  $('timerSkip').addEventListener('click',skipPreparation);
+  $('timerReset').addEventListener('click',()=>resetPracticeTimer(practiceTimer.themeId));
+  $('practiceMode').addEventListener('click',()=>{const group=state.groups.find(item=>item.id===currentDetailId);if(group){detailMode='practice';renderDetail(group);}});
+  $('showMode').addEventListener('click',()=>{const group=state.groups.find(item=>item.id===currentDetailId);if(group){detailMode='show';renderDetail(group);}});
+  $('editMode').addEventListener('click',()=>{const group=state.groups.find(item=>item.id===currentDetailId);if(group){detailMode='edit';renderDetail(group);}});
+  $('annotationToolbar').addEventListener('pointerdown',event=>{if(event.target.closest('[data-mark-action]'))event.preventDefault();});
+  $('annotationToolbar').addEventListener('click',event=>{
+    const button=event.target.closest('[data-mark-action]');if(!button||button.disabled)return;
+    applyMark(button.dataset.markAction,button.dataset.color||'');
+  });
+  $('noteCancel').addEventListener('click',()=>closeNotePopup(true));
+  $('noteSave').addEventListener('click',()=>{
+    const draft=noteDraft,group=state.groups.find(item=>item.id===draft?.groupId),value=$('noteInput').value.trim();
+    if(!draft||!group)return;if(!value){toast('先写一点旁注内容');return;}
+    const notes=marksFor(group,draft.slot),existing=notes.find(mark=>mark.id===draft.id&&mark.type==='note');
+    if(existing)existing.value=value.slice(0,3000);
+    else if(draft.end>draft.start&&draft.end<=(slotText(group,draft.slot)||'').length)notes.push({id:makeId(),type:'note',start:draft.start,end:draft.end,value:value.slice(0,3000)});
+    save();refreshNoteList(group,draft.slot);closeNotePopup(true);toast('旁注已保存');
+  });
+  $('noteDelete').addEventListener('click',()=>{
+    const draft=noteDraft,group=state.groups.find(item=>item.id===draft?.groupId);if(!draft||!group)return;
+    group.annotations[draft.slot]=marksFor(group,draft.slot).filter(mark=>mark.id!==draft.id);
+    save();refreshNoteList(group,draft.slot);closeNotePopup(true);toast('旁注已删除');
+  });
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!$('notePopup').hidden)closeNotePopup(true);});
+  $('exportText').addEventListener('click',exportText);
+  $('exportBackup').addEventListener('click',exportBackup);
+  $('p1ExportBackup').addEventListener('click',exportBackup);
+  $('importBackup').addEventListener('click',()=>{$('moreMenu').open=false;$('backupFile').click();});
+  $('p1ImportBackup').addEventListener('click',()=>$('backupFile').click());
+  $('backupFile').addEventListener('change',event=>{const file=event.target.files[0];if(file)importBackup(file);event.target.value='';});
+  $('navP1').addEventListener('click',()=>{location.hash='part1';syncView();window.scrollTo(0,0);});
+  $('navP2').addEventListener('click',()=>{location.hash='board';syncView();window.scrollTo(0,0);});
+  $('p1AddTopic').addEventListener('click',()=>{const topic={id:makeId(),title:'',questions:'',category:'未分类'};state.p1Topics.push(topic);activeP1TopicId=topic.id;p1CollapsedCategories['未分类']=false;saveP1Collapsed();p1Mode='edit';save();renderP1();document.querySelector('#p1Main input')?.focus();});
+  $('backBoard').addEventListener('click',()=>{location.hash='board';syncView();});
+  $('toggleBank').addEventListener('click',()=>setBoardPanelCollapsed('bank',!boardPanelCollapsed.bank));
+  $('toggleZoneIndex').addEventListener('click',()=>setBoardPanelCollapsed('index',!boardPanelCollapsed.index));
+  $('themeSidebarToggle').addEventListener('click',()=>setSidebarCollapsed(!sidebarCollapsed));
+  $('sortThemesModified').addEventListener('click',()=>chooseThemeSort('modified'));
+  $('sortThemesMastered').addEventListener('click',()=>chooseThemeSort('mastered'));
+  window.addEventListener('hashchange',syncView);
+  let resizeFrame;
+  window.addEventListener('resize',()=>{cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(renderZones);});
+  let draggingTopicId='',draggingGroupId='';
+  document.addEventListener('dragstart',event=>{const card=event.target.closest('[data-topic-id]');if(!card)return;draggingTopicId=card.dataset.topicId;event.dataTransfer.effectAllowed='move';event.dataTransfer.setData('text/plain',draggingTopicId);requestAnimationFrame(()=>card.classList.add('dragging'));});
+  document.addEventListener('dragend',()=>{draggingTopicId='';draggingGroupId='';document.querySelectorAll('.dragging,.drag-over,.drop-before,.drop-after,.group-dragging,.zone-insert-before,.zone-insert-after').forEach(node=>node.classList.remove('dragging','drag-over','drop-before','drop-after','group-dragging','zone-insert-before','zone-insert-after'));});
+  $('zoneIndexList').addEventListener('dragover',event=>{
+    if(!draggingGroupId)return;
+    event.preventDefault();event.dataTransfer.dropEffect='move';
+    const rows=[...$('zoneIndexList').querySelectorAll('.zone-index-row')],row=event.target.closest('.zone-index-row')||rows.at(-1);
+    rows.forEach(item=>item.classList.remove('drop-before','drop-after'));
+    if(row&&row.dataset.groupId!==draggingGroupId)row.classList.add(event.target.closest('.zone-index-row')&&event.clientY<row.getBoundingClientRect().top+row.getBoundingClientRect().height/2?'drop-before':'drop-after');
+  });
+  $('zoneIndexList').addEventListener('dragleave',event=>{if(!$('zoneIndexList').contains(event.relatedTarget))$('zoneIndexList').querySelectorAll('.zone-index-row').forEach(row=>row.classList.remove('drop-before','drop-after'));});
+  $('zoneIndexList').addEventListener('drop',event=>{
+    if(!draggingGroupId)return;
+    event.preventDefault();const target=event.target.closest('.zone-index-row')||$('zoneIndexList').querySelector('.zone-index-row:last-child');if(!target)return;
+    const groupId=draggingGroupId,after=!event.target.closest('.zone-index-row')||event.clientY>=target.getBoundingClientRect().top+target.getBoundingClientRect().height/2;
+    draggingGroupId='';reorderGroup(groupId,target.dataset.groupId,after);
+    [...$('zoneIndexList').querySelectorAll('.zone-index-row')].find(row=>row.dataset.groupId===groupId)?.querySelector('.zone-index-handle')?.focus({preventScroll:true});
+  });
+  $('zones').addEventListener('dragover',event=>{
+    const zone=event.target.closest('.zone');if(!zone)return;
+    event.preventDefault();event.dataTransfer.dropEffect='move';
+    document.querySelectorAll('.zone.drag-over,.zone-topic.drop-before,.zone-topic.drop-after,.zone.zone-insert-before,.zone.zone-insert-after').forEach(node=>node.classList.remove('drag-over','drop-before','drop-after','zone-insert-before','zone-insert-after'));
+    if(draggingGroupId){
+      if(zone.dataset.groupId!==draggingGroupId){const middle=zone.getBoundingClientRect().top+zone.getBoundingClientRect().height/2;zone.classList.add(event.clientY<middle?'zone-insert-before':'zone-insert-after');}
+      return;
+    }
+    zone.classList.add('drag-over');
+    const target=event.target.closest('.zone-topic');
+    if(target&&target.dataset.topicId!==draggingTopicId){const middle=target.getBoundingClientRect().top+target.getBoundingClientRect().height/2;target.classList.add(event.clientY<middle?'drop-before':'drop-after');}
+  });
+  $('zones').addEventListener('dragleave',event=>{const zone=event.target.closest('.zone');if(zone&&!zone.contains(event.relatedTarget)){zone.classList.remove('drag-over','zone-insert-before','zone-insert-after');zone.querySelectorAll('.drop-before,.drop-after').forEach(node=>node.classList.remove('drop-before','drop-after'));}});
+  $('zones').addEventListener('drop',event=>{
+    const zone=event.target.closest('.zone');if(!zone)return;
+    event.preventDefault();
+    if(draggingGroupId){
+      const groupId=draggingGroupId;draggingGroupId='';
+      const middle=zone.getBoundingClientRect().top+zone.getBoundingClientRect().height/2;
+      zone.classList.remove('zone-insert-before','zone-insert-after');
+      document.querySelectorAll('.group-dragging').forEach(node=>node.classList.remove('group-dragging'));
+      reorderGroup(groupId,zone.dataset.groupId,event.clientY>=middle);
+      return;
+    }
+    const target=event.target.closest('.zone-topic');
+    const middle=target?target.getBoundingClientRect().top+target.getBoundingClientRect().height/2:0;
+    placeTopic(event.dataTransfer.getData('text/plain'),zone.dataset.groupId,target?.dataset.topicId||'',Boolean(target&&event.clientY>=middle));
+    draggingTopicId='';
+  });
+  document.addEventListener('click',event=>{document.querySelectorAll('.zone-palette[open]').forEach(picker=>{if(!picker.contains(event.target))picker.open=false;});});
+  setSidebarCollapsed(sidebarCollapsed,false);setBoardPanelCollapsed('bank',boardPanelCollapsed.bank,false);setBoardPanelCollapsed('index',boardPanelCollapsed.index,false);seedPdfPrompts();seedP1Questions();render();syncView();
+})();
+</script>
+</body>
+</html>
